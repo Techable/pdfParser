@@ -225,7 +225,7 @@ class PdfParserProvider:
                 print "Hellooooo"
             if 'C200607522' in value:
                 print "@@@@@@@@@@@@@@@@@@",key,"@@@@", type(key), "@@@",value,"@@@@@@@@"
-                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95],"@@@@@@@@@@@@@@@"
+                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95000000000002],"@@@@@@@@@@@@@@@"
             if ':' in value:
                 value.remove(':')
 
