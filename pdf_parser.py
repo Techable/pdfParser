@@ -11,7 +11,6 @@ from pdfminer.pdfdevice import PDFDevice
 from pdfminer.pdftypes import PDFObjRef
 from pdfminer.layout import LAParams, LTTextBoxHorizontal, LTTextBoxVertical
 from pdfminer.converter import PDFPageAggregator
-
 from collections import defaultdict, namedtuple
 
 # default configuration dictionary which will be initialized when
@@ -147,21 +146,22 @@ class PdfParserProvider:
         for layout_obj in layout:
             if isinstance( layout_obj, LTTextBoxHorizontal ):
                 if layout_obj.get_text().strip():
+                    layout_obj_y1 = round(layout_obj.y1, 2)
                     temporary_text.append( TextBlock(layout_obj.x0, \
-                            layout_obj.y1, layout_obj.get_text().strip()) )
+                            layout_obj_y1, layout_obj.get_text().strip()) )
                     #TODO: Not the pythonic way to write the code
                     #Need to fix it
-                    if layout_obj.y1 in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj.y1].append( \
+                    if layout_obj_y1 in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj_y1].append( \
                                 layout_obj.get_text().strip())
-                    elif (layout_obj.y1 + 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj.y1 + 4].append( \
+                    elif (layout_obj_y1 + 4) in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj_y1 + 4].append( \
                                 layout_obj.get_text().strip())
-                    elif (layout_obj.y1 - 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj.y1 - 4].append( \
+                    elif (layout_obj_y1 - 4) in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj_y1 - 4].append( \
                                 layout_obj.get_text().strip())
                     else:
-                        parser_obj.horizontal_table[layout_obj.y1] = \
+                        parser_obj.horizontal_table[layout_obj_y1] = \
                         [layout_obj.get_text().strip()]
 
         #Appending the key value pairs in the dictionary
@@ -173,12 +173,12 @@ class PdfParserProvider:
     """
     Populate the table containing charges
     """
-    def populate_charges_record_table(self,parser_obj):
+    def populate_charges_record_table(self, parser_obj):
         #print "Hello"
         for key, value in parser_obj.horizontal_table.iteritems():
             if 'Charge No.' in value:
                 #y_coordinate = key
-                index = key - 28.34
+                index = round(key - 28.34, 2)
                 value = parser_obj.horizontal_table[index]
                 records_id = 0
                 while(len(parser_obj.horizontal_table[index]) == 4):
@@ -225,7 +225,7 @@ class PdfParserProvider:
                 print "Hellooooo"
             if 'C200607522' in value:
                 print "@@@@@@@@@@@@@@@@@@",key,"@@@@", type(key), "@@@",value,"@@@@@@@@"
-                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95000000000002],"@@@@@@@@@@@@@@@"
+                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95],"@@@@@@@@@@@@@@@"
             if ':' in value:
                 value.remove(':')
 
