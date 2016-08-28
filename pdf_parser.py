@@ -179,9 +179,10 @@ class PdfParserProvider:
             if 'Charge No.' in value:
                 #y_coordinate = key
                 index = round(key - 28.34, 2)
-                value = parser_obj.horizontal_table[index]
+                #value = parser_obj.horizontal_table[index]
                 records_id = 0
-                while(len(parser_obj.horizontal_table[index]) == 4):
+                length_fields = len(parser_obj.horizontal_table[index])
+                while(length_fields == 4):
                     #index = index - 36
                     if index in parser_obj.horizontal_table:
                         print "charge values XXXX", parser_obj.horizontal_table[index]
@@ -194,7 +195,9 @@ class PdfParserProvider:
                         records_id = records_id + 1
                         index = index - 36
                         print "ind", index
-                    if not index in parser_obj.horizontal_table:
+                    if index in parser_obj.horizontal_table:
+                        length_fields = len(parser_obj.horizontal_table)
+                    else:
                         break
                         #index = index - 36
                         #print "ind", index
