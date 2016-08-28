@@ -51,7 +51,7 @@ class PdfParser:
         self.input_pdf_file = conf.get("input_pdf_file",  \
                               DEFAULTS["input_pdf_file"])
 
-        #self.horizontal_tables = {}
+        self.horizontal_table = {}
         #initializing all the fields as blank for now
         self.company_record = {
                 'id':'',
@@ -80,14 +80,14 @@ class PdfParser:
                 'organization':'',
             }
 
-        self.charges = [{
-                'id':'',
-                'charge_no':'',
-                'date_registered':'',
-                'currency':'',
-                'amount_secured':'',
-                'charge_org':'',
-            }]
+        self.charges = [
+                {'id':''},
+                {'charge_no':''},
+                {'date_registered':''},
+                {'currency':''},
+                {'amount_secured':''},
+                {'charge_org':''},
+            ]
     
 
 class PdfParserProvider:
@@ -143,7 +143,6 @@ class PdfParserProvider:
     """
     def _get_text(self, parser_obj, pdf_aggregator_obj):
         temporary_text = []
-        temporary_horizontal_table = {}
         layout = pdf_aggregator_obj.get_result()
         for layout_obj in layout:
             if isinstance( layout_obj, LTTextBoxHorizontal ):
@@ -152,35 +151,53 @@ class PdfParserProvider:
                             layout_obj.y1, layout_obj.get_text().strip()) )
                     #TODO: Not the pythonic way to write the code
                     #Need to fix it
-                    if layout_obj.y1 in temporary_horizontal_table.keys():
-                        temporary_horizontal_table[layout_obj.y1].append( \
+                    if layout_obj.y1 in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj.y1].append( \
                                 layout_obj.get_text().strip())
-                    elif (layout_obj.y1 + 4) in temporary_horizontal_table.keys():
-                        temporary_horizontal_table[layout_obj.y1 + 4].append( \
+                    elif (layout_obj.y1 + 4) in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj.y1 + 4].append( \
                                 layout_obj.get_text().strip())
-                    elif (layout_obj.y1 - 4) in temporary_horizontal_table.keys():
-                        temporary_horizontal_table[layout_obj.y1 - 4].append( \
+                    elif (layout_obj.y1 - 4) in parser_obj.horizontal_table.keys():
+                        parser_obj.horizontal_table[layout_obj.y1 - 4].append( \
                                 layout_obj.get_text().strip())
                     else:
-                        temporary_horizontal_table[layout_obj.y1] = \
+                        parser_obj.horizontal_table[layout_obj.y1] = \
                         [layout_obj.get_text().strip()]
 
         #Appending the key value pairs in the dictionary
-        self.populate_company_record_table(parser_obj,temporary_horizontal_table)
-        self.populate_charges_record_table(parser_obj,temporary_horizontal_table)
+        self.populate_company_record_table(parser_obj)
+        self.populate_charges_record_table(parser_obj)
         #temporary_text.sort( key=lambda row: (row.x, -row.y) )
         return temporary_text
 
     """
     Populate the table containing charges
     """
-    def populate_charges_record_table(self,parser_obj,temporary_horizontal_table):
-        print "Hello"
-        #for key, value in temporary_horizontal_table.iteritems():
-            #Print statements for debug
-            #if 'Charge No.' in value:
-            #    index = self.find_index(parser_obj,'Registration No.',value)
-            #    parser_obj.company_record['registration_no'] = value[index]
+    def populate_charges_record_table(self,parser_obj):
+        #print "Hello"
+        for key, value in parser_obj.horizontal_table.iteritems():
+            if 'Charge No.' in value:
+                #y_coordinate = key
+                index = key - 28.34
+                value = parser_obj.horizontal_table[index]
+                records_id = 0
+                while(len(parser_obj.horizontal_table[index]) == 4):
+                    #index = index - 36
+                    if index in parser_obj.horizontal_table:
+                        print "charge values XXXX", parser_obj.horizontal_table[index]
+                        print " index  XXXX", index
+                        parser_obj.charges[records_id]['charge_no'] = parser_obj.horizontal_table[index][0]
+                        parser_obj.charges[records_id]['date_registered'] = parser_obj.horizontal_table[index][1]
+                        #parser_obj.charges[records_id]['currency'] = value[2]
+                        parser_obj.charges[records_id]['amount_secured'] = parser_obj.horizontal_table[index][2]
+                        parser_obj.charges[records_id]['charge_org'] = parser_obj.horizontal_table[index][3]
+                        records_id = records_id + 1
+                        index = index - 36
+                        print "ind", index
+                    if not index in parser_obj.horizontal_table:
+                        break
+                        #index = index - 36
+                        #print "ind", index
 
     """
     Finds index in a string containing company records
@@ -199,10 +216,16 @@ class PdfParserProvider:
     """
     Populates records in company records table
     """
-    def populate_company_record_table(self,parser_obj,temporary_horizontal_table):
-        for key, value in temporary_horizontal_table.iteritems():
+    def populate_company_record_table(self,parser_obj):
+        for key, value in parser_obj.horizontal_table.iteritems():
+
             #Print statements for debug
             print key, "\t", value, "\t"
+            if(key == 246.95):
+                print "Hellooooo"
+            if 'C200607522' in value:
+                print "@@@@@@@@@@@@@@@@@@",key,"@@@@", type(key), "@@@",value,"@@@@@@@@"
+                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95],"@@@@@@@@@@@@@@@"
             if ':' in value:
                 value.remove(':')
 
@@ -291,6 +314,12 @@ def run_pdf_parser():
     #	print parser_object.parsed_output_text.values()
     for key, value in parser_object.company_record.iteritems():
         print key, "\t", value
+    print "\n\nCHARGES TABLE DETAILS"
+
+    for charge_value in parser_object.charges:
+        print charge_value
+    #for key, value in parser_object.charges.iteritems()
+    #    print key, "\t", value
 if __name__ == "__main__":
     run_pdf_parser()
 
