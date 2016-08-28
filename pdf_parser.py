@@ -17,7 +17,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "inputfile3.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
             }
 
 # dictionary of configured values
@@ -174,12 +174,13 @@ class PdfParserProvider:
     """
     Populate the table containing charges
     """
-    def populate_charges_record_table(self,parser_obj,temporary_horizontal_table)
-        for key, value in temporary_horizontal_table.iteritems():
+    def populate_charges_record_table(self,parser_obj,temporary_horizontal_table):
+        print "Hello"
+        #for key, value in temporary_horizontal_table.iteritems():
             #Print statements for debug
-            if 'Charge No.' in value:
-                index = self.find_index(parser_obj,'Registration No.',value)
-                parser_obj.company_record['registration_no'] = value[index]    
+            #if 'Charge No.' in value:
+            #    index = self.find_index(parser_obj,'Registration No.',value)
+            #    parser_obj.company_record['registration_no'] = value[index]
 
     """
     Finds index in a string containing company records
