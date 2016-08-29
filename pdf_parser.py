@@ -79,15 +79,7 @@ class PdfParser:
                 'organization':'',
             }
 
-        self.charges = [
-                {'id':''},
-                {'charge_no':''},
-                {'date_registered':''},
-                {'currency':''},
-                {'amount_secured':''},
-                {'charge_org':''},
-            ]
-    
+        self.charges = []
 
 class PdfParserProvider:
 
@@ -182,25 +174,31 @@ class PdfParserProvider:
                 #value = parser_obj.horizontal_table[index]
                 records_id = 0
                 length_fields = len(parser_obj.horizontal_table[index])
-                while(length_fields == 4):
+                while(len(parser_obj.horizontal_table[index]) == 4):
                     #index = index - 36
+                    charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
+                    charge_no = parser_obj.horizontal_table[index][0]
                     if index in parser_obj.horizontal_table:
                         print "charge values XXXX", parser_obj.horizontal_table[index]
                         print " index  XXXX", index
-                        parser_obj.charges[records_id]['charge_no'] = parser_obj.horizontal_table[index][0]
-                        parser_obj.charges[records_id]['date_registered'] = parser_obj.horizontal_table[index][1]
+                        charges_dict = {'id':'', 'charge_no':'', 'date_registered':'', 'currency':'', 'amount_secured':'', 'charge_org':''}
+                        charges_dict['charge_no'] = charge_no
+                        charges_dict['date_registered'] = parser_obj.horizontal_table[index][1]
                         #parser_obj.charges[records_id]['currency'] = value[2]
-                        parser_obj.charges[records_id]['amount_secured'] = parser_obj.horizontal_table[index][2]
-                        parser_obj.charges[records_id]['charge_org'] = parser_obj.horizontal_table[index][3]
+                        charges_dict['amount_secured'] = parser_obj.horizontal_table[index][2]
+                        charges_dict['charge_org'] = parser_obj.horizontal_table[index][3]
+                        parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
-                        index = index - 36
+                        index = round(index - 36, 2)
                         print "ind", index
                     if index in parser_obj.horizontal_table:
                         length_fields = len(parser_obj.horizontal_table)
-                    else:
-                        break
                         #index = index - 36
                         #print "ind", index
+                    else:
+                        break
+        # remove duplicates of charges
+        parser_obj.charges = [dict(t) for t in set([tuple(d.items()) for d in parser_obj.charges])]
 
     """
     Finds index in a string containing company records
