@@ -191,11 +191,7 @@ class PdfParserProvider:
                         records_id = records_id + 1
                         index = round(index - 36, 2)
                         print "ind", index
-                    if index in parser_obj.horizontal_table:
-                        length_fields = len(parser_obj.horizontal_table)
-                        #index = index - 36
-                        #print "ind", index
-                    else:
+                    if not index in parser_obj.horizontal_table:
                         break
         # remove duplicates of charges
         parser_obj.charges = [dict(t) for t in set([tuple(d.items()) for d in parser_obj.charges])]
