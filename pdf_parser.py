@@ -167,10 +167,16 @@ class PdfParserProvider:
     def populate_charges_record_table(self, parser_obj):
         for key, value in parser_obj.horizontal_table.iteritems():
             if 'Charge No.' in value:
-                #y_coordinate = key
                 index = round(key - 28.34, 2)
                 records_id = 0
-                while(len(parser_obj.horizontal_table[index]) == 4):
+                #To check if the Charges table is empty
+                if index in parser_obj.horizontal_table:
+                    charge_table_fields = \
+                        len(parser_obj.horizontal_table[index])
+                else:
+                    charge_table_fields = 0
+
+                while(charge_table_fields == 4):
                     charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
                     charge_no = parser_obj.horizontal_table[index][0]
                     if index in parser_obj.horizontal_table:
@@ -192,8 +198,11 @@ class PdfParserProvider:
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
                         index = round(index - 36, 2)
-                    if not index in parser_obj.horizontal_table:
+                    if index in parser_obj.horizontal_table:
+                        charge_table_fields = len(parser_obj.horizontal_table[index])
+                    else:
                         break
+
         # remove duplicates of charges
         parser_obj.charges = [dict(t) for t in set([tuple(d.items()) for d in parser_obj.charges])]
 
