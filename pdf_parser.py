@@ -166,7 +166,6 @@ class PdfParserProvider:
     Populate the table containing charges
     """
     def populate_charges_record_table(self, parser_obj):
-        #print "Hello"
         for key, value in parser_obj.horizontal_table.iteritems():
             if 'Charge No.' in value:
                 #y_coordinate = key
@@ -176,11 +175,21 @@ class PdfParserProvider:
                     charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
                     charge_no = parser_obj.horizontal_table[index][0]
                     if index in parser_obj.horizontal_table:
-                        charges_dict = {'id':'', 'charge_no':'', 'date_registered':'', 'currency':'', 'amount_secured':'', 'charge_org':''}
+
+                        charges_dict = {'id':'',
+                                        'charge_no':'',
+                                        'date_registered':'',
+                                        'currency':'',
+                                        'amount_secured':'',
+                                        'charge_org':''}
+
                         charges_dict['charge_no'] = charge_no
-                        charges_dict['date_registered'] = parser_obj.horizontal_table[index][1]
-                        charges_dict['amount_secured'] = parser_obj.horizontal_table[index][2]
-                        charges_dict['charge_org'] = parser_obj.horizontal_table[index][3]
+                        charges_dict['date_registered'] = \
+                                parser_obj.horizontal_table[index][1]
+                        charges_dict['amount_secured'] = \
+                                parser_obj.horizontal_table[index][2]
+                        charges_dict['charge_org'] = \
+                                parser_obj.horizontal_table[index][3]
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
                         index = round(index - 36, 2)
