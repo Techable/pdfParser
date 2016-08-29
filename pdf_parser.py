@@ -173,7 +173,6 @@ class PdfParserProvider:
                 index = round(key - 28.34, 2)
                 #value = parser_obj.horizontal_table[index]
                 records_id = 0
-                length_fields = len(parser_obj.horizontal_table[index])
                 while(len(parser_obj.horizontal_table[index]) == 4):
                     #index = index - 36
                     charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
