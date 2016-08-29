@@ -171,25 +171,19 @@ class PdfParserProvider:
             if 'Charge No.' in value:
                 #y_coordinate = key
                 index = round(key - 28.34, 2)
-                #value = parser_obj.horizontal_table[index]
                 records_id = 0
                 while(len(parser_obj.horizontal_table[index]) == 4):
-                    #index = index - 36
                     charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
                     charge_no = parser_obj.horizontal_table[index][0]
                     if index in parser_obj.horizontal_table:
-                        print "charge values XXXX", parser_obj.horizontal_table[index]
-                        print " index  XXXX", index
                         charges_dict = {'id':'', 'charge_no':'', 'date_registered':'', 'currency':'', 'amount_secured':'', 'charge_org':''}
                         charges_dict['charge_no'] = charge_no
                         charges_dict['date_registered'] = parser_obj.horizontal_table[index][1]
-                        #parser_obj.charges[records_id]['currency'] = value[2]
                         charges_dict['amount_secured'] = parser_obj.horizontal_table[index][2]
                         charges_dict['charge_org'] = parser_obj.horizontal_table[index][3]
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
                         index = round(index - 36, 2)
-                        print "ind", index
                     if not index in parser_obj.horizontal_table:
                         break
         # remove duplicates of charges
