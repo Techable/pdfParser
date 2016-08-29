@@ -159,7 +159,6 @@ class PdfParserProvider:
         #Appending the key value pairs in the dictionary
         self.populate_company_record_table(parser_obj)
         self.populate_charges_record_table(parser_obj)
-        #temporary_text.sort( key=lambda row: (row.x, -row.y) )
         return temporary_text
 
     """
