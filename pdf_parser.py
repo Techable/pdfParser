@@ -217,11 +217,7 @@ class PdfParserProvider:
 
             #Print statements for debug
             print key, "\t", value, "\t"
-            if(key == 246.95):
-                print "Hellooooo"
-            if 'C200607522' in value:
-                print "@@@@@@@@@@@@@@@@@@",key,"@@@@", type(key), "@@@",value,"@@@@@@@@"
-                print "@@@@@@@@@@@@@@@@@@@",parser_obj.horizontal_table[246.95],"@@@@@@@@@@@@@@@"
+
             if ':' in value:
                 value.remove(':')
 
