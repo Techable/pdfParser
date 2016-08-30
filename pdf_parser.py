@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #Standard imports
 import logging
+import re
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument, PDFTextExtractionNotAllowed
@@ -21,7 +22,7 @@ DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
 
 # dictionary of configured values
 conf = {}
-TextBlock= namedtuple("TextBlock", ["x", "y", "text"])
+TextBlock= namedtuple("TextBlock", ["x", "y", "z", "text"])
 
 class PdfParserException(Exception):
     """ 
@@ -80,6 +81,8 @@ class PdfParser:
             }
 
         self.charges = []
+        self.officers_details = []
+
 
 class PdfParserProvider:
 
@@ -139,26 +142,25 @@ class PdfParserProvider:
             if isinstance( layout_obj, LTTextBoxHorizontal ):
                 if layout_obj.get_text().strip():
                     layout_obj_y1 = round(layout_obj.y1, 2)
+                    layout_obj_z = round(layout_obj.height, 2)
                     temporary_text.append( TextBlock(layout_obj.x0, \
-                            layout_obj_y1, layout_obj.get_text().strip()) )
+                            layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()) )
                     #TODO: Not the pythonic way to write the code
                     #Need to fix it
                     if layout_obj_y1 in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1].append( \
-                                layout_obj.get_text().strip())
+                        parser_obj.horizontal_table[layout_obj_y1].append(TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
                     elif (layout_obj_y1 + 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1 + 4].append( \
-                                layout_obj.get_text().strip())
+                        parser_obj.horizontal_table[layout_obj_y1 + 4].append(TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
                     elif (layout_obj_y1 - 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1 - 4].append( \
-                                layout_obj.get_text().strip())
+                        parser_obj.horizontal_table[layout_obj_y1 - 4].append(TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
                     else:
                         parser_obj.horizontal_table[layout_obj_y1] = \
-                        [layout_obj.get_text().strip()]
+                        [TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip())]
 
         #Appending the key value pairs in the dictionary
         self.populate_company_record_table(parser_obj)
         self.populate_charges_record_table(parser_obj)
+        self.populate_officers_and_representatives(parser_obj, temporary_text, layout)
         return temporary_text
 
     """
@@ -205,6 +207,48 @@ class PdfParserProvider:
 
         # remove duplicates of charges
         parser_obj.charges = [dict(t) for t in set([tuple(d.items()) for d in parser_obj.charges])]
+
+
+    def populate_officers_and_representatives(self, parser_obj, temporary_text, layout):
+        print "########officers_details########"
+        textblock_by_y = {(textblock.x, textblock.y) :textblock for textblock in temporary_text}    
+        for (x_cord, y_cord), textblock in textblock_by_y.iteritems():
+            if 'Officers/Authorised Representative(s)' in textblock.text:
+                x = textblock.x + 6
+                y = round(y_cord - 74.34, 2)
+                try:
+                    textblock_by_y[x, y]
+                    is_table = True
+                except:
+                    is_table = False
+                while(is_table):
+                    officers_dict = {
+                        'name': '',
+                        'id': '',
+                        'nationality': '',
+                        'source_of_address': '',
+                        'date_of_appointment': '',
+                        'address': '',
+                        'position_held': ''
+                    }
+                    officers_dict['name'] = textblock_by_y[x, y]
+                    officers_dict['id'] = textblock_by_y[round(x + 239), y]
+                    officers_dict['nationality'] = textblock_by_y[round(x + 320), y]
+                    officers_dict['source_of_address'] = textblock_by_y[round(x + 463), y]
+                    officers_dict['date_of_appointment'] = textblock_by_y[round(x + 551), y]
+                    if textblock_by_y[x, y].z > 15:
+                        y = round(y - 35.00, 2)
+                    else:
+                        y = round(y - 25.00, 2)
+                    officers_dict['address'] = textblock_by_y[x, y]
+                    officers_dict['position_held'] = textblock_by_y[round(x + 320), y]
+                    y = round(round(textblock_by_y[x, y].y - textblock_by_y[x, y].z, 2) - 16.44, 2)
+                    parser_obj.officers_details.append(officers_dict)
+                    try:
+                        textblock_by_y[x, y]
+                        is_table = True
+                    except:
+                        is_table = False
 
     """
     Finds index in a string containing company records
@@ -320,6 +364,10 @@ def run_pdf_parser():
     print "\n\nCHARGES TABLE DETAILS"
 
     for charge_value in parser_object.charges:
+        print charge_value
+    
+    print "\n\n###################   Officers details     ##################"
+    for charge_value in parser_object.officers_details:
         print charge_value
     #for key, value in parser_object.charges.iteritems()
     #    print key, "\t", value
