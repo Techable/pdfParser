@@ -218,10 +218,7 @@ class PdfParserProvider:
     def populate_share_capital_table(self,parser_obj):
         for key, value in parser_obj.horizontal_table.iteritems():
             if 'Capital' in value:
-                print "XXXX", key,"\t", value
-                #index = round(key - 28.34, 2)
                 index = round((key-75.34),2)
-                print "XXXX", index,"\t",index
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in parser_obj.horizontal_table:
@@ -232,11 +229,9 @@ class PdfParserProvider:
 
                 while((capital_table_fields == 4) or \
                       (capital_table_fields == 3)):
-                    print "XXXXXXXXXXXX",index
                     capital_ids = [capital['amount'] \
                         for capital in parser_obj.capital_details]
                     amount = parser_obj.horizontal_table[index][0]
-                    print "XXXX amount", amount
                     if index in parser_obj.horizontal_table:
                         capital_dict = {'id':'',
                                         'capital_type':'',
