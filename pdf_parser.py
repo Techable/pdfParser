@@ -162,7 +162,7 @@ class PdfParserProvider:
         self.populate_company_record_table(parser_obj)
         self.populate_charges_record_table(parser_obj)
         self.populate_share_capital_table(parser_obj)
-        #self.populate_paidup_capital_table(parser_obj)
+        self.populate_paidup_capital_table(parser_obj)
         return temporary_text
 
     """
@@ -262,6 +262,53 @@ class PdfParserProvider:
                         break
         parser_obj.capital_details = [dict(t) for t in set([tuple(d.items()) \
             for d in parser_obj.capital_details])]
+
+    """
+    Populate the Paidup Capital Details table
+    """
+    def populate_paidup_capital_table(self,parser_obj):
+        for key, value in parser_obj.horizontal_table.iteritems():
+            if 'Paid-Up Capital' in value:
+                index = round((key-50.34),2)
+                records_id = 0
+                #To check if the Charges table is empty
+                if index in parser_obj.horizontal_table:
+                    capital_table_fields = \
+                        len(parser_obj.horizontal_table[index])
+                else:
+                    capital_table_fields = 0
+
+                while(capital_table_fields == 3):
+                    capital_ids = [capital['amount'] \
+                        for capital in parser_obj.paidup_capital_details]
+                    amount = parser_obj.horizontal_table[index][0]
+                    if index in parser_obj.horizontal_table:
+                        capital_dict = {'id':'',
+                                        'capital_type':'',
+                                        'amount':'',
+                                        'shares':'',
+                                        'currency':'',
+                                        'share_type':''}
+
+                        capital_dict['amount'] = amount
+                        capital_dict['currency'] = \
+                                parser_obj.horizontal_table[index][1]
+                        capital_dict['share_type'] = \
+                                parser_obj.horizontal_table[index][2]
+                        capital_dict['shares'] = ''
+                        parser_obj.paidup_capital_details.append(capital_dict)
+                        records_id = records_id + 1
+                        index = round(index - 36, 2)
+                    if index in parser_obj.horizontal_table:
+                        capital_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                    else:
+                        break
+        parser_obj.paidup_capital_details = [dict(t) for t in set([tuple(d.items()) \
+            for d in parser_obj.paidup_capital_details])]
+
+
+
 
     """
     Finds index in a string containing company records
@@ -380,8 +427,10 @@ def run_pdf_parser():
     print "\n\nCAPITAL TABLE DETAILS\n"
     for capital_value in parser_object.capital_details:
         print capital_value
-    #for paidup_capital in parser_object.paidup_capital_details:
-    #    print paidup_capital
+    print "\n\nPAID-UP CAPITAL TABLE DETAILS\n"
+
+    for paidup_capital in parser_object.paidup_capital_details:
+        print paidup_capital
     #for key, value in parser_object.charges.iteritems()
     #    print key, "\t", value
 if __name__ == "__main__":
