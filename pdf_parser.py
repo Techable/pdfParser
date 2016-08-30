@@ -216,11 +216,7 @@ class PdfParserProvider:
             if 'Officers/Authorised Representative(s)' in textblock.text:
                 x = textblock.x + 6
                 y = round(y_cord - 74.34, 2)
-                try:
-                    textblock_by_y[x, y]
-                    is_table = True
-                except:
-                    is_table = False
+                is_table = (x, y) in textblock_by_y
                 while(is_table):
                     officers_dict = {
                         'name': '',
@@ -244,11 +240,7 @@ class PdfParserProvider:
                     officers_dict['position_held'] = textblock_by_y[round(x + 320), y]
                     y = round(round(textblock_by_y[x, y].y - textblock_by_y[x, y].z, 2) - 16.44, 2)
                     parser_obj.officers_details.append(officers_dict)
-                    try:
-                        textblock_by_y[x, y]
-                        is_table = True
-                    except:
-                        is_table = False
+                    is_table = (x, y) in textblock_by_y
 
     """
     Finds index in a string containing company records
