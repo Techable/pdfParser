@@ -2,6 +2,9 @@
 #Standard imports
 import logging
 import re
+from collections import defaultdict
+from operator import attrgetter
+
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument, PDFTextExtractionNotAllowed
@@ -79,7 +82,7 @@ class PdfParser:
                 'audit_firm_name':'',
                 'organization':'',
             }
-
+        self.pending_table = None
         self.charges = []
         self.officers_details = []
 
@@ -211,36 +214,82 @@ class PdfParserProvider:
 
     def populate_officers_and_representatives(self, parser_obj, temporary_text, layout):
         print "########officers_details########"
-        textblock_by_y = {(textblock.x, textblock.y) :textblock for textblock in temporary_text}    
-        for (x_cord, y_cord), textblock in textblock_by_y.iteritems():
-            if 'Officers/Authorised Representative(s)' in textblock.text:
-                x = textblock.x + 6
-                y = round(y_cord - 74.34, 2)
-                is_table = (x, y) in textblock_by_y
-                while(is_table):
-                    officers_dict = {
-                        'name': '',
-                        'id': '',
-                        'nationality': '',
-                        'source_of_address': '',
-                        'date_of_appointment': '',
-                        'address': '',
-                        'position_held': ''
-                    }
-                    officers_dict['name'] = textblock_by_y[x, y]
-                    officers_dict['id'] = textblock_by_y[round(x + 239), y]
-                    officers_dict['nationality'] = textblock_by_y[round(x + 320), y]
-                    officers_dict['source_of_address'] = textblock_by_y[round(x + 463), y]
-                    officers_dict['date_of_appointment'] = textblock_by_y[round(x + 551), y]
-                    if textblock_by_y[x, y].z > 15:
-                        y = round(y - 35.00, 2)
+        for key, value in parser_obj.horizontal_table.iteritems():
+            texts = []
+            for t in value:
+                texts.append(t) if type(t) == str else texts.append(t.text)
+            if 'Name' in texts:
+                temp_table = defaultdict(list)
+                for textblock in temporary_text:
+                    temp_table[textblock.y].append(textblock)
+                    temp_table[textblock.y].sort(key=lambda t: t.x)
+                index = round(key - 51.34, 2)
+                records_id = 0
+                # import ipdb;ipdb.set_trace()
+                #To check if the Charges table is empty
+                # import ipdb;ipdb.set_trace()
+                if index in temp_table:
+                    charge_table_fields = \
+                        len(temp_table[index])
+                else:
+                    charge_table_fields = 0
+
+                while(charge_table_fields == 5 or charge_table_fields == 2):
+                    officer_id = temp_table[index][0]
+                    officer_details = temp_table[index]
+                    if index in temp_table:
+                        officers_dict = {
+                            'name': '',
+                            'id': '',
+                            'nationality': '',
+                            'source_of_address': '',
+                            'date_of_appointment': '',
+                            'address': '',
+                            'position_held': ''
+                        }
+                        if parser_obj.pending_table is None:
+                            officers_dict['name'] = officer_details[0].text
+                            officers_dict['id'] = officer_details[1].text
+                            officers_dict['nationality'] = officer_details[2].text
+                            officers_dict['source_of_address'] = officer_details[3].text
+                            officers_dict['date_of_appointment'] = officer_details[4].text
+
+                            index = round(index - 25, 2)
+                        if parser_obj.pending_table is not None:
+                            officers_dict = parser_obj.pending_table
+                            parser_obj.pending_table = None
+                        elif index not in temp_table:
+                            parser_obj.pending_table = officers_dict
+                            parser_obj.officers_details.append(officers_dict)
+                            break
+
+                        officers_dict['address'] = temp_table[index][0].text
+                        officers_dict['position_held'] = temp_table[index][1].text
+                        if officers_dict['name'] == 'MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA':
+                            import ipdb;ipdb.set_trace()
+
+                        height = temp_table[index][0].z
+                        if height > 10 and height < 20:
+                            temp_index = round(temp_table[index][0].y - 49, 2)
+                        if height > 20 and height < 30:
+                            temp_index = round(temp_table[index][0].y - 37, 2)
+                        elif height > 30 and height < 40:
+                            temp_index = round(temp_table[index][0].y - 49, 2)
+                            if not temp_index in temp_table:
+                                temp_index = round(temp_table[index][0].y - 51, 2)
+                                if not temp_index in temp_table:
+                                    temp_index = round(temp_table[index][0].y - 47, 2)
+                        elif height > 40 and height < 50:
+                            temp_index = round(temp_table[index][0].y - 60, 2)
+                            if not temp_index in temp_table:
+                                temp_index = round(temp_table[index][0].y - 62, 2)
+                        index = temp_index
+                        parser_obj.officers_details.append(officers_dict)
+
+                    if index in temp_table:
+                        charge_table_fields = len(temp_table[index])
                     else:
-                        y = round(y - 25.00, 2)
-                    officers_dict['address'] = textblock_by_y[x, y]
-                    officers_dict['position_held'] = textblock_by_y[round(x + 320), y]
-                    y = round(round(textblock_by_y[x, y].y - textblock_by_y[x, y].z, 2) - 16.44, 2)
-                    parser_obj.officers_details.append(officers_dict)
-                    is_table = (x, y) in textblock_by_y
+                        break
 
     """
     Finds index in a string containing company records
@@ -361,6 +410,8 @@ def run_pdf_parser():
     print "\n\n###################   Officers details     ##################"
     for charge_value in parser_object.officers_details:
         print charge_value
+        print "\n\n"
+    print len(parser_object.officers_details)
     #for key, value in parser_object.charges.iteritems()
     #    print key, "\t", value
 if __name__ == "__main__":
