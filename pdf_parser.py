@@ -16,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile6.pdf",
             }
 
 # dictionary of configured values
@@ -170,6 +170,7 @@ class PdfParserProvider:
         self.populate_share_capital_table(parser_obj)
         self.populate_paidup_capital_table(parser_obj)
         self.populate_shareholders_table(parser_obj)
+        print temporary_text
         return temporary_text
 
 
@@ -260,7 +261,12 @@ class PdfParserProvider:
                         shareholders_dict['source_of_address'] = \
                                 parser_obj.horizontal_table[index][4]
 
-                        index = round(index - 37.0, 2)
+                        index = round(index -27.0, 2)
+                        if not index in parser_obj.horizontal_table:
+                            index = round(index - 10.0, 2)
+
+                        if not index in parser_obj.horizontal_table:
+                            index = round(index  - 10)
                         #shareholders_table_fields = \
                         #    len(parser_obj.horizontal_table[index])
                         if (index in parser_obj.horizontal_table):
@@ -272,7 +278,6 @@ class PdfParserProvider:
 
                         index = round((index-70.0),2)
                         if (index in parser_obj.horizontal_table):
-                            print "LLLL",index
                             shareholders_table_fields = \
                             len(parser_obj.horizontal_table[index])
                             if(shareholders_table_fields == 2):
