@@ -55,6 +55,9 @@ class PdfParser:
                               DEFAULTS["input_pdf_file"])
 
         self.horizontal_table = {}
+        #TODO: Bad design, need to redesign it again
+        self.page_number = 0
+
         #initializing all the fields as blank for now
         self.company_record = {
                 'id':'',
@@ -85,6 +88,9 @@ class PdfParser:
         self.pending_table = None
         self.charges = []
         self.officers_details = []
+        self.capital_details = []
+        self.paidup_capital_details = []
+        self.shareholders_details = []
 
 
 class PdfParserProvider:
@@ -132,6 +138,7 @@ class PdfParserProvider:
             if page.annots:
                 self._build_annotations( page )
             page_text = self._get_text(parser_obj, pdf_aggregator_obj)
+            parser_obj.page_number = page_num
             #TODO: Need to copy the data into parsed_output_text variable
             parser_obj.parsed_output_text[page_num + 1] = page_text
        
@@ -144,7 +151,8 @@ class PdfParserProvider:
         for layout_obj in layout:
             if isinstance( layout_obj, LTTextBoxHorizontal ):
                 if layout_obj.get_text().strip():
-                    layout_obj_y1 = round(layout_obj.y1, 2)
+                    layout_obj_y1 = round(((1000 * parser_obj.page_number) + \
+                                    layout_obj.y1),2)
                     layout_obj_z = round(layout_obj.height, 2)
                     temporary_text.append( TextBlock(layout_obj.x0, \
                             layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()) )
@@ -164,7 +172,12 @@ class PdfParserProvider:
         self.populate_company_record_table(parser_obj)
         self.populate_charges_record_table(parser_obj)
         self.populate_officers_and_representatives(parser_obj, temporary_text, layout)
+        self.populate_share_capital_table(parser_obj)
+        self.populate_paidup_capital_table(parser_obj)
+        self.populate_shareholders_table(parser_obj)
         return temporary_text
+
+
 
     """
     Populate the table containing charges
@@ -182,7 +195,8 @@ class PdfParserProvider:
                     charge_table_fields = 0
 
                 while(charge_table_fields == 4):
-                    charge_ids = [charge['charge_no'] for charge in parser_obj.charges]
+                    charge_ids = [charge['charge_no'] \
+                        for charge in parser_obj.charges]
                     charge_no = parser_obj.horizontal_table[index][0]
                     if index in parser_obj.horizontal_table:
 
@@ -204,7 +218,8 @@ class PdfParserProvider:
                         records_id = records_id + 1
                         index = round(index - 36, 2)
                     if index in parser_obj.horizontal_table:
-                        charge_table_fields = len(parser_obj.horizontal_table[index])
+                        charge_table_fields = \
+                            len(parser_obj.horizontal_table[index])
                     else:
                         break
 
@@ -213,7 +228,6 @@ class PdfParserProvider:
 
 
     def populate_officers_and_representatives(self, parser_obj, temporary_text, layout):
-        print "########officers_details########"
         for key, value in parser_obj.horizontal_table.iteritems():
             texts = []
             for t in value:
@@ -225,9 +239,6 @@ class PdfParserProvider:
                     temp_table[textblock.y].sort(key=lambda t: t.x)
                 index = round(key - 51.34, 2)
                 records_id = 0
-                # import ipdb;ipdb.set_trace()
-                #To check if the Charges table is empty
-                # import ipdb;ipdb.set_trace()
                 if index in temp_table:
                     charge_table_fields = \
                         len(temp_table[index])
@@ -265,8 +276,9 @@ class PdfParserProvider:
 
                         officers_dict['address'] = temp_table[index][0].text
                         officers_dict['position_held'] = temp_table[index][1].text
-                        if officers_dict['name'] == 'MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA':
-                            import ipdb;ipdb.set_trace()
+                        # TODO fix this issue
+                        # if officers_dict['name'] == 'MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA':
+                        #     import ipdb;ipdb.set_trace()
 
                         height = temp_table[index][0].z
                         if height > 10 and height < 20:
@@ -292,13 +304,180 @@ class PdfParserProvider:
                         break
 
     """
+    Populate the table containing shareholders object
+    """
+    def populate_shareholders_table(self,parser_obj):
+        for key, value in parser_obj.horizontal_table.iteritems():
+            if 'Shareholder(s)' in value:
+                index = round((key-74.34),2)
+                records_id = 0
+                #To check if the Charges table is empty
+                if index in parser_obj.horizontal_table:
+                    shareholders_table_fields = \
+                        len(parser_obj.horizontal_table[index])
+                else:
+                    shareholders_table_fields = 0
+
+                while(shareholders_table_fields == 5):
+                    shareholders_id = [shareholders['id'] \
+                        for shareholders in parser_obj.shareholders_details]
+                    shareholder_id = parser_obj.horizontal_table[index][2]
+                    if index in parser_obj.horizontal_table:
+                        shareholders_dict = {'id':'',
+                                            'name':'',
+                                            'address':'',
+                                            'shareholder_id':'',
+                                            'nationality':'',''
+                                            'source_of_address':'',
+                                            'address_changed':'',
+                                            'currency':'',
+                                            'odinary_num':'',
+                                            'company_record':''}
+
+                        shareholders_dict['id'] = shareholder_id
+                        shareholders_dict['name'] = \
+                                parser_obj.horizontal_table[index][1]
+                        shareholders_dict['nationality'] = \
+                                parser_obj.horizontal_table[index][3]
+                        shareholders_dict['source_of_address'] = \
+                                parser_obj.horizontal_table[index][4]
+
+                        index = round(index -27.0, 2)
+                        if not index in parser_obj.horizontal_table:
+                            index = round(index - 10.0, 2)
+
+                        if not index in parser_obj.horizontal_table:
+                            index = round(index  - 10)
+                        #shareholders_table_fields = \
+                        #    len(parser_obj.horizontal_table[index])
+                        if (index in parser_obj.horizontal_table):
+                            shareholders_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                            if (shareholders_table_fields == 2):
+                                shareholders_dict['address'] = \
+                                    parser_obj.horizontal_table[index][0]
+
+                        index = round((index-70.0),2)
+                        if (index in parser_obj.horizontal_table):
+                            shareholders_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                            if(shareholders_table_fields == 2):
+                                shareholders_dict['ordinary_num'] = \
+                                    parser_obj.horizontal_table[index][0]
+                                shareholders_dict['currency'] = \
+                                    parser_obj.horizontal_table[index][1]
+
+                        parser_obj.shareholders_details.\
+                            append(shareholders_dict)
+                        records_id = records_id + 1
+                        index = round(index - 2, 2)
+
+                    if index in parser_obj.horizontal_table:
+                        shareholders_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                    else:
+                        break
+        parser_obj.shareholders_details = \
+            [dict(t) for t in set([tuple(d.items()) \
+            for d in parser_obj.shareholders_details])]
+
+
+    """
+    Populate the Capital Details table
+    """
+    def populate_share_capital_table(self,parser_obj):
+        for key, value in parser_obj.horizontal_table.iteritems():
+            if 'Capital' in value:
+                index = round((key-75.34),2)
+                records_id = 0
+                #To check if the Charges table is empty
+                if index in parser_obj.horizontal_table:
+                    capital_table_fields = \
+                        len(parser_obj.horizontal_table[index])
+                else:
+                    capital_table_fields = 0
+
+                while((capital_table_fields == 4) or \
+                      (capital_table_fields == 3)):
+                    capital_ids = [capital['amount'] \
+                        for capital in parser_obj.capital_details]
+                    amount = parser_obj.horizontal_table[index][0]
+                    if index in parser_obj.horizontal_table:
+                        capital_dict = {'id':'',
+                                        'capital_type':'',
+                                        'amount':'',
+                                        'shares':'',
+                                        'currency':'',
+                                        'share_type':''}
+
+                        capital_dict['amount'] = amount
+                        capital_dict['shares'] = \
+                                parser_obj.horizontal_table[index][0]
+                        capital_dict['currency'] = \
+                                parser_obj.horizontal_table[index][1]
+                        capital_dict['share_type'] = \
+                                parser_obj.horizontal_table[index][2]
+                        parser_obj.capital_details.append(capital_dict)
+                        records_id = records_id + 1
+                        index = round(index - 26, 2)
+                    if index in parser_obj.horizontal_table:
+                        capital_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                    else:
+                        break
+        parser_obj.capital_details = [dict(t) for t in set([tuple(d.items()) \
+            for d in parser_obj.capital_details])]
+
+    """
+    Populate the Paidup Capital Details table
+    """
+    def populate_paidup_capital_table(self,parser_obj):
+        for key, value in parser_obj.horizontal_table.iteritems():
+            if 'Paid-Up Capital' in value:
+                index = round((key-50.34),2)
+                records_id = 0
+                #To check if the Charges table is empty
+                if index in parser_obj.horizontal_table:
+                    capital_table_fields = \
+                        len(parser_obj.horizontal_table[index])
+                else:
+                    capital_table_fields = 0
+
+                while(capital_table_fields == 3):
+                    capital_ids = [capital['amount'] \
+                        for capital in parser_obj.paidup_capital_details]
+                    amount = parser_obj.horizontal_table[index][0]
+                    if index in parser_obj.horizontal_table:
+                        capital_dict = {'id':'',
+                                        'capital_type':'',
+                                        'amount':'',
+                                        'shares':'',
+                                        'currency':'',
+                                        'share_type':''}
+
+                        capital_dict['amount'] = amount
+                        capital_dict['currency'] = \
+                                parser_obj.horizontal_table[index][1]
+                        capital_dict['share_type'] = \
+                                parser_obj.horizontal_table[index][2]
+                        capital_dict['shares'] = ''
+                        parser_obj.paidup_capital_details.append(capital_dict)
+                        records_id = records_id + 1
+                        index = round(index - 36, 2)
+                    if index in parser_obj.horizontal_table:
+                        capital_table_fields = \
+                            len(parser_obj.horizontal_table[index])
+                    else:
+                        break
+        parser_obj.paidup_capital_details = [dict(t) for t in set([tuple(d.items()) \
+            for d in parser_obj.paidup_capital_details])]
+
+
+    """
     Finds index in a string containing company records
     """
     def find_index(self,parser_obj,input_text,input_list):
-        #print "input_text", input_text
-        #print "input_list", input_list
         input_index = input_list.index(input_text)
-        #print "input_index", input_index
         if input_index:
             return 0
         else:
@@ -400,18 +579,36 @@ def run_pdf_parser():
     provider_object.load_pdf_file(parser_object)
     #for i in parser_object.parsed_output_text:
     #	print parser_object.parsed_output_text.values()
+    print "\n#### Company records ##### \n"
     for key, value in parser_object.company_record.iteritems():
         print key, "\t", value
-    print "\n\nCHARGES TABLE DETAILS"
 
+    print "\n#### CHARGES TABLE DETAILS ####\n"
+    print len(parser_object.charges)
     for charge_value in parser_object.charges:
         print charge_value
-    
-    print "\n\n###################   Officers details     ##################"
+
+    print "\n###################   Officers details     ##################\n"
+    print len(parser_object.officers_details)
     for charge_value in parser_object.officers_details:
         print charge_value
         print "\n\n"
-    print len(parser_object.officers_details)
+
+    print "\nCAPITAL TABLE DETAILS\n"
+    print len(parser_object.capital_details)
+    for capital_value in parser_object.capital_details:
+        print capital_value
+
+    print "\n\nPAID-UP CAPITAL TABLE DETAILS\n"
+    print len(parser_object.paidup_capital_details)
+    for paidup_capital in parser_object.paidup_capital_details:
+        print paidup_capital
+
+    print "\n\nSHAREHOLDERS TABLE DETAILS\n"
+    print len(parser_object.shareholders_details)
+    for shareholder_value in parser_object.shareholders_details:
+        print shareholder_value
+
     #for key, value in parser_object.charges.iteritems()
     #    print key, "\t", value
 if __name__ == "__main__":
