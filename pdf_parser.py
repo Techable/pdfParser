@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 #Standard imports
-import logging
-import re
 from collections import defaultdict
-from operator import attrgetter
 
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
