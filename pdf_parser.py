@@ -1,22 +1,19 @@
 #!/usr/bin/env python
 #Standard imports
-import logging
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
-from pdfminer.pdfdocument import PDFDocument, PDFTextExtractionNotAllowed
-from pdfminer.psparser import PSLiteral
+from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.pdfdevice import PDFDevice
 from pdfminer.pdftypes import PDFObjRef
-from pdfminer.layout import LAParams, LTTextBoxHorizontal, LTTextBoxVertical
+from pdfminer.layout import LAParams, LTTextBoxHorizontal
 from pdfminer.converter import PDFPageAggregator
 from collections import defaultdict, namedtuple
 
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile4.pdf",
             }
 
 # dictionary of configured values
@@ -46,11 +43,12 @@ class PdfParser:
         #Initialize output text as key value pairs
 
         self.parsed_output_text = {}
+        self.horizontal_dict = defaultdict(lambda : defaultdict(list))
         # Innitializing the input PDF file
         self.input_pdf_file = conf.get("input_pdf_file",  \
                               DEFAULTS["input_pdf_file"])
 
-        self.horizontal_table = {}
+        self.horizontal_table = defaultdict(list)
         #TODO: Bad design, need to redesign it again
         self.page_number = 0
 
@@ -132,8 +130,8 @@ class PdfParserProvider:
         for page_num, page in enumerate(PDFPage.create_pages(document_obj)):
             interpreter_obj.process_page(page)
             if page.annots:
-                self._build_annotations( page )
-            page_text = self._get_text(parser_obj, pdf_aggregator_obj)
+                self._build_annotations(page)
+            page_text = self._get_text(parser_obj, pdf_aggregator_obj, page_num)
             parser_obj.page_number = page_num
             #TODO: Need to copy the data into parsed_output_text variable
             parser_obj.parsed_output_text[page_num + 1] = page_text
@@ -141,7 +139,7 @@ class PdfParserProvider:
     """
     To fetch the text from the pdf_aggregator_obj
     """
-    def _get_text(self, parser_obj, pdf_aggregator_obj):
+    def _get_text(self, parser_obj, pdf_aggregator_obj, page_num):
         temporary_text = []
         layout = pdf_aggregator_obj.get_result()
         for layout_obj in layout:
@@ -154,27 +152,28 @@ class PdfParserProvider:
                             layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()) )
                     #TODO: Not the pythonic way to write the code
                     #Need to fix it
-                    if layout_obj_y1 in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1].append( \
-                                layout_obj.get_text().strip())
-                    elif (layout_obj_y1 + 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1 + 4].append( \
-                                layout_obj.get_text().strip())
-                    elif (layout_obj_y1 - 4) in parser_obj.horizontal_table.keys():
-                        parser_obj.horizontal_table[layout_obj_y1 - 4].append( \
-                                layout_obj.get_text().strip())
+                    page_nos = parser_obj.horizontal_dict.keys()
+                    keys = [parser_obj.horizontal_dict[pageno].keys() for pageno in page_nos]
+                    if layout_obj_y1 in keys:
+                        parser_obj.horizontal_dict[page_num][layout_obj_y1].append( \
+                                TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
+                    elif (layout_obj_y1 + 4) in keys:
+                        parser_obj.horizontal_dict[page_num][layout_obj_y1 + 4].append( \
+                                TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
+                    elif (layout_obj_y1 - 4) in keys:
+                        parser_obj.horizontal_dict[page_num][layout_obj_y1 - 4].append( \
+                                TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
                     else:
-                        parser_obj.horizontal_table[layout_obj_y1] = \
-                        [layout_obj.get_text().strip()]
+                        parser_obj.horizontal_dict[page_num][layout_obj_y1].append(
+                             TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
 
         #Appending the key value pairs in the dictionary
         self.populate_company_record_table(parser_obj)
-        self.populate_charges_record_table(parser_obj)
-        self.populate_share_capital_table(parser_obj)
-        self.populate_paidup_capital_table(parser_obj)
-        self.populate_shareholders_table(parser_obj)
-        self.populate_officers_and_representatives(parser_obj, temporary_text)
-        # print temporary_text
+        self.populate_charges_record_table(parser_obj, page_num)
+        # self.populate_share_capital_table(parser_obj)
+        # self.populate_paidup_capital_table(parser_obj)
+        # self.populate_shareholders_table(parser_obj)
+        # self.populate_officers_and_representatives(parser_obj, temporary_text)
         return temporary_text
 
 
@@ -182,23 +181,29 @@ class PdfParserProvider:
     """
     Populate the table containing charges
     """
-    def populate_charges_record_table(self, parser_obj):
-        for key, value in parser_obj.horizontal_table.iteritems():
-            if 'Charge No.' in value:
+    def populate_charges_record_table(self, parser_obj, page_num):
+        page_values = parser_obj.horizontal_dict[page_num]
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text for t in list_of_t]
+            if 'Charge No.' in values:
+                for x, y in page_values.iteritems():
+                    print x, y
+                    print "\n"
                 index = round(key - 28.34, 2)
                 records_id = 0
                 #To check if the Charges table is empty
-                if index in parser_obj.horizontal_table:
+                if index in page_values:
                     charge_table_fields = \
-                        len(parser_obj.horizontal_table[index])
+                        len(page_values[index])
                 else:
                     charge_table_fields = 0
 
+                # import ipdb;ipdb.set_trace()
                 while(charge_table_fields == 4):
                     charge_ids = [charge['charge_no'] \
                         for charge in parser_obj.charges]
-                    charge_no = parser_obj.horizontal_table[index][0]
-                    if index in parser_obj.horizontal_table:
+                    charge_no = page_values[index][0].text
+                    if index in page_values:
 
                         charges_dict = {'id':'',
                                         'charge_no':'',
@@ -208,18 +213,25 @@ class PdfParserProvider:
                                         'charge_org':''}
 
                         charges_dict['charge_no'] = charge_no
-                        charges_dict['date_registered'] = \
-                                parser_obj.horizontal_table[index][1]
-                        charges_dict['amount_secured'] = \
-                                parser_obj.horizontal_table[index][2]
-                        charges_dict['charge_org'] = \
-                                parser_obj.horizontal_table[index][3]
+                        charges_dict['date_registered'] = page_values[index][1]
+                        charges_dict['amount_secured'] = page_values[index][2]
+                        charges_dict['charge_org'] = page_values[index][3]
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
-                        index = round(index - 36, 2)
-                    if index in parser_obj.horizontal_table:
+                        possible_deltas = [24, 28, 48, 36, 26]
+                        temp_index = [round(index - delta, 2) for delta in possible_deltas if round(index - delta, 2) in page_values]
+                        if temp_index:
+                            index = temp_index[0]
+                        else:
+                            index = round(index - 36, 2)
+
+                        # for delta in possible_deltas:
+                        #     if round(index - delta, 2) in page_values:
+                        #         index = round(index - delta, 2)
+                    # import ipdb;ipdb.set_trace()
+                    if index in page_values:
                         charge_table_fields = \
-                            len(parser_obj.horizontal_table[index])
+                            len(page_values[index])
                     else:
                         break
 
@@ -582,22 +594,27 @@ def run_pdf_parser():
         print key, "\t", value
 
     print "\n\nCHARGES TABLE DETAILS"
+    print len(parser_object.charges)
     for charge_value in parser_object.charges:
         print charge_value
 
     print "\n\nCAPITAL TABLE DETAILS\n"
+    print len(parser_object.capital_details)
     for capital_value in parser_object.capital_details:
         print capital_value
 
     print "\n\nPAID-UP CAPITAL TABLE DETAILS\n"
+    print len(parser_object.paidup_capital_details)
     for paidup_capital in parser_object.paidup_capital_details:
         print paidup_capital
 
     print "\n\nSHAREHOLDERS TABLE DETAILS\n"
+    print len(parser_object.shareholders_details)
     for shareholder_value in parser_object.shareholders_details:
         print shareholder_value
 
     print "\n\nOFFICERS TABLE DETAILS\n"
+    print len(parser_object.officers_details)
     for officer_detail in parser_object.officers_details:
         print officer_detail
         print "\n"
