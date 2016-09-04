@@ -16,12 +16,12 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile6.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
             }
 
 # dictionary of configured values
 conf = {}
-TextBlock= namedtuple("TextBlock", ["x", "y", "text"])
+TextBlock= namedtuple("TextBlock", ["x", "y", "z", "text"])
 
 class PdfParserException(Exception):
     """ 
@@ -81,11 +81,13 @@ class PdfParser:
                 'audit_firm_name':'',
                 'organization':'',
             }
+        self.pending_table = None
 
         self.charges = []
         self.capital_details = []
         self.paidup_capital_details = []
         self.shareholders_details = []
+        self.officers_details = []
 
 class PdfParserProvider:
 
@@ -147,8 +149,9 @@ class PdfParserProvider:
                 if layout_obj.get_text().strip():
                     layout_obj_y1 = round(((1000 * parser_obj.page_number) + \
                                     layout_obj.y1),2)
+                    layout_obj_z = round(layout_obj.height, 2)
                     temporary_text.append( TextBlock(layout_obj.x0, \
-                            layout_obj_y1, layout_obj.get_text().strip()) )
+                            layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()) )
                     #TODO: Not the pythonic way to write the code
                     #Need to fix it
                     if layout_obj_y1 in parser_obj.horizontal_table.keys():
@@ -170,7 +173,8 @@ class PdfParserProvider:
         self.populate_share_capital_table(parser_obj)
         self.populate_paidup_capital_table(parser_obj)
         self.populate_shareholders_table(parser_obj)
-        print temporary_text
+        self.populate_officers_and_representatives(parser_obj, temporary_text)
+        # print temporary_text
         return temporary_text
 
 
@@ -392,6 +396,82 @@ class PdfParserProvider:
             for d in parser_obj.paidup_capital_details])]
 
 
+    def populate_officers_and_representatives(self, parser_obj, temporary_text):
+        for key, value in parser_obj.horizontal_table.iteritems():
+            texts = []
+            for t in value:
+                texts.append(t) if type(t) == str else texts.append(t)
+            if 'Name' in texts:
+                temp_table = defaultdict(list)
+                for textblock in temporary_text:
+                    temp_table[textblock.y].append(textblock)
+                    temp_table[textblock.y].sort(key=lambda t: t.x)
+                index = round(key - 51.34, 2)
+                records_id = 0
+                if index in temp_table:
+                    charge_table_fields = \
+                        len(temp_table[index])
+                else:
+                    charge_table_fields = 0
+
+                while(charge_table_fields == 5 or charge_table_fields == 2):
+                    officer_id = temp_table[index][0]
+                    officer_details = temp_table[index]
+                    if index in temp_table:
+                        officers_dict = {
+                            'name': '',
+                            'id': '',
+                            'nationality': '',
+                            'source_of_address': '',
+                            'date_of_appointment': '',
+                            'address': '',
+                            'position_held': ''
+                        }
+                        if parser_obj.pending_table is None:
+                            officers_dict['name'] = officer_details[0]
+                            officers_dict['id'] = officer_details[1]
+                            officers_dict['nationality'] = officer_details[2]
+                            officers_dict['source_of_address'] = officer_details[3]
+                            officers_dict['date_of_appointment'] = officer_details[4]
+
+                            index = round(index - 25, 2)
+                        if parser_obj.pending_table is not None:
+                            officers_dict = parser_obj.pending_table
+                            parser_obj.pending_table = None
+                        elif index not in temp_table:
+                            parser_obj.pending_table = officers_dict
+                            parser_obj.officers_details.append(officers_dict)
+                            break
+
+                        officers_dict['address'] = temp_table[index][0]
+                        officers_dict['position_held'] = temp_table[index][1]
+                        # TODO fix this issue
+                        # if officers_dict['name'] == 'MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA':
+                        #     import ipdb;ipdb.set_trace()
+
+                        height = temp_table[index][0].z
+                        if height > 10 and height < 20:
+                            temp_index = round(temp_table[index][0].y - 49, 2)
+                        if height > 20 and height < 30:
+                            temp_index = round(temp_table[index][0].y - 37, 2)
+                        elif height > 30 and height < 40:
+                            temp_index = round(temp_table[index][0].y - 49, 2)
+                            if not temp_index in temp_table:
+                                temp_index = round(temp_table[index][0].y - 51, 2)
+                                if not temp_index in temp_table:
+                                    temp_index = round(temp_table[index][0].y - 47, 2)
+                        elif height > 40 and height < 50:
+                            temp_index = round(temp_table[index][0].y - 60, 2)
+                            if not temp_index in temp_table:
+                                temp_index = round(temp_table[index][0].y - 62, 2)
+                        index = temp_index if temp_index else index
+                        parser_obj.officers_details.append(officers_dict)
+
+                    if index in temp_table:
+                        charge_table_fields = len(temp_table[index])
+                    else:
+                        break
+
     """
     Finds index in a string containing company records
     """
@@ -409,8 +489,8 @@ class PdfParserProvider:
     def populate_company_record_table(self,parser_obj):
         for key, value in parser_obj.horizontal_table.iteritems():
 
-            #Print statements for debug
-            print key, "\t", value, "\t"
+            # #Print statements for debug
+            # print key, "\t", value, "\t"
 
             if ':' in value:
                 value.remove(':')
@@ -496,13 +576,15 @@ def run_pdf_parser():
     parser_object = PdfParser(conf)
     provider_object = PdfParserProvider()
     provider_object.load_pdf_file(parser_object)
-    #for i in parser_object.parsed_output_text:
-    #	print parser_object.parsed_output_text.values()
+
+    print "\n ##### Company details ###### \n"
     for key, value in parser_object.company_record.iteritems():
         print key, "\t", value
+
     print "\n\nCHARGES TABLE DETAILS"
     for charge_value in parser_object.charges:
         print charge_value
+
     print "\n\nCAPITAL TABLE DETAILS\n"
     for capital_value in parser_object.capital_details:
         print capital_value
@@ -515,8 +597,11 @@ def run_pdf_parser():
     for shareholder_value in parser_object.shareholders_details:
         print shareholder_value
 
-    #for key, value in parser_object.charges.iteritems()
-    #    print key, "\t", value
+    print "\n\nOFFICERS TABLE DETAILS\n"
+    for officer_detail in parser_object.officers_details:
+        print officer_detail
+        print "\n"
+
 if __name__ == "__main__":
     run_pdf_parser()
 
