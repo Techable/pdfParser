@@ -13,7 +13,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile4.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile9.pdf",
             }
 
 # dictionary of configured values
@@ -170,8 +170,8 @@ class PdfParserProvider:
         #Appending the key value pairs in the dictionary
         self.populate_company_record_table(parser_obj)
         self.populate_charges_record_table(parser_obj, page_num)
-        # self.populate_share_capital_table(parser_obj)
-        # self.populate_paidup_capital_table(parser_obj)
+        self.populate_share_capital_table(parser_obj, page_num)
+        self.populate_paidup_capital_table(parser_obj, page_num)
         # self.populate_shareholders_table(parser_obj)
         # self.populate_officers_and_representatives(parser_obj, temporary_text)
         return temporary_text
@@ -186,9 +186,6 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Charge No.' in values:
-                for x, y in page_values.iteritems():
-                    print x, y
-                    print "\n"
                 index = round(key - 28.34, 2)
                 records_id = 0
                 #To check if the Charges table is empty
@@ -198,7 +195,6 @@ class PdfParserProvider:
                 else:
                     charge_table_fields = 0
 
-                # import ipdb;ipdb.set_trace()
                 while(charge_table_fields == 4):
                     charge_ids = [charge['charge_no'] \
                         for charge in parser_obj.charges]
@@ -224,11 +220,6 @@ class PdfParserProvider:
                             index = temp_index[0]
                         else:
                             index = round(index - 36, 2)
-
-                        # for delta in possible_deltas:
-                        #     if round(index - delta, 2) in page_values:
-                        #         index = round(index - delta, 2)
-                    # import ipdb;ipdb.set_trace()
                     if index in page_values:
                         charge_table_fields = \
                             len(page_values[index])
@@ -320,15 +311,17 @@ class PdfParserProvider:
     """
     Populate the Capital Details table
     """
-    def populate_share_capital_table(self,parser_obj):
-        for key, value in parser_obj.horizontal_table.iteritems():
-            if 'Capital' in value:
+    def populate_share_capital_table(self,parser_obj, page_num):
+        page_values = parser_obj.horizontal_dict[page_num]
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text for t in list_of_t]
+            if 'Capital' in values:
                 index = round((key-75.34),2)
                 records_id = 0
                 #To check if the Charges table is empty
-                if index in parser_obj.horizontal_table:
+                if index in page_values:
                     capital_table_fields = \
-                        len(parser_obj.horizontal_table[index])
+                        len(page_values[index])
                 else:
                     capital_table_fields = 0
 
@@ -336,8 +329,8 @@ class PdfParserProvider:
                       (capital_table_fields == 3)):
                     capital_ids = [capital['amount'] \
                         for capital in parser_obj.capital_details]
-                    amount = parser_obj.horizontal_table[index][0]
-                    if index in parser_obj.horizontal_table:
+                    amount = page_values[index][0].text
+                    if index in page_values:
                         capital_dict = {'id':'',
                                         'capital_type':'',
                                         'amount':'',
@@ -346,18 +339,15 @@ class PdfParserProvider:
                                         'share_type':''}
 
                         capital_dict['amount'] = amount
-                        capital_dict['shares'] = \
-                                parser_obj.horizontal_table[index][0]
-                        capital_dict['currency'] = \
-                                parser_obj.horizontal_table[index][1]
-                        capital_dict['share_type'] = \
-                                parser_obj.horizontal_table[index][2]
+                        capital_dict['shares'] = page_values[index][0].text
+                        capital_dict['currency'] = page_values[index][1].text
+                        capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.capital_details.append(capital_dict)
                         records_id = records_id + 1
                         index = round(index - 26, 2)
-                    if index in parser_obj.horizontal_table:
+                    if index in page_values:
                         capital_table_fields = \
-                            len(parser_obj.horizontal_table[index])
+                            len(page_values[index])
                     else:
                         break
         parser_obj.capital_details = [dict(t) for t in set([tuple(d.items()) \
@@ -366,23 +356,23 @@ class PdfParserProvider:
     """
     Populate the Paidup Capital Details table
     """
-    def populate_paidup_capital_table(self,parser_obj):
-        for key, value in parser_obj.horizontal_table.iteritems():
-            if 'Paid-Up Capital' in value:
+    def populate_paidup_capital_table(self,parser_obj, page_num):
+        page_values = parser_obj.horizontal_dict[page_num]
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text for t in list_of_t]
+            if 'Paid-Up Capital' in values:
+                # import ipdb;ipdb.set_trace()
                 index = round((key-50.34),2)
                 records_id = 0
                 #To check if the Charges table is empty
-                if index in parser_obj.horizontal_table:
-                    capital_table_fields = \
-                        len(parser_obj.horizontal_table[index])
+                if index in page_values:
+                    capital_table_fields = len(page_values[index])
                 else:
                     capital_table_fields = 0
 
                 while(capital_table_fields == 3):
-                    capital_ids = [capital['amount'] \
-                        for capital in parser_obj.paidup_capital_details]
-                    amount = parser_obj.horizontal_table[index][0]
-                    if index in parser_obj.horizontal_table:
+                    amount = page_values[index][0].text
+                    if index in page_values:
                         capital_dict = {'id':'',
                                         'capital_type':'',
                                         'amount':'',
@@ -391,17 +381,15 @@ class PdfParserProvider:
                                         'share_type':''}
 
                         capital_dict['amount'] = amount
-                        capital_dict['currency'] = \
-                                parser_obj.horizontal_table[index][1]
-                        capital_dict['share_type'] = \
-                                parser_obj.horizontal_table[index][2]
+                        capital_dict['currency'] = page_values[index][1].text
+                        capital_dict['share_type'] = page_values[index][2].text
                         capital_dict['shares'] = ''
                         parser_obj.paidup_capital_details.append(capital_dict)
                         records_id = records_id + 1
-                        index = round(index - 36, 2)
-                    if index in parser_obj.horizontal_table:
+                        index = round(index - 26, 2)
+                    if index in page_values:
                         capital_table_fields = \
-                            len(parser_obj.horizontal_table[index])
+                            len(page_values[index])
                     else:
                         break
         parser_obj.paidup_capital_details = [dict(t) for t in set([tuple(d.items()) \
@@ -563,7 +551,7 @@ class PdfParserProvider:
 
 
 
-    def _build_annotations( self, parser_obj, page ):
+    def _build_annotations( self, page):
         for annot in page.annots.resolve():
             if isinstance( annot, PDFObjRef ):
                 annot= annot.resolve()
