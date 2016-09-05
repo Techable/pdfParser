@@ -168,10 +168,11 @@ class PdfParserProvider:
                              TextBlock(layout_obj.x0, layout_obj_y1, layout_obj_z, layout_obj.get_text().strip()))
 
         #Appending the key value pairs in the dictionary
-        self.populate_company_record_table(parser_obj)
-        self.populate_charges_record_table(parser_obj, page_num)
-        self.populate_share_capital_table(parser_obj, page_num)
-        self.populate_paidup_capital_table(parser_obj, page_num)
+        page_values = parser_obj.horizontal_dict[page_num]
+        self.populate_company_record_table(parser_obj, page_values)
+        self.populate_charges_record_table(parser_obj, page_values)
+        self.populate_share_capital_table(parser_obj, page_values)
+        self.populate_paidup_capital_table(parser_obj, page_values)
         # self.populate_shareholders_table(parser_obj)
         # self.populate_officers_and_representatives(parser_obj, temporary_text)
         return temporary_text
@@ -181,8 +182,7 @@ class PdfParserProvider:
     """
     Populate the table containing charges
     """
-    def populate_charges_record_table(self, parser_obj, page_num):
-        page_values = parser_obj.horizontal_dict[page_num]
+    def populate_charges_record_table(self, parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Charge No.' in values:
@@ -486,7 +486,7 @@ class PdfParserProvider:
     """
     Populates records in company records table
     """
-    def populate_company_record_table(self,parser_obj):
+    def populate_company_record_table(self, parser_obj, page_values):
         for key, value in parser_obj.horizontal_table.iteritems():
 
             # #Print statements for debug
