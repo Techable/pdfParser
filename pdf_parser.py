@@ -232,7 +232,7 @@ class PdfParserProvider:
     """
     Populate the table containing shareholders object
     """
-    def populate_shareholders_table(self,parser_obj):
+    def populate_shareholders_table(self, parser_obj):
         for key, value in parser_obj.horizontal_table.iteritems():
             if 'Shareholder(s)' in value:
                 index = round((key-74.34),2)
@@ -311,8 +311,7 @@ class PdfParserProvider:
     """
     Populate the Capital Details table
     """
-    def populate_share_capital_table(self,parser_obj, page_num):
-        page_values = parser_obj.horizontal_dict[page_num]
+    def populate_share_capital_table(self,parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Capital' in values:
@@ -356,8 +355,7 @@ class PdfParserProvider:
     """
     Populate the Paidup Capital Details table
     """
-    def populate_paidup_capital_table(self,parser_obj, page_num):
-        page_values = parser_obj.horizontal_dict[page_num]
+    def populate_paidup_capital_table(self,parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
