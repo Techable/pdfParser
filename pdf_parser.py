@@ -79,7 +79,8 @@ class PdfParser:
                 'audit_firm_name':'',
                 'organization':'',
             }
-        self.pending_table = None
+        self.pending_officers_table = None
+        self.pending_shareholders_table = None
 
         self.charges = []
         self.capital_details = []
@@ -173,7 +174,7 @@ class PdfParserProvider:
         self.populate_charges_record_table(parser_obj, page_values)
         self.populate_share_capital_table(parser_obj, page_values)
         self.populate_paidup_capital_table(parser_obj, page_values)
-        # self.populate_shareholders_table(parser_obj)
+        self.populate_shareholders_table(parser_obj, page_values)
         # self.populate_officers_and_representatives(parser_obj, temporary_text)
         return temporary_text
 
@@ -214,12 +215,7 @@ class PdfParserProvider:
                         charges_dict['charge_org'] = page_values[index][3]
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
-                        possible_deltas = [24, 28, 48, 36, 26]
-                        temp_index = [round(index - delta, 2) for delta in possible_deltas if round(index - delta, 2) in page_values]
-                        if temp_index:
-                            index = temp_index[0]
-                        else:
-                            index = round(index - 36, 2)
+                        index = self.get_index(index, 36, [24, 28, 48, 36, 26], page_values)
                     if index in page_values:
                         charge_table_fields = \
                             len(page_values[index])
@@ -229,26 +225,36 @@ class PdfParserProvider:
         # remove duplicates of charges
         parser_obj.charges = [dict(t) for t in set([tuple(d.items()) for d in parser_obj.charges])]
 
+    def get_index(self, index, default_index, possible_deltas, page_values):
+        temp_index = [round(index - delta, 2) for delta in possible_deltas if round(index - delta, 2) in page_values]
+        if temp_index:
+            index = temp_index[0]
+        else:
+            index = round((index-default_index),2)
+        return index
+
     """
     Populate the table containing shareholders object
     """
-    def populate_shareholders_table(self, parser_obj):
-        for key, value in parser_obj.horizontal_table.iteritems():
-            if 'Shareholder(s)' in value:
-                index = round((key-74.34),2)
+    def populate_shareholders_table(self, parser_obj, page_values):
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text for t in list_of_t]
+            if 'Shareholder(s)' in values:
+                for k , list_of_t in page_values.iteritems():
+                    print k, list_of_t
+                    print '\n'
+                # import ipdb;ipdb.set_trace()
+                index = self.get_index(key, 74.34, [97.34], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
-                if index in parser_obj.horizontal_table:
+                if index in page_values:
                     shareholders_table_fields = \
-                        len(parser_obj.horizontal_table[index])
+                        len(page_values[index])
                 else:
                     shareholders_table_fields = 0
 
-                while(shareholders_table_fields == 5):
-                    shareholders_id = [shareholders['id'] \
-                        for shareholders in parser_obj.shareholders_details]
-                    shareholder_id = parser_obj.horizontal_table[index][2]
-                    if index in parser_obj.horizontal_table:
+                while(shareholders_table_fields in [5, 1, 2]):
+                    if index in page_values:
                         shareholders_dict = {'id':'',
                                             'name':'',
                                             'address':'',
@@ -260,47 +266,51 @@ class PdfParserProvider:
                                             'odinary_num':'',
                                             'company_record':''}
 
-                        shareholders_dict['id'] = shareholder_id
-                        shareholders_dict['name'] = \
-                                parser_obj.horizontal_table[index][1]
-                        shareholders_dict['nationality'] = \
-                                parser_obj.horizontal_table[index][3]
-                        shareholders_dict['source_of_address'] = \
-                                parser_obj.horizontal_table[index][4]
+                        if parser_obj.pending_shareholders_table is None:
+                            try:
+                                shareholders_dict['id'] = page_values[index][2].text
+                            except:
+                                break
+                                # import ipdb;ipdb.set_trace()
+                            shareholders_dict['name'] = page_values[index][1].text
+                            shareholders_dict['nationality'] = page_values[index][3].text
+                            shareholders_dict['source_of_address'] = page_values[index][4].text
+                            index = round(index-27.0, 2)
 
-                        index = round(index -27.0, 2)
-                        if not index in parser_obj.horizontal_table:
-                            index = round(index - 10.0, 2)
+                        if not index in page_values:
+                            index = round(index  - 10, 2)
 
-                        if not index in parser_obj.horizontal_table:
-                            index = round(index  - 10)
-                        #shareholders_table_fields = \
-                        #    len(parser_obj.horizontal_table[index])
-                        if (index in parser_obj.horizontal_table):
-                            shareholders_table_fields = \
-                            len(parser_obj.horizontal_table[index])
-                            if (shareholders_table_fields == 2):
-                                shareholders_dict['address'] = \
-                                    parser_obj.horizontal_table[index][0]
+                        if parser_obj.pending_shareholders_table is not None:
+                            shareholders_dict = parser_obj.pending_shareholders_table
+                            parser_obj.pending_shareholders_table = None
+                        elif index not in page_values:
+                            parser_obj.pending_shareholders_table = shareholders_dict
+                            parser_obj.shareholders_details.append(shareholders_dict)
+                            break
 
-                        index = round((index-70.0),2)
-                        if (index in parser_obj.horizontal_table):
-                            shareholders_table_fields = \
-                            len(parser_obj.horizontal_table[index])
+                        if (index in page_values):
+                            shareholders_table_fields = len(page_values[index])
+                            if (shareholders_table_fields == 1):
+                                shareholders_dict['address'] = page_values[index][0].text
+
+                        index = self.get_index(index, 81, [70, 58], page_values)
+
+                        if (index in page_values):
+                            shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
-                                shareholders_dict['ordinary_num'] = \
-                                    parser_obj.horizontal_table[index][0]
-                                shareholders_dict['currency'] = \
-                                    parser_obj.horizontal_table[index][1]
+                                shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                shareholders_dict['currency'] = page_values[index][1].text
+                        else:
+                            parser_obj.pending_shareholders_table = shareholders_dict
+                            parser_obj.shareholders_details.append(shareholders_dict)
+                            break
 
-                        parser_obj.shareholders_details.\
-                            append(shareholders_dict)
+                        parser_obj.shareholders_details.append(shareholders_dict)
                         records_id = records_id + 1
-                        index = round(index - 2, 2)
+                        index = round(index - 24, 2)
 
-                    if index in parser_obj.horizontal_table:
-                        shareholders_table_fields = \
-                            len(parser_obj.horizontal_table[index])
+                    if index in page_values:
+                        shareholders_table_fields = len(page_values[index])
                     else:
                         break
         parser_obj.shareholders_details = \
@@ -359,7 +369,6 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
-                # import ipdb;ipdb.set_trace()
                 index = round((key-50.34),2)
                 records_id = 0
                 #To check if the Charges table is empty
@@ -425,7 +434,7 @@ class PdfParserProvider:
                             'address': '',
                             'position_held': ''
                         }
-                        if parser_obj.pending_table is None:
+                        if parser_obj.pending_officers_table is None:
                             officers_dict['name'] = officer_details[0]
                             officers_dict['id'] = officer_details[1]
                             officers_dict['nationality'] = officer_details[2]
@@ -433,11 +442,11 @@ class PdfParserProvider:
                             officers_dict['date_of_appointment'] = officer_details[4]
 
                             index = round(index - 25, 2)
-                        if parser_obj.pending_table is not None:
-                            officers_dict = parser_obj.pending_table
-                            parser_obj.pending_table = None
+                        if parser_obj.pending_officers_table is not None:
+                            officers_dict = parser_obj.pending_officers_table
+                            parser_obj.pending_officers_table = None
                         elif index not in temp_table:
-                            parser_obj.pending_table = officers_dict
+                            parser_obj.pending_officers_table = officers_dict
                             parser_obj.officers_details.append(officers_dict)
                             break
 
@@ -598,6 +607,7 @@ def run_pdf_parser():
     print len(parser_object.shareholders_details)
     for shareholder_value in parser_object.shareholders_details:
         print shareholder_value
+        print "\n"
 
     print "\n\nOFFICERS TABLE DETAILS\n"
     print len(parser_object.officers_details)
