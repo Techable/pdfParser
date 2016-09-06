@@ -114,7 +114,7 @@ class PdfParserProvider:
         resource_manager_obj = PDFResourceManager()
 
         #Set parameters for analysis
-        laparams = LAParams(detect_vertical=True, all_texts=True)
+        laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.2)
       
         #laparams = LAParams(detect_vertical=True,line_margin=0.3)
         #Create PDF aggregator object
@@ -174,7 +174,7 @@ class PdfParserProvider:
         self.populate_share_capital_table(parser_obj, page_values)
         self.populate_paidup_capital_table(parser_obj, page_values)
         # self.populate_shareholders_table(parser_obj)
-        # self.populate_officers_and_representatives(parser_obj, temporary_text)
+        self.populate_officers_and_representatives(parser_obj, page_values)
         return temporary_text
 
 
@@ -394,28 +394,29 @@ class PdfParserProvider:
             for d in parser_obj.paidup_capital_details])]
 
 
-    def populate_officers_and_representatives(self, parser_obj, temporary_text):
-        for key, value in parser_obj.horizontal_table.iteritems():
-            texts = []
-            for t in value:
-                texts.append(t) if type(t) == str else texts.append(t)
-            if 'Name' in texts:
-                temp_table = defaultdict(list)
-                for textblock in temporary_text:
-                    temp_table[textblock.y].append(textblock)
-                    temp_table[textblock.y].sort(key=lambda t: t.x)
-                index = round(key - 51.34, 2)
-                records_id = 0
-                if index in temp_table:
+    def get_proper_index(self, index, default_index, possible_deltas, page_values):
+        temp_index = [round(index - delta, 2) for delta in possible_deltas if round(index - delta, 2) in page_values]
+        if temp_index:
+            index = temp_index[0]
+        else:
+            index = round(index - default_index, 2)
+        return index
+
+    def populate_officers_and_representatives(self, parser_obj, page_values):
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text.split("\n") for t in list_of_t]
+            values = [x for v in values for x in v]
+            if 'Officers/Authorised Representative(s)' in values:
+                index = self.get_proper_index(key, 74.34, [98, 74.37], page_values)
+                if index in page_values:
                     charge_table_fields = \
-                        len(temp_table[index])
+                        len(page_values[index])
                 else:
                     charge_table_fields = 0
 
                 while(charge_table_fields == 5 or charge_table_fields == 2):
-                    officer_id = temp_table[index][0]
-                    officer_details = temp_table[index]
-                    if index in temp_table:
+                    officer_details = page_values[index]
+                    if index in page_values:
                         officers_dict = {
                             'name': '',
                             'id': '',
@@ -426,47 +427,27 @@ class PdfParserProvider:
                             'position_held': ''
                         }
                         if parser_obj.pending_table is None:
-                            officers_dict['name'] = officer_details[0]
-                            officers_dict['id'] = officer_details[1]
-                            officers_dict['nationality'] = officer_details[2]
-                            officers_dict['source_of_address'] = officer_details[3]
-                            officers_dict['date_of_appointment'] = officer_details[4]
+                            officers_dict['name'] = officer_details[0].text
+                            officers_dict['id'] = officer_details[1].text
+                            officers_dict['nationality'] = officer_details[2].text
+                            officers_dict['source_of_address'] = officer_details[3].text
+                            officers_dict['date_of_appointment'] = officer_details[4].text
+                            index = self.get_proper_index(index, 25, [35], page_values)
 
-                            index = round(index - 25, 2)
                         if parser_obj.pending_table is not None:
                             officers_dict = parser_obj.pending_table
                             parser_obj.pending_table = None
-                        elif index not in temp_table:
+                        elif index not in page_values:
                             parser_obj.pending_table = officers_dict
-                            parser_obj.officers_details.append(officers_dict)
                             break
 
-                        officers_dict['address'] = temp_table[index][0]
-                        officers_dict['position_held'] = temp_table[index][1]
-                        # TODO fix this issue
-                        # if officers_dict['name'] == 'MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA':
-                        #     import ipdb;ipdb.set_trace()
-
-                        height = temp_table[index][0].z
-                        if height > 10 and height < 20:
-                            temp_index = round(temp_table[index][0].y - 49, 2)
-                        if height > 20 and height < 30:
-                            temp_index = round(temp_table[index][0].y - 37, 2)
-                        elif height > 30 and height < 40:
-                            temp_index = round(temp_table[index][0].y - 49, 2)
-                            if not temp_index in temp_table:
-                                temp_index = round(temp_table[index][0].y - 51, 2)
-                                if not temp_index in temp_table:
-                                    temp_index = round(temp_table[index][0].y - 47, 2)
-                        elif height > 40 and height < 50:
-                            temp_index = round(temp_table[index][0].y - 60, 2)
-                            if not temp_index in temp_table:
-                                temp_index = round(temp_table[index][0].y - 62, 2)
-                        index = temp_index if temp_index else index
+                        officers_dict['address'] = page_values[index][0].text
+                        officers_dict['position_held'] = page_values[index][1].text
+                        index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39], page_values)
                         parser_obj.officers_details.append(officers_dict)
 
-                    if index in temp_table:
-                        charge_table_fields = len(temp_table[index])
+                    if index in page_values:
+                        charge_table_fields = len(page_values[index])
                     else:
                         break
 
@@ -485,67 +466,67 @@ class PdfParserProvider:
     Populates records in company records table
     """
     def populate_company_record_table(self, parser_obj, page_values):
-        for key, value in parser_obj.horizontal_table.iteritems():
-
+        for key, list_of_t in page_values.iteritems():
+            values = [t.text for t in list_of_t]
             # #Print statements for debug
             # print key, "\t", value, "\t"
 
-            if ':' in value:
-                value.remove(':')
+            if ':' in values:
+                values.remove(':')
 
-            if (len(value) == 1):
-                value.append('')
+            if (len(values) == 1):
+                values.append('')
 
-            if 'Registration No.' in value:
-                index = self.find_index(parser_obj,'Registration No.',value)
-                parser_obj.company_record['registration_no'] = value[index]
-            elif 'Company Name.' in value:
-                index = self.find_index(parser_obj,'Company Name.',value)
-                parser_obj.company_record['company_name'] = value[index]
-            elif 'Former Name if any' in value:
-                index = self.find_index(parser_obj,'Former Name if any',value)
-                parser_obj.company_record['former_name'] = value[index]
-            elif 'Incorporation Date.' in value:
-                index = self.find_index(parser_obj,'Incorporation Date.',value)
-                parser_obj.company_record['incorp_date'] = value[index]
-            elif 'Company Type' in value:
-                index = self.find_index(parser_obj,'Company Type',value)
-                parser_obj.company_record['company_type'] = value[index]
-            elif 'Status' in value:
-                index = self.find_index(parser_obj,'Status',value)
-                parser_obj.company_record['status'] = value[index]
-            elif 'Status Date' in value:
-                index = self.find_index(parser_obj,'Status Date',value)
-                parser_obj.company_record['status_date'] = value[index]
-            elif 'Activities (I)' in value:
-                index = self.find_index(parser_obj,'Activities (I)',value)
-                parser_obj.company_record['activities_1'] = value[index]
-            elif 'Activities (II)' in value:
-                index = self.find_index(parser_obj,'Activities (II)',value)
-                parser_obj.company_record['activities_2'] = value[index]
-            elif ('Description' in value) and (len(value)==1):
+            if 'Registration No.' in values:
+                index = self.find_index(parser_obj,'Registration No.',values)
+                parser_obj.company_record['registration_no'] = values[index]
+            elif 'Company Name.' in values:
+                index = self.find_index(parser_obj,'Company Name.',values)
+                parser_obj.company_record['company_name'] = values[index]
+            elif 'Former Name if any' in values:
+                index = self.find_index(parser_obj,'Former Name if any',values)
+                parser_obj.company_record['former_name'] = values[index]
+            elif 'Incorporation Date.' in values:
+                index = self.find_index(parser_obj,'Incorporation Date.',values)
+                parser_obj.company_record['incorp_date'] = values[index]
+            elif 'Company Type' in values:
+                index = self.find_index(parser_obj,'Company Type',values)
+                parser_obj.company_record['company_type'] = values[index]
+            elif 'Status' in values:
+                index = self.find_index(parser_obj,'Status',values)
+                parser_obj.company_record['status'] = values[index]
+            elif 'Status Date' in values:
+                index = self.find_index(parser_obj,'Status Date',values)
+                parser_obj.company_record['status_date'] = values[index]
+            elif 'Activities (I)' in values:
+                index = self.find_index(parser_obj,'Activities (I)',values)
+                parser_obj.company_record['activities_1'] = values[index]
+            elif 'Activities (II)' in values:
+                index = self.find_index(parser_obj,'Activities (II)',values)
+                parser_obj.company_record['activities_2'] = values[index]
+            elif ('Description' in values) and (len(values)==1):
                 parser_obj.company_record['activities_description'] = ''
-            elif ('Description' in value) and (len(value)>1):
-                index = self.find_index(parser_obj,'Description',value)
-                parser_obj.company_record['activities_description'] = value[index]
-            elif 'Registered Office Address' in value:
-                index = self.find_index(parser_obj,'Registered Office Address',value)
-                parser_obj.company_record['registered_office_address'] = value[index]
-            elif 'Date of Address' in value:
-                index = self.find_index(parser_obj,'Date of Address', value)
-                parser_obj.company_record['date_of_address'] = value[index]
-            elif 'Date of Last AGM' in value:
-                index = self.find_index(parser_obj,'Date of Last AGM',value)
-                parser_obj.company_record['date_of_last_agm'] = value[index]
-            elif 'Date of Last AR' in value:
-                index = self.find_index(parser_obj,'Date of Last AR',value)
-                parser_obj.company_record['date_of_last_ar'] = value[index]
-            elif 'Date of A/C Laid at Last AGM' in value:
-                index = self.find_index(parser_obj,'Date of A/C Laid at Last AGM',value)
-                parser_obj.company_record['date_of_ac_at_last'] = value[index]
-            elif 'Date of Lodgment of AR, A/C' in value:
-                index = self.find_index(parser_obj,'Date of Lodgment of AR, A/C',value)
-                parser_obj.company_record['date_of_lodgment_of_ar'] = value[index]
+            elif ('Description' in values) and (len(values)>1):
+                index = self.find_index(parser_obj,'Description',values)
+                parser_obj.company_record['activities_description'] = values[index]
+            elif 'Registered Office Address' in values:
+                index = self.find_index(parser_obj,'Registered Office Address',values)
+                parser_obj.company_record['registered_office_address'] = values[index]
+            elif 'Date of Address' in values:
+                index = self.find_index(parser_obj,'Date of Address', values)
+                parser_obj.company_record['date_of_address'] = values[index]
+            elif 'Date of Last AGM' in values:
+                index = self.find_index(parser_obj,'Date of Last AGM',values)
+                parser_obj.company_record['date_of_last_agm'] = values[index]
+            elif 'Date of Last AR' in values:
+                index = self.find_index(parser_obj,'Date of Last AR',values)
+                parser_obj.company_record['date_of_last_ar'] = values[index]
+            elif 'Date of A/C Laid at Last AGM' in values:
+                index = self.find_index(parser_obj,'Date of A/C Laid at Last AGM',values)
+                parser_obj.company_record['date_of_ac_at_last'] = values[index]
+            elif 'Date of Lodgment of AR, A/C' in values:
+                index = self.find_index(parser_obj,'Date of Lodgment of AR, A/C',values)
+                parser_obj.company_record['date_of_lodgment_of_ar'] = values[index]
 
 
 
