@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 #Standard imports
+import re
+
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
@@ -13,7 +15,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile1.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile4.pdf",
             }
 
 # dictionary of configured values
@@ -240,10 +242,6 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Shareholder(s)' in values:
-                for k , list_of_t in page_values.iteritems():
-                    print k, list_of_t
-                    print '\n'
-                # import ipdb;ipdb.set_trace()
                 index = self.get_index(key, 74.34, [97.34], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
@@ -267,11 +265,11 @@ class PdfParserProvider:
                                             'company_record':''}
 
                         if parser_obj.pending_shareholders_table is None:
+                            # TODO this is a bad fix to detect table end in one of the pdfs
                             try:
                                 shareholders_dict['id'] = page_values[index][2].text
                             except:
                                 break
-                                # import ipdb;ipdb.set_trace()
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
@@ -475,7 +473,9 @@ class PdfParserProvider:
     Populates records in company records table
     """
     def populate_company_record_table(self, parser_obj, page_values):
-        for key, list_of_t in page_values.iteritems():
+        temp_page_values = {k: v for k,v in page_values.iteritems() if v}
+
+        for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
             # #Print statements for debug
             # print key, "\t", value, "\t"
@@ -486,56 +486,70 @@ class PdfParserProvider:
             if (len(values) == 1):
                 values.append('')
 
+            for v in values:
+                bizfile_date = re.match('^Date:.\d+/\d+/\d+', v if type(v) == str or type(v) == unicode else v.text)
+                if bizfile_date:
+                    parser_obj.company_record['bizfile_date'] = bizfile_date.group(0).split(':')[1].strip()
+
             if 'Registration No.' in values:
                 index = self.find_index(parser_obj,'Registration No.',values)
-                parser_obj.company_record['registration_no'] = values[index]
+                parser_obj.company_record['registration_no'] = values[index].replace(':', '').strip()
             elif 'Company Name.' in values:
                 index = self.find_index(parser_obj,'Company Name.',values)
-                parser_obj.company_record['company_name'] = values[index]
+                parser_obj.company_record['company_name'] = values[index].replace(':', '').strip()
             elif 'Former Name if any' in values:
                 index = self.find_index(parser_obj,'Former Name if any',values)
-                parser_obj.company_record['former_name'] = values[index]
+                parser_obj.company_record['former_name'] = values[index].replace(':', '').strip()
             elif 'Incorporation Date.' in values:
                 index = self.find_index(parser_obj,'Incorporation Date.',values)
-                parser_obj.company_record['incorp_date'] = values[index]
+                parser_obj.company_record['incorp_date'] = values[index].replace(':', '').strip()
             elif 'Company Type' in values:
                 index = self.find_index(parser_obj,'Company Type',values)
-                parser_obj.company_record['company_type'] = values[index]
+                parser_obj.company_record['company_type'] = values[index].replace(':', '').strip()
             elif 'Status' in values:
                 index = self.find_index(parser_obj,'Status',values)
-                parser_obj.company_record['status'] = values[index]
+                parser_obj.company_record['status'] = values[index].replace(':', '').strip()
             elif 'Status Date' in values:
                 index = self.find_index(parser_obj,'Status Date',values)
-                parser_obj.company_record['status_date'] = values[index]
+                parser_obj.company_record['status_date'] = values[index].replace(':', '').strip()
             elif 'Activities (I)' in values:
-                index = self.find_index(parser_obj,'Activities (I)',values)
-                parser_obj.company_record['activities_1'] = values[index]
+                activities_1 = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
+                parser_obj.company_record['activities_1'] = activities_1
             elif 'Activities (II)' in values:
-                index = self.find_index(parser_obj,'Activities (II)',values)
-                parser_obj.company_record['activities_2'] = values[index]
-            elif ('Description' in values) and (len(values)==1):
-                parser_obj.company_record['activities_description'] = ''
-            elif ('Description' in values) and (len(values)>1):
-                index = self.find_index(parser_obj,'Description',values)
-                parser_obj.company_record['activities_description'] = values[index]
+                activities_2 = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
+                parser_obj.company_record['activities_2'] = activities_2
+            elif 'Description' in values:
+                activities_desc = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
+                if round(key + 24, 2) in page_values and activities_desc:
+                    parser_obj.company_record['activites_description'] = activities_desc
+                elif activities_desc:
+                    parser_obj.company_record['activites_description_2'] = activities_desc
+
             elif 'Registered Office Address' in values:
-                index = self.find_index(parser_obj,'Registered Office Address',values)
-                parser_obj.company_record['registered_office_address'] = values[index]
+                registered_office_address = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
+                parser_obj.company_record['registered_office_address'] = registered_office_address
             elif 'Date of Address' in values:
-                index = self.find_index(parser_obj,'Date of Address', values)
-                parser_obj.company_record['date_of_address'] = values[index]
+                date_of_address = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
+                parser_obj.company_record['date_of_address'] = date_of_address
             elif 'Date of Last AGM' in values:
                 index = self.find_index(parser_obj,'Date of Last AGM',values)
-                parser_obj.company_record['date_of_last_agm'] = values[index]
+                parser_obj.company_record['date_of_last_agm'] = values[index].replace(':', '').strip()
             elif 'Date of Last AR' in values:
                 index = self.find_index(parser_obj,'Date of Last AR',values)
-                parser_obj.company_record['date_of_last_ar'] = values[index]
+                parser_obj.company_record['date_of_last_ar'] = values[index].replace(':', '').strip()
             elif 'Date of A/C Laid at Last AGM' in values:
                 index = self.find_index(parser_obj,'Date of A/C Laid at Last AGM',values)
-                parser_obj.company_record['date_of_ac_at_last'] = values[index]
+                parser_obj.company_record['date_of_ac_at_last'] = values[index].replace(':', '').strip()
             elif 'Date of Lodgment of AR, A/C' in values:
                 index = self.find_index(parser_obj,'Date of Lodgment of AR, A/C',values)
-                parser_obj.company_record['date_of_lodgment_of_ar'] = values[index]
+                parser_obj.company_record['date_of_lodgment_of_ar'] = values[index].replace(':', '').strip()
+            elif 'RECEIPT NO.' in values:
+                receipt_no = page_values[round(key + 1, 2)][0].text if page_values[round(key + 1, 2)] else ''
+                parser_obj.company_record['receipt_no'] = receipt_no
+            elif 'Audit Firms' in values:
+                audit_index = round(key - 51.34, 2)
+                if audit_index in page_values:
+                    parser_obj.company_record['audit_firm_name'] = page_values[audit_index][0].text
 
 
 
