@@ -186,7 +186,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Charge No.' in values:
-                index = round(key - 28.34, 2)
+                index = self.get_proper_index(key, 28.34, [28.37], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -315,7 +315,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Capital' in values:
-                index = round((key-75.34),2)
+                index = self.get_proper_index(key, 75.34, [75.37], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -359,8 +359,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
-                # import ipdb;ipdb.set_trace()
-                index = round((key-50.34),2)
+                index = self.get_proper_index(key, 50.34, [50.37], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
