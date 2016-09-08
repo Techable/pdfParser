@@ -15,7 +15,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile4.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile7.pdf",
             }
 
 # dictionary of configured values
@@ -117,9 +117,9 @@ class PdfParserProvider:
         resource_manager_obj = PDFResourceManager()
 
         #Set parameters for analysis
-        laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.2)
+        #laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.2)
       
-        #laparams = LAParams(detect_vertical=True,line_margin=0.3)
+        laparams = LAParams(detect_vertical=True,line_margin=0.3)
         #Create PDF aggregator object
         pdf_aggregator_obj = PDFPageAggregator(resource_manager_obj, \
                                                   laparams=laparams)
@@ -178,6 +178,7 @@ class PdfParserProvider:
         self.populate_paidup_capital_table(parser_obj, page_values)
         self.populate_officers_and_representatives(parser_obj, page_values)
         self.populate_shareholders_table(parser_obj, page_values)
+
         return temporary_text
 
 
@@ -240,7 +241,9 @@ class PdfParserProvider:
     """
     def populate_shareholders_table(self, parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
+
             values = [t.text for t in list_of_t]
+
             if 'Shareholder(s)' in values:
                 index = self.get_index(key, 74.34, [97.34], page_values)
                 records_id = 0
@@ -291,11 +294,13 @@ class PdfParserProvider:
                             if (shareholders_table_fields == 1):
                                 shareholders_dict['address'] = page_values[index][0].text
 
-                        index = self.get_index(index, 81, [70, 58], page_values)
+                        index = self.get_index(index, 81, [21, 48, 58, 70, 99], page_values)
 
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
+                                if "Ordinary(Number)" in page_values[index][0].text:
+                                    index = round(index - 27, 2)
                                 shareholders_dict['ordinary_num'] = page_values[index][0].text
                                 shareholders_dict['currency'] = page_values[index][1].text
                         else:
@@ -477,8 +482,6 @@ class PdfParserProvider:
 
         for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
-            # #Print statements for debug
-            # print key, "\t", value, "\t"
 
             if ':' in values:
                 values.remove(':')
