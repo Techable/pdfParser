@@ -254,7 +254,7 @@ class PdfParserProvider:
                 else:
                     shareholders_table_fields = 0
 
-                while(shareholders_table_fields in [5, 1, 2]):
+                while(shareholders_table_fields in [6, 5, 1, 2]):
                     if index in page_values:
                         shareholders_dict = {'id':'',
                                             'name':'',
