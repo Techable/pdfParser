@@ -15,7 +15,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile7.pdf",
+DEFAULTS = {"input_pdf_file": "testcases/inputfile2.pdf",
             }
 
 # dictionary of configured values
@@ -213,9 +213,9 @@ class PdfParserProvider:
                                         'charge_org':''}
 
                         charges_dict['charge_no'] = charge_no
-                        charges_dict['date_registered'] = page_values[index][1]
-                        charges_dict['amount_secured'] = page_values[index][2]
-                        charges_dict['charge_org'] = page_values[index][3]
+                        charges_dict['date_registered'] = page_values[index][1].text
+                        charges_dict['amount_secured'] = page_values[index][2].text
+                        charges_dict['charge_org'] = page_values[index][3].text
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
                         index = self.get_index(index, 36, [24, 28, 48, 36, 26], page_values)
@@ -264,7 +264,7 @@ class PdfParserProvider:
                                             'source_of_address':'',
                                             'address_changed':'',
                                             'currency':'',
-                                            'odinary_num':'',
+                                            'ordinary_num':'',
                                             'company_record':''}
 
                         if parser_obj.pending_shareholders_table is None:
@@ -295,6 +295,7 @@ class PdfParserProvider:
                                     parser_obj.pending_shareholders_table = None
                             parser_obj.pending_shareholders_table = None
                             parser_obj.shareholders_details.append(shareholders_dict)
+
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if (shareholders_table_fields == 1):
