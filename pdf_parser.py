@@ -178,7 +178,7 @@ class PdfParserProvider:
         self.populate_paidup_capital_table(parser_obj, page_values)
         self.populate_officers_and_representatives(parser_obj, page_values)
         self.populate_shareholders_table(parser_obj, page_values)
-
+        print temporary_text
         return temporary_text
 
 
@@ -245,7 +245,7 @@ class PdfParserProvider:
             values = [t.text for t in list_of_t]
 
             if 'Shareholder(s)' in values:
-                index = self.get_index(key, 74.34, [97.34], page_values)
+                index = self.get_index(key, 74.34, [97.34, 121.34], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -273,6 +273,10 @@ class PdfParserProvider:
                                 shareholders_dict['id'] = page_values[index][2].text
                             except:
                                 break
+
+                        shareholders_table_fields == len(page_values[index])
+                        if(shareholders_table_fields == 6) or \
+                           (shareholders_table_fields == 5):
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
@@ -283,19 +287,20 @@ class PdfParserProvider:
 
                         if parser_obj.pending_shareholders_table is not None:
                             shareholders_dict = parser_obj.pending_shareholders_table
+                            if index in page_values:
+                                if(shareholders_table_fields == 2):
+                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                    shareholders_dict['currency'] = page_values[index][1].text
+                                    parser_obj.pending_shareholders_table = shareholders_dict
+                                    parser_obj.pending_shareholders_table = None
                             parser_obj.pending_shareholders_table = None
-                        elif index not in page_values:
-                            parser_obj.pending_shareholders_table = shareholders_dict
                             parser_obj.shareholders_details.append(shareholders_dict)
-                            break
-
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if (shareholders_table_fields == 1):
                                 shareholders_dict['address'] = page_values[index][0].text
 
-                        index = self.get_index(index, 81, [21, 48, 58, 70, 99], page_values)
-
+                        index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
@@ -303,6 +308,11 @@ class PdfParserProvider:
                                     index = round(index - 27, 2)
                                 shareholders_dict['ordinary_num'] = page_values[index][0].text
                                 shareholders_dict['currency'] = page_values[index][1].text
+                            if(shareholders_table_fields == 6) or \
+                               (shareholders_table_fields == 6):
+                                shareholders_dict['name'] = page_values[index][1].text
+                                shareholders_dict['nationality'] = page_values[index][3].text
+                                shareholders_dict['source_of_address'] = page_values[index][4].text
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             parser_obj.shareholders_details.append(shareholders_dict)
