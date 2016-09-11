@@ -303,16 +303,17 @@ class PdfParserProvider:
                         index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
-                            if(shareholders_table_fields == 2):
-                                if "Ordinary(Number)" in page_values[index][0].text:
-                                    index = round(index - 27, 2)
-                                shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                shareholders_dict['currency'] = page_values[index][1].text
                             if(shareholders_table_fields == 6) or \
                                (shareholders_table_fields == 6):
                                 shareholders_dict['name'] = page_values[index][1].text
                                 shareholders_dict['nationality'] = page_values[index][3].text
                                 shareholders_dict['source_of_address'] = page_values[index][4].text
+                                index = round(index-27.0, 2)
+                            if(shareholders_table_fields == 2):
+                                if "Ordinary(Number)" in page_values[index][0].text:
+                                    index = round(index - 27, 2)
+                                shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                shareholders_dict['currency'] = page_values[index][1].text
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             parser_obj.shareholders_details.append(shareholders_dict)
