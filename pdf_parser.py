@@ -15,8 +15,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile9.pdf",
-            }
+DEFAULTS = {"input_pdf_file": "testcases/inputfile9.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -117,9 +116,9 @@ class PdfParserProvider:
         resource_manager_obj = PDFResourceManager()
 
         #Set parameters for analysis
-        laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.2)
+        #laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.2)
       
-        #laparams = LAParams(detect_vertical=True,line_margin=0.3)
+        laparams = LAParams(detect_vertical=True,line_margin=0.3)
         #Create PDF aggregator object
         pdf_aggregator_obj = PDFPageAggregator(resource_manager_obj, \
                                                   laparams=laparams)
@@ -178,6 +177,7 @@ class PdfParserProvider:
         self.populate_paidup_capital_table(parser_obj, page_values)
         self.populate_officers_and_representatives(parser_obj, page_values)
         self.populate_shareholders_table(parser_obj, page_values)
+        print temporary_text
         return temporary_text
 
 
@@ -214,9 +214,9 @@ class PdfParserProvider:
                                         'charge_org':''}
 
                         charges_dict['charge_no'] = charge_no
-                        charges_dict['date_registered'] = page_values[index][1]
-                        charges_dict['amount_secured'] = page_values[index][2]
-                        charges_dict['charge_org'] = page_values[index][3]
+                        charges_dict['date_registered'] = page_values[index][1].text
+                        charges_dict['amount_secured'] = page_values[index][2].text
+                        charges_dict['charge_org'] = page_values[index][3].text
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
                         index = self.get_index(index, 36, [24, 28, 48, 36, 26], page_values)
@@ -242,9 +242,11 @@ class PdfParserProvider:
     """
     def populate_shareholders_table(self, parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
+
             values = [t.text for t in list_of_t]
+
             if 'Shareholder(s)' in values:
-                index = self.get_index(key, 74.34, [97.34], page_values)
+                index = self.get_index(key, 74.34, [97.34, 121.34], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -253,7 +255,7 @@ class PdfParserProvider:
                 else:
                     shareholders_table_fields = 0
 
-                while(shareholders_table_fields in [5, 1, 2]):
+                while(shareholders_table_fields in [6, 5, 1, 2]):
                     if index in page_values:
                         shareholders_dict = {'id':'',
                                             'name':'',
@@ -272,6 +274,10 @@ class PdfParserProvider:
                                 shareholders_dict['id'] = page_values[index][2].text
                             except:
                                 break
+
+                        shareholders_table_fields == len(page_values[index])
+                        if(shareholders_table_fields == 6) or \
+                           (shareholders_table_fields == 5):
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
@@ -282,6 +288,12 @@ class PdfParserProvider:
 
                         if parser_obj.pending_shareholders_table is not None:
                             shareholders_dict = parser_obj.pending_shareholders_table
+                            if index in page_values:
+                                if(shareholders_table_fields == 2):
+                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                    shareholders_dict['currency'] = page_values[index][1].text
+                                    parser_obj.pending_shareholders_table = shareholders_dict
+                                    parser_obj.pending_shareholders_table = None
                             parser_obj.pending_shareholders_table = None
                         elif index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -295,11 +307,18 @@ class PdfParserProvider:
                                 shareholders_dict['ordinary_num'] = page_values[index][0].text
                                 shareholders_dict['currency'] = page_values[index][1].text
 
-                        index = self.get_index(index, 81, [70, 58], page_values)
-
+                        index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
+                            if(shareholders_table_fields == 6) or \
+                               (shareholders_table_fields == 6):
+                                shareholders_dict['name'] = page_values[index][1].text
+                                shareholders_dict['nationality'] = page_values[index][3].text
+                                shareholders_dict['source_of_address'] = page_values[index][4].text
+                                index = round(index-27.0, 2)
                             if(shareholders_table_fields == 2):
+                                if "Ordinary(Number)" in page_values[index][0].text:
+                                    index = round(index - 27, 2)
                                 shareholders_dict['ordinary_num'] = page_values[index][0].text
                                 shareholders_dict['currency'] = page_values[index][1].text
                         else:
@@ -480,8 +499,6 @@ class PdfParserProvider:
 
         for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
-            # #Print statements for debug
-            # print key, "\t", value, "\t"
 
             if ':' in values:
                 values.remove(':')
