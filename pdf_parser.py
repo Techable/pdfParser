@@ -11,6 +11,7 @@ from pdfminer.pdftypes import PDFObjRef
 from pdfminer.layout import LAParams, LTTextBoxHorizontal
 from pdfminer.converter import PDFPageAggregator
 from collections import defaultdict, namedtuple
+from datetime import datetime
 
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
