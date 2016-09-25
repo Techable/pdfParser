@@ -236,17 +236,19 @@ class PdfParserProvider:
         return index
 
     def update_pending_shareholders_table(self, parser_obj, page_values, index):
+        """
+        updates the pending shareholders table by looking at address and ordinary number consecutively.
+        Also updates the index with the next table row after populating the pending table
+        """
         pending_table = parser_obj.pending_shareholders_table
-        if pending_table is not None and index in page_values:
+        if index in page_values:
             if index in page_values and not pending_table['address'] and len(page_values[index]) == 1:
                 pending_table['address'] = page_values[index][0].text
                 index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
             if(len(page_values[index]) == 2) and pending_table['ordinary_num'] is None:
                 pending_table['ordinary_num'] = page_values[index][0].text
                 pending_table['currency'] = page_values[index][1].text
-                parser_obj.pending_shareholders_table = pending_table
-                parser_obj.pending_shareholders_table = None
-            index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
+                index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
             parser_obj.shareholders_details.append(pending_table)
             parser_obj.pending_shareholders_table = None
         return index
