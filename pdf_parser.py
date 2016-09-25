@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #Standard imports
+from datetime import datetime
 import re
 
 #Imports related to pdfminer
@@ -15,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile9.pdf"}
+DEFAULTS = {"input_pdf_file": "testcases/inputfile7.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -234,10 +235,28 @@ class PdfParserProvider:
             index = round((index-default_index),2)
         return index
 
+    def update_pending_shareholders_table(self, parser_obj, page_values, index):
+        pending_table = parser_obj.pending_shareholders_table
+        if pending_table is not None and index in page_values:
+            if index in page_values and not pending_table['address'] and len(page_values[index]) == 1:
+                pending_table['address'] = page_values[index][0].text
+                index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
+            if(len(page_values[index]) == 2) and pending_table['ordinary_num'] is None:
+                pending_table['ordinary_num'] = page_values[index][0].text
+                pending_table['currency'] = page_values[index][1].text
+                parser_obj.pending_shareholders_table = pending_table
+                parser_obj.pending_shareholders_table = None
+            index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
+            parser_obj.shareholders_details.append(pending_table)
+            parser_obj.pending_shareholders_table = None
+        return index
+
     """
     Populate the table containing shareholders object
     """
     def populate_shareholders_table(self, parser_obj, page_values):
+        for key, list_of_t in page_values.iteritems():
+            print key, list_of_t
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Shareholder(s)' in values:
@@ -279,18 +298,13 @@ class PdfParserProvider:
                         if not index in page_values:
                             index = round(index  - 10, 2)
 
-                        if parser_obj.pending_shareholders_table is not None:
-                            shareholders_dict = parser_obj.pending_shareholders_table
+                        if parser_obj.pending_shareholders_table:
+                            index = self.update_pending_shareholders_table(parser_obj, page_values, index)
                             if index in page_values:
-                                if(shareholders_table_fields == 2):
-                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                    shareholders_dict['currency'] = page_values[index][1].text
-                                    parser_obj.pending_shareholders_table = shareholders_dict
-                                    parser_obj.pending_shareholders_table = None
-                            parser_obj.pending_shareholders_table = None
-                        elif index not in page_values:
-                            parser_obj.pending_shareholders_table = shareholders_dict
-                            break
+                                shareholders_table_fields = len(page_values[index])
+                                continue
+                            else:
+                                break
 
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
@@ -302,14 +316,11 @@ class PdfParserProvider:
 
                         index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
 
+                        if index not in page_values:
+                            parser_obj.pending_shareholders_table = shareholders_dict
+                            break
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
-                            if(shareholders_table_fields == 6) or \
-                               (shareholders_table_fields == 6):
-                                shareholders_dict['name'] = page_values[index][1].text
-                                shareholders_dict['nationality'] = page_values[index][3].text
-                                shareholders_dict['source_of_address'] = page_values[index][4].text
-                                index = round(index-27.0, 2)
                             if(shareholders_table_fields == 2):
                                 if "Ordinary(Number)" in page_values[index][0].text:
                                     index = round(index - 27, 2)
