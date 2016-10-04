@@ -253,6 +253,10 @@ class PdfParserProvider:
             if(len(page_values[index]) == 2) and pending_table['ordinary_num'] is None:
                 pending_table['ordinary_num'] = page_values[index][0].text
                 pending_table['currency'] = page_values[index][1].text
+                index = self.get_index(index, 81, [21, 24, 48, 47, 58, 70, 99, 1495], page_values)
+            if(len(page_values[index]) == 2) and pending_table['pref_num'] is None:
+                pending_table['pref_num'] = page_values[index][0].text
+                pending_table['pref_currency'] = page_values[index][1].text
                 index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
             parser_obj.shareholders_details.append(pending_table)
             parser_obj.pending_shareholders_table = None
@@ -285,6 +289,8 @@ class PdfParserProvider:
                                             'source_of_address':'',
                                             'address_changed':None,
                                             'currency':'',
+                                            'pref_num': None,
+                                            'pref_currency': None,
                                             'ordinary_num':None,
                                             'company_record':''}
 
@@ -313,15 +319,15 @@ class PdfParserProvider:
                             else:
                                 break
 
-                        if (index in page_values):
-                            shareholders_table_fields = len(page_values[index])
-                            if (shareholders_table_fields == 1):
-                                shareholders_dict['address'] = page_values[index][0].text
-                            elif (shareholders_table_fields == 2):
-                                shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                shareholders_dict['currency'] = page_values[index][1].text
+                        # if (index in page_values):
+                        #     shareholders_table_fields = len(page_values[index])
+                        #     if (shareholders_table_fields == 1):
+                        #         shareholders_dict['address'] = page_values[index][0].text
+                        #     elif (shareholders_table_fields == 2):
+                        #         shareholders_dict['ordinary_num'] = page_values[index][0].text
+                        #         shareholders_dict['currency'] = page_values[index][1].text
 
-                        index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
+                        index = self.get_index(index, 81, [21, 24, 48, 54, 58, 70, 99, 1495], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -330,16 +336,22 @@ class PdfParserProvider:
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
                                 if "Ordinary(Number)" in page_values[index][0].text:
-                                    index = round(index - 27, 2)
-                                shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                shareholders_dict['currency'] = page_values[index][1].text
+                                    pref_index = round(index - 47, 2)
+                                    if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
+                                        index = round(index - 27, 2)
+                                        shareholders_dict['pref_num'] = page_values[index][0].text
+                                        shareholders_dict['pref_currency'] = page_values[index][1].text
+                                    else:
+                                        index = round(index - 27, 2)
+                                        shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                        shareholders_dict['currency'] = page_values[index][1].text
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             break
 
                         parser_obj.shareholders_details.append(shareholders_dict)
                         records_id = records_id + 1
-                        index = round(index - 24, 2)
+                        index = self.get_index(index, 24, [71], page_values)
 
                     if index in page_values:
                         shareholders_table_fields = len(page_values[index])
