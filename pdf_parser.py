@@ -16,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile6.pdf"}
+DEFAULTS = {"input_pdf_file": "testcases/inputfile7.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -267,8 +267,6 @@ class PdfParserProvider:
     """
     def populate_shareholders_table(self, parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
-            print key, list_of_t
-        for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Shareholder(s)' in values:
                 index = self.get_index(key, 74.34, [97.34, 121.34], page_values)
@@ -383,7 +381,6 @@ class PdfParserProvider:
                 pending_table = parser_obj.pending_shareholders_type_table
                 temp_page_values = page_values.copy()
                 shareholder_type_table_fields = len(temp_page_values[index])
-
                 # if(shareholder_type_table_fields == 2) and parser_obj.shareholder_type and parser_obj.ordinary_num is None and index in temp_page_values:
                 #     import ipdb;ipdb.set_trace()
                 #     if "Ordinary(Number)" in temp_page_values[index][0].text:
@@ -408,8 +405,11 @@ class PdfParserProvider:
                 if index in page_values and parser_obj.shareholder_type:
                     page_values[index].sort()
                     pending_shareholder = page_values[index]
+                    shareholder_type_table_fields = len(page_values[index])
                     shareholder_type_values = [shareholder for shareholder in parser_obj.shareholder_type_details if parser_obj.shareholder_type == shareholder['shareholder_type']]
-                    if int(pending_shareholder[0].text) == len(shareholder_type_values) + 1:
+                    if 1:
+                    #Commenting out the line. Need to revisit the need of it
+                    #if int(pending_shareholder[0].text) == len(shareholder_type_values) + 1:
                         while(shareholder_type_table_fields == 6) or \
                            (shareholder_type_table_fields == 5):
                             shareholder_type_dict = {
@@ -432,7 +432,7 @@ class PdfParserProvider:
                             shareholder_type_dict['source_of_address'] = shareholder_type_details[4].text
                             index = round(index-27.0, 2)
                             shareholder_type_dict['address'] = temp_page_values[index][0].text
-                            index = self.get_index(index, 81, [25, 47, 35], temp_page_values)
+                            index = self.get_index(index, 81, [25, 47, 35, 58], temp_page_values)
                             parser_obj.shareholder_type_details.append(shareholder_type_dict)
                             shareholder_type_table_fields = len(temp_page_values[index])
 
@@ -503,7 +503,7 @@ class PdfParserProvider:
                         else:
                             parser_obj.pending_shareholders_type_table = shareholder_type_dict
                             break
-                        index = self.get_index(index, 81, [25, 47, 35], temp_page_values)
+                        index = self.get_index(index, 81, [25, 47, 35, 58], temp_page_values)
                         if index not in temp_page_values:
                             break
                         shareholder_type_table_fields = len(temp_page_values[index])
