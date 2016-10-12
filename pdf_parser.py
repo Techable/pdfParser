@@ -317,15 +317,15 @@ class PdfParserProvider:
                             else:
                                 break
 
-                        # if (index in page_values):
-                        #     shareholders_table_fields = len(page_values[index])
-                        #     if (shareholders_table_fields == 1):
-                        #         shareholders_dict['address'] = page_values[index][0].text
+                        if (index in page_values):
+                            shareholders_table_fields = len(page_values[index])
+                            if (shareholders_table_fields == 1):
+                                shareholders_dict['address'] = page_values[index][0].text
                         #     elif (shareholders_table_fields == 2):
                         #         shareholders_dict['ordinary_num'] = page_values[index][0].text
                         #         shareholders_dict['currency'] = page_values[index][1].text
 
-                        index = self.get_index(index, 81, [21, 24, 48, 54, 58, 70, 99, 1495], page_values)
+                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 58, 70, 99, 1495], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -333,16 +333,15 @@ class PdfParserProvider:
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
+                                pref_index = round(index - 47, 2)
                                 if "Ordinary(Number)" in page_values[index][0].text:
-                                    pref_index = round(index - 47, 2)
-                                    if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
-                                        index = round(index - 27, 2)
-                                        shareholders_dict['pref_num'] = page_values[index][0].text
-                                        shareholders_dict['pref_currency'] = page_values[index][1].text
-                                    else:
-                                        index = round(index - 27, 2)
-                                        shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                        shareholders_dict['currency'] = page_values[index][1].text
+                                    index = round(index - 27, 2)
+                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                    shareholders_dict['currency'] = page_values[index][1].text
+                                if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
+                                    index = round(pref_index - 27, 2)
+                                    shareholders_dict['pref_num'] = page_values[index][0].text
+                                    shareholders_dict['pref_currency'] = page_values[index][1].text
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             break
@@ -376,47 +375,46 @@ class PdfParserProvider:
             # TODO this should be dynamic instead of hardcoding
             expected_headings = ["WHILST EVERY ENDEAVOR IS MADE TO ENSURE THAT INFORMATION PROVIDED IS UPDATED AND CORRECT. THE AUTHORITY"]
             if list_of_t[0].text in expected_headings:
-                index = self.get_index(list_of_t[0].y, 99.73, [48.40, 24.34], page_values)
+                temp_index = self.get_index(list_of_t[0].y, 99.73, [48.40, 24.34], page_values)
                 # TODO this function needs to be fixed to hanlde pending table values
                 pending_table = parser_obj.pending_shareholders_type_table
                 temp_page_values = page_values.copy()
-                shareholder_type_table_fields = len(temp_page_values[index])
-                # if(shareholder_type_table_fields == 2) and parser_obj.shareholder_type and parser_obj.ordinary_num is None and index in temp_page_values:
-                #     import ipdb;ipdb.set_trace()
-                #     if "Ordinary(Number)" in temp_page_values[index][0].text:
-                #         index = round(index - 27, 2)
-                #     ordinary_num = temp_page_values[index][0].text
-                #     currency = temp_page_values[index][1].text
-                #     parser_obj.ordinary_num = ordinary_num
-                #     parser_obj.currency = currency
-                #     index = self.get_index(index, 81, [21, 23, 24, 25, 48, 51, 58, 70, 99, 1495], temp_page_values)
-                #     shareholder_type_table_fields = len(temp_page_values[index])
 
-                if pending_table is not None and index in temp_page_values and not pending_table['address']:
-                    pending_table['address'] = temp_page_values[index][0].text
+                temp_shareholder_type = pending_table['shareholder_type'] if pending_table is not None else parser_obj.shareholder_type
+                if pending_table is not None and temp_index in temp_page_values and not pending_table['address'] and pending_table['name']:
+                    pending_table['address'] = temp_page_values[temp_index][0].text
                     parser_obj.shareholder_type_details.append(pending_table)
-                    index = round(index - 58, 2)
+                    temp_index = round(temp_index - 58, 2)
+                    parser_obj.pending_shareholders_type_table = None
+                elif pending_table is not None and not pending_table['name']:
+                    temp_index = round(list_of_t[0].y - 95.73, 2)
                     parser_obj.pending_shareholders_type_table = None
 
-
-                # list of values of shareholder type
-                # if parser_obj.shareholder_type == 'B':
-                #     import ipdb;ipdb.set_trace()
-                if index in page_values and parser_obj.shareholder_type:
-                    page_values[index].sort()
-                    pending_shareholder = page_values[index]
-                    shareholder_type_table_fields = len(page_values[index])
-                    shareholder_type_values = [shareholder for shareholder in parser_obj.shareholder_type_details if parser_obj.shareholder_type == shareholder['shareholder_type']]
-                    if 1:
-                    #Commenting out the line. Need to revisit the need of it
-                    #if int(pending_shareholder[0].text) == len(shareholder_type_values) + 1:
+                if temp_index in page_values and parser_obj.shareholder_type is not None:
+                    page_values[temp_index].sort()
+                    pending_shareholder = page_values[temp_index]
+                    shareholder_type_table_fields = len(page_values[temp_index])
+                    shareholder_type_values = [shareholder for shareholder in parser_obj.shareholder_type_details if temp_shareholder_type == shareholder['shareholder_type']]
+                    next_shareholder_type = pending_shareholder[0].text
+                    # start of the shareholder type table
+                    if(shareholder_type_table_fields == 2):
+                        if "Ordinary(Number)" in temp_page_values[temp_index][0].text:
+                            temp_index = round(temp_index - 27, 2)
+                        ordinary_num = temp_page_values[temp_index][0].text
+                        currency = temp_page_values[temp_index][1].text
+                        parser_obj.ordinary_num = ordinary_num
+                        parser_obj.currency = currency
+                        temp_index = self.get_index(temp_index, 81, [21, 23, 24, 25, 48, 51, 58, 70, 99, 1495], temp_page_values)
+                        next_shareholder_type = temp_page_values[temp_index][0].text
+                        shareholder_type_table_fields = len(temp_page_values[temp_index])
+                    if int(next_shareholder_type) == len(shareholder_type_values) + 1:
                         while(shareholder_type_table_fields == 6) or \
                            (shareholder_type_table_fields == 5):
                             shareholder_type_dict = {
                                 'name':'',
                                 'address':'',
                                 'shareholder_id':'',
-                                'shareholder_type': parser_obj.shareholder_type,
+                                'shareholder_type': temp_shareholder_type,
                                 'nationality':'',
                                 'source_of_address':'',
                                 'address_changed':None,
@@ -424,30 +422,35 @@ class PdfParserProvider:
                                 'ordinary_num': parser_obj.ordinary_num,
                                 'company_record':''
                             }
-                            shareholder_type_details = temp_page_values[index]
+                            shareholder_type_details = temp_page_values[temp_index]
                             shareholder_type_details.sort()
                             shareholder_type_dict['name'] = shareholder_type_details[1].text
                             shareholder_type_dict['shareholder_id'] = shareholder_type_details[2].text
                             shareholder_type_dict['nationality'] = shareholder_type_details[3].text
                             shareholder_type_dict['source_of_address'] = shareholder_type_details[4].text
-                            index = round(index-27.0, 2)
-                            shareholder_type_dict['address'] = temp_page_values[index][0].text
-                            index = self.get_index(index, 81, [25, 47, 35, 58], temp_page_values)
+                            temp_index = round(temp_index-27.0, 2)
+                            shareholder_type_dict['address'] = temp_page_values[temp_index][0].text
+                            temp_index = self.get_index(temp_index, 81, [25, 47, 35, 58], temp_page_values)
                             parser_obj.shareholder_type_details.append(shareholder_type_dict)
-                            shareholder_type_table_fields = len(temp_page_values[index])
+                            shareholder_type_table_fields = len(temp_page_values[temp_index])
 
     """
     Populate the table containing shareholder type
     """
     def populate_shareholder_type_table(self, parser_obj, page_values):
-        for key, list_of_t in page_values.iteritems():
+        temp_page_values = page_values.copy()
+        # sorted(temp_page_values.iteritems(), key=lambda (x, y): float(x))
+        from collections import OrderedDict
+        temp_page_values = OrderedDict(sorted(temp_page_values.iteritems(), key=lambda (x,y): float(x), reverse=True))
+        for key, list_of_t in temp_page_values.iteritems():
             self.update_pending_shareholder_type(list_of_t, page_values, parser_obj)
             shareholder_type, shareholder_index = self._find_shareholder_type_and_index(list_of_t)
+            for k, list_of_t in temp_page_values.iteritems():
+                print k, list_of_t
             if shareholder_type:
                 parser_obj.shareholder_type = shareholder_type
                 index = self.get_index(shareholder_index, 23, [23], page_values)
-                temp_page_values = page_values.copy()
-                shareholder_type_table_fields = len(temp_page_values[index])
+                shareholder_type_table_fields = len(temp_page_values[index]) if index in temp_page_values else 0
 
                 if shareholder_type_table_fields == 0 and parser_obj.pending_shareholders_type_table is None:
                     shareholder_type_dict = {
