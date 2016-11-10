@@ -16,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/inputfile7.pdf"}
+DEFAULTS = {"input_pdf_file": "testcases/jaguar.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -519,7 +519,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Capital' in values:
-                index = self.get_proper_index(key, 75.34, [75.37], page_values)
+                index = self.get_proper_index(key, 75.34, [75.37, 59.75, 59.82], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -547,7 +547,7 @@ class PdfParserProvider:
                         capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.capital_details.append(capital_dict)
                         records_id = records_id + 1
-                        index = round(index - 26, 2)
+                        index = self.get_proper_index(index, 26, [21.3], page_values)
                     if index in page_values:
                         capital_table_fields = \
                             len(page_values[index])
@@ -563,7 +563,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
-                index = self.get_proper_index(key, 50.34, [50.37], page_values)
+                index = self.get_proper_index(key, 50.34, [50.37, 39.32, 39.25], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -586,7 +586,7 @@ class PdfParserProvider:
                         capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.paidup_capital_details.append(capital_dict)
                         records_id = records_id + 1
-                        index = round(index - 26, 2)
+                        index = self.get_proper_index(index, 26, [21.3], page_values)
                     if index in page_values:
                         capital_table_fields = \
                             len(page_values[index])
