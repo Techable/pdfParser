@@ -542,7 +542,7 @@ class PdfParserProvider:
                                         'share_type':''}
 
                         capital_dict['amount'] = amount
-                        capital_dict['shares'] = int(page_values[index][0].text)
+                        capital_dict['shares'] = float(page_values[index][0].text)
                         capital_dict['currency'] = page_values[index][1].text
                         capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.capital_details.append(capital_dict)
