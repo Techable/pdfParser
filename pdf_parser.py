@@ -16,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/jaguar.pdf"}
+DEFAULTS = {"input_pdf_file": "testcases/avalon.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -608,15 +608,14 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text.split("\n") for t in list_of_t]
             values = [x for v in values for x in v]
-            if 'Officers/Authorised Representative(s)' in values:
-                index = self.get_proper_index(key, 74.34, [98, 74.37], page_values)
+            if 'Officers/Authorised Representative(s)' or 'Officers/Agents' in values:
+                index = self.get_proper_index(key, 74.34, [98, 74.37, 58.52], page_values)
                 if index in page_values:
                     charge_table_fields = \
                         len(page_values[index])
                 else:
                     charge_table_fields = 0
-
-                while(charge_table_fields == 5 or charge_table_fields == 2):
+                while(charge_table_fields == 5 or charge_table_fields == 2 or charge_table_fields == 4):
                     officer_details = page_values[index]
                     officer_details.sort(key=lambda x:x.x)
                     if index in page_values:
@@ -629,15 +628,24 @@ class PdfParserProvider:
                             'address': '',
                             'position': ''
                         }
-                        if parser_obj.pending_officers_table is None:
-                            officers_dict['name'] = officer_details[0].text
-                            officers_dict['officer_id'] = officer_details[1].text
-                            officers_dict['nationality'] = officer_details[2].text
-                            officers_dict['source_of_address'] = officer_details[3].text
-                            date_of_appointment_str = officer_details[4].text
-                            officers_dict['date_of_appointment'] = datetime.strptime(date_of_appointment_str, '%d/%m/%Y') if date_of_appointment_str else None
-                            index = self.get_proper_index(index, 25, [35], page_values)
 
+                        if(charge_table_fields == 4):
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                officers_dict['officer_id'] = officer_details[1].text
+                                officers_dict['source_of_address'] = officer_details[2].text
+                                date_of_appointment_str = officer_details[3].text
+                                officers_dict['date_of_appointment'] = datetime.strptime(date_of_appointment_str, '%d/%m/%Y') if date_of_appointment_str else None
+                                index = self.get_proper_index(index, 25, [35, 42.95, 18.7], page_values)
+                        else:
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                officers_dict['officer_id'] = officer_details[1].text
+                                officers_dict['nationality'] = officer_details[2].text
+                                officers_dict['source_of_address'] = officer_details[3].text
+                                date_of_appointment_str = officer_details[4].text
+                                officers_dict['date_of_appointment'] = datetime.strptime(date_of_appointment_str, '%d/%m/%Y') if date_of_appointment_str else None
+                                index = self.get_proper_index(index, 25, [35], page_values)
                         if parser_obj.pending_officers_table is not None:
                             officers_dict = parser_obj.pending_officers_table
                             parser_obj.pending_officers_table = None
@@ -645,9 +653,11 @@ class PdfParserProvider:
                             parser_obj.pending_officers_table = officers_dict
                             break
 
-                        officers_dict['address'] = page_values[index][0].text
-                        officers_dict['position'] = page_values[index][1].text
-                        index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39], page_values)
+                        if(len(page_values[index]) == 1):
+                            officers_dict['address'] = page_values[index][0].text
+                        else:
+                            officers_dict['position'] = page_values[index][1].text
+                        index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95], page_values)
                         parser_obj.officers_details.append(officers_dict)
 
                     if index in page_values:
