@@ -16,7 +16,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "testcases/avalon.pdf"}
+DEFAULTS = {"input_pdf_file": "not_working_bizfiles/alternative_energies.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -268,8 +268,10 @@ class PdfParserProvider:
     def populate_shareholders_table(self, parser_obj, page_values):
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
-            if 'Shareholder(s)' in values:
-                index = self.get_index(key, 74.34, [97.34, 121.34], page_values)
+            for tmp_key, list_of_t in page_values.iteritems():
+                print tmp_key, list_of_t
+            if 'Shareholder (s)' in values:
+                index = self.get_index(key, 74.34, [97.34, 121.34, 54.82], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -304,7 +306,7 @@ class PdfParserProvider:
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
-                            index = round(index-27.0, 2)
+                            index = self.get_index(index, 27.0, [20.20], page_values)
 
                         if not index in page_values:
                             index = round(index  - 10, 2)
@@ -324,8 +326,7 @@ class PdfParserProvider:
                         #     elif (shareholders_table_fields == 2):
                         #         shareholders_dict['ordinary_num'] = page_values[index][0].text
                         #         shareholders_dict['currency'] = page_values[index][1].text
-
-                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 58, 70, 99, 1495], page_values)
+                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 58, 70, 99, 1495, 55.18], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -334,10 +335,16 @@ class PdfParserProvider:
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
                                 pref_index = round(index - 47, 2)
-                                if "Ordinary(Number)" in page_values[index][0].text:
-                                    index = round(index - 27, 2)
-                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                    shareholders_dict['currency'] = page_values[index][1].text
+                                ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
+                                if page_values[index][0].text in ordinary_numbers:
+                                    index = self.get_index(index, 27, [22.62], page_values)
+                                    shareholders_dict['ordinary_num'] = int(page_values[index][0].text)
+                                    if len(page_values[index]) == 1:
+                                        index = round(index + 0.5, 2)
+                                        currency = page_values[index][0]
+                                    else:
+                                        currency = page_values[index][1]
+                                    shareholders_dict['currency'] = currency.text
                                 if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
                                     index = round(pref_index - 27, 2)
                                     shareholders_dict['pref_num'] = page_values[index][0].text
