@@ -2,6 +2,7 @@
 #Standard imports
 from datetime import datetime
 import re
+import os
 
 #Imports related to pdfminer
 from pdfminer.pdfparser import PDFParser
@@ -16,7 +17,7 @@ from collections import defaultdict, namedtuple
 # default configuration dictionary which will be initialized when
 # PdfParser objects are created
 
-DEFAULTS = {"input_pdf_file": "not_working_bizfiles/alternative_energies.pdf"}
+DEFAULTS = {"input_pdf_file": "bizfiles/inputfile7.pdf"}
 
 # dictionary of configured values
 conf = {}
@@ -34,7 +35,7 @@ class PdfParser:
     """
     This provides object to encapsulate metadata about Python parser
     """
-    def __init__(self, conf):
+    def __init__(self, pdf_file):
 
         """
         Initialize the `PdfParser` config values.
@@ -47,15 +48,14 @@ class PdfParser:
         self.parsed_output_text = {}
         self.horizontal_dict = defaultdict(lambda : defaultdict(list))
         # Innitializing the input PDF file
-        self.input_pdf_file = conf.get("input_pdf_file",  \
-                              DEFAULTS["input_pdf_file"])
+        self.input_pdf_file = pdf_file
 
         self.horizontal_table = defaultdict(list)
         #TODO: Bad design, need to redesign it again
         self.page_number = 0
 
         #initializing all the fields as blank for now
-        self.company_record = {
+        self.company_details = {
                 'id':'',
                 'description':'',
                 'bizfile_date':'',
@@ -79,6 +79,7 @@ class PdfParser:
                 'date_of_lodgment_of_ar':'',
                 'audit_firm_name':'',
                 'organization':'',
+                'pdf_file': self.input_pdf_file
             }
         self.charges = []
         self.capital_details = []
@@ -101,7 +102,7 @@ class PdfParserProvider:
     def load_pdf_file(self,parser_obj):
 
         # Open the PDF file
-        file_obj = open(parser_obj.input_pdf_file,'rb')
+        file_obj = parser_obj.input_pdf_file
 
         # Create the parser object associated with the file object
         pdf_parser_obj = PDFParser(file_obj)
@@ -216,8 +217,7 @@ class PdfParserProvider:
                                         'charge_org':''}
 
                         charges_dict['charge_no'] = charge_no
-                        date_registered_str = page_values[index][1].text
-                        charges_dict['date_registered'] = datetime.strptime(date_registered_str, '%d/%m/%Y') if date_registered_str else None
+                        charges_dict['date_registered'] = page_values[index][1].text
                         charges_dict['amount_secured'] = page_values[index][2].text
                         charges_dict['charge_org'] = page_values[index][3].text
                         parser_obj.charges.append(charges_dict)
@@ -291,8 +291,8 @@ class PdfParserProvider:
                                             'currency':'',
                                             'pref_num': None,
                                             'pref_currency': None,
-                                            'ordinary_num':None,
-                                            'company_record':''}
+                                            'ordinary_num':None
+                                             }
 
                         if parser_obj.pending_shareholders_table is None:
                             # TODO this is a bad fix to detect table end in one of the pdfs
@@ -426,8 +426,7 @@ class PdfParserProvider:
                                 'source_of_address':'',
                                 'address_changed':None,
                                 'currency': parser_obj.currency,
-                                'ordinary_num': parser_obj.ordinary_num,
-                                'company_record':''
+                                'ordinary_num': parser_obj.ordinary_num
                             }
                             shareholder_type_details = temp_page_values[temp_index]
                             shareholder_type_details.sort()
@@ -469,8 +468,7 @@ class PdfParserProvider:
                         'source_of_address': '',
                         'address_changed':None,
                         'currency': '',
-                        'ordinary_num': '',
-                        'company_record':''
+                        'ordinary_num': ''
                     }
                     parser_obj.pending_shareholders_type_table = shareholder_type_dict
 
@@ -497,8 +495,7 @@ class PdfParserProvider:
                             'source_of_address':'',
                             'address_changed':None,
                             'currency':currency,
-                            'ordinary_num':ordinary_num,
-                            'company_record':''
+                            'ordinary_num':ordinary_num
                         }
                         shareholder_type_details = temp_page_values[index]
                         shareholder_type_details.sort()
@@ -641,8 +638,7 @@ class PdfParserProvider:
                                 officers_dict['name'] = officer_details[0].text
                                 officers_dict['officer_id'] = officer_details[1].text
                                 officers_dict['source_of_address'] = officer_details[2].text
-                                date_of_appointment_str = officer_details[3].text
-                                officers_dict['date_of_appointment'] = datetime.strptime(date_of_appointment_str, '%d/%m/%Y') if date_of_appointment_str else None
+                                officers_dict['date_of_appointment'] = officer_details[3].text
                                 index = self.get_proper_index(index, 25, [35, 42.95, 18.7], page_values)
                         else:
                             if parser_obj.pending_officers_table is None:
@@ -688,6 +684,8 @@ class PdfParserProvider:
     """
     def populate_company_record_table(self, parser_obj, page_values):
         temp_page_values = {k: v for k,v in page_values.iteritems() if v}
+        for k,v in temp_page_values.iteritems():
+            print k, v
 
         for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
@@ -703,71 +701,74 @@ class PdfParserProvider:
             for v in values:
                 bizfile_date = re.match('^Date:.\d+/\d+/\d+', v if type(v) == str or type(v) == unicode else v.text)
                 if bizfile_date:
-                    bizfile_date_str = bizfile_date.group(0).split(':')[1].strip()
-                    parser_obj.company_record['bizfile_date'] = datetime.strptime(bizfile_date_str, '%d/%m/%Y') if bizfile_date_str else None
+                    parser_obj.company_details['bizfile_date'] = bizfile_date.group(0).split(':')[1].strip()
 
-            if 'Registration No.' in values:
-                index = self.find_index(parser_obj,'Registration No.',values)
-                parser_obj.company_record['registration_no'] = values[index].replace(':', '').strip()
+            if 'Registration No.' in values or 'Registration No. :' in values:
+                reg_index = round(key + 0.80, 2)
+                if reg_index in page_values:
+                    reg_no = page_values[reg_index][0].text
+                else:
+                    index = self.find_index(parser_obj,'Registration No.',values)
+                    reg_no = values[index].replace(':', '').strip()
+                parser_obj.company_details['registration_no'] = reg_no
             elif 'Company Name.' in values:
                 index = self.find_index(parser_obj,'Company Name.',values)
-                parser_obj.company_record['company_name'] = values[index].replace(':', '').strip()
+                parser_obj.company_details['company_name'] = values[index].replace(':', '').strip()
             elif 'Former Name if any' in values:
                 index = self.find_index(parser_obj,'Former Name if any',values)
-                parser_obj.company_record['former_name'] = values[index].replace(':', '').strip()
+                parser_obj.company_details['former_name'] = values[index].replace(':', '').strip()
             elif 'Incorporation Date.' in values:
                 incorp_date_str = values[self.find_index(parser_obj,'Incorporation Date.',values)].replace(':', '').strip()
-                parser_obj.company_record['incorp_date'] = datetime.strptime(incorp_date_str, '%d/%m/%Y') if incorp_date_str else None
+                parser_obj.company_details['incorp_date'] = incorp_date_str
             elif 'Company Type' in values:
                 index = self.find_index(parser_obj,'Company Type',values)
-                parser_obj.company_record['company_type'] = values[index].replace(':', '').strip()
+                parser_obj.company_details['company_type'] = values[index].replace(':', '').strip()
             elif 'Status' in values:
                 index = self.find_index(parser_obj,'Status',values)
-                parser_obj.company_record['status'] = values[index].replace(':', '').strip()
+                parser_obj.company_details['status'] = values[index].replace(':', '').strip()
             elif 'Status Date' in values:
                 index = self.find_index(parser_obj,'Status Date',values)
                 status_date_str = values[index].replace(':', '').strip()
-                parser_obj.company_record['status_date'] = datetime.strptime(status_date_str, '%d/%m/%Y') if status_date_str else None
+                parser_obj.company_details['status_date'] = status_date_str
             elif 'Activities (I)' in values:
                 activities_1 = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
-                parser_obj.company_record['activities_1'] = activities_1
+                parser_obj.company_details['activities_1'] = activities_1
             elif 'Activities (II)' in values:
                 activities_2 = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
-                parser_obj.company_record['activities_2'] = activities_2
+                parser_obj.company_details['activities_2'] = activities_2
             elif 'Description' in values:
                 activities_desc = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
                 if round(key + 24, 2) in page_values and activities_desc:
-                    parser_obj.company_record['activites_description'] = activities_desc
+                    parser_obj.company_details['activites_description'] = activities_desc
                 elif activities_desc:
-                    parser_obj.company_record['activites_description_2'] = activities_desc
+                    parser_obj.company_details['activites_description_2'] = activities_desc
 
             elif 'Registered Office Address' in values:
                 registered_office_address = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
-                parser_obj.company_record['registered_office_address'] = registered_office_address
+                parser_obj.company_details['registered_office_address'] = registered_office_address
             elif 'Date of Address' in values:
                 date_of_address_str = page_values[round(key - 4, 2)][0].text if page_values[round(key - 4, 2)] else ''
-                date_of_address = datetime.strptime(date_of_address_str, '%d/%m/%Y') if date_of_address_str else None
-                parser_obj.company_record['date_of_address'] = date_of_address
+                parser_obj.company_details['date_of_address'] = date_of_address_str
             elif 'Date of Last AGM' in values:
                 index = self.find_index(parser_obj,'Date of Last AGM',values)
                 date_of_last_agm_str = values[index].replace(':', '').strip()
-                parser_obj.company_record['date_of_last_agm'] = datetime.strptime(date_of_last_agm_str, '%d/%m/%Y') if date_of_last_agm_str else None
+                parser_obj.company_details['date_of_last_agm'] = date_of_last_agm_str
             elif 'Date of Last AR' in values:
                 date_of_last_ar_str = values[self.find_index(parser_obj,'Date of Last AR',values)].replace(':', '').strip()
-                parser_obj.company_record['date_of_last_ar'] = datetime.strptime(date_of_last_ar_str, '%d/%m/%Y') if date_of_last_ar_str else None
+                parser_obj.company_details['date_of_last_ar'] = date_of_last_ar_str
             elif 'Date of A/C Laid at Last AGM' in values:
                 date_of_ac_at_last_str = values[self.find_index(parser_obj,'Date of A/C Laid at Last AGM',values)].replace(':', '').strip()
-                parser_obj.company_record['date_of_ac_at_last'] = datetime.strptime(date_of_ac_at_last_str, '%d/%m/%Y') if date_of_ac_at_last_str else None
+                parser_obj.company_details['date_of_ac_at_last'] = datetime.strptime(date_of_ac_at_last_str, '%d/%m/%Y') if date_of_ac_at_last_str else None
             elif 'Date of Lodgment of AR, A/C' in values:
                 date_of_lodgment_of_ar_str = values[self.find_index(parser_obj,'Date of Lodgment of AR, A/C',values)].replace(':', '').strip()
-                parser_obj.company_record['date_of_lodgment_of_ar'] = datetime.strptime(date_of_lodgment_of_ar_str, '%d/%m/%Y') if date_of_lodgment_of_ar_str else None
+                parser_obj.company_details['date_of_lodgment_of_ar'] = datetime.strptime(date_of_lodgment_of_ar_str, '%d/%m/%Y') if date_of_lodgment_of_ar_str else None
             elif 'RECEIPT NO.' in values:
                 receipt_no = page_values[round(key + 1, 2)][0].text if page_values[round(key + 1, 2)] else ''
-                parser_obj.company_record['receipt_no'] = receipt_no
+                parser_obj.company_details['receipt_no'] = receipt_no
             elif 'Audit Firms' in values:
                 audit_index = round(key - 51.34, 2)
                 if audit_index in page_values:
-                    parser_obj.company_record['audit_firm_name'] = page_values[audit_index][0].text
+                    parser_obj.company_details['audit_firm_name'] = page_values[audit_index][0].text
 
 
 
@@ -792,48 +793,23 @@ class PdfParserProvider:
             else:
                 raise Exception( "Unknown Annotation" )
 
-def run_pdf_parser():
-    parser_object = PdfParser(conf)
+def run_pdf_parser(pdf_file):
+    parser_object = PdfParser(pdf_file)
     provider_object = PdfParserProvider()
     provider_object.load_pdf_file(parser_object)
+    company_details = parser_object.company_details
+    company_details['charges'] = parser_object.charges
+    company_details['officers'] = parser_object.officers_details
+    company_details['capital'] = parser_object.capital_details
+    company_details['capital'].extend(parser_object.paidup_capital_details)
+    company_details['shareholders'] = parser_object.shareholders_details
+    company_details['shareholders'].extend(parser_object.shareholder_type_details)
+    return company_details
 
-    print "\n ##### Company details ###### \n"
-    for key, value in parser_object.company_record.iteritems():
-        print key, "\t", value
-
-    print "\n\nCHARGES TABLE DETAILS"
-    print len(parser_object.charges)
-    for charge_value in parser_object.charges:
-        print charge_value
-
-    print "\n\nCAPITAL TABLE DETAILS\n"
-    print len(parser_object.capital_details)
-    for capital_value in parser_object.capital_details:
-        print capital_value
-
-    print "\n\nPAID-UP CAPITAL TABLE DETAILS\n"
-    print len(parser_object.paidup_capital_details)
-    for paidup_capital in parser_object.paidup_capital_details:
-        print paidup_capital
-
-    print "\n\nSHAREHOLDERS TABLE DETAILS\n"
-    print len(parser_object.shareholders_details)
-    for shareholder_value in parser_object.shareholders_details:
-        print shareholder_value
-        print "\n"
-
-    print "\n\nSHAREHOLDER TYPE TABLE DETAILS\n"
-    print len(parser_object.shareholder_type_details)
-    for shareholder_type_value in parser_object.shareholder_type_details:
-        print shareholder_type_value
-        print "\n"
-
-    print "\n\nOFFICERS TABLE DETAILS\n"
-    print len(parser_object.officers_details)
-    for officer_detail in parser_object.officers_details:
-        print officer_detail
-        print "\n"
 
 if __name__ == "__main__":
-    run_pdf_parser()
-
+    PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/aavishkar_international.pdf'
+    pdf_file = open(pdf_file_path)
+    company_details = run_pdf_parser(pdf_file)
+    # print details here with company_details
