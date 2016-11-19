@@ -832,7 +832,42 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/aavishkar_international.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/nalli_chinna.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
-    # print details here with company_details
+
+    print "###########################"
+    print "##### company details #####"
+    print "###########################"
+    for key, value in company_details.iteritems():
+        if key not in ['charges', 'officers', 'capital', 'shareholders']:
+            print key, value
+
+    print "###################"
+    print "##### charges #####"
+    print "###################"
+    for charge in company_details['charges']:
+        print charge
+        print '\n\n'
+
+    print "###################"
+    print "##### officers #####"
+    print "###################"
+    for officer in company_details['officers']:
+        print officer
+        print '\n\n'
+
+    print "###################"
+    print "##### capital #####"
+    print "###################"
+    for capital in company_details['capital']:
+        print capital
+        print '\n\n'
+
+    print "########################"
+    print "##### shareholders #####"
+    print "########################"
+    for shareholder in company_details['shareholders']:
+        print shareholder
+        print '\n\n'
+
