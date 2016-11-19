@@ -2,6 +2,7 @@ import os
 import json
 import unittest
 
+
 from pdf_parser import run_pdf_parser
 
 class TestStringMethods(unittest.TestCase):
@@ -27,8 +28,10 @@ class TestStringMethods(unittest.TestCase):
             for key, expected_details in expected_company_details.iteritems():
                 if type(expected_details) == list:
                     expected_details.sort()
+                    actual_details = actual_company_details[key]
+                    actual_details.sort()
                     actual_company_details[key].sort()
-                    self.assertListEqual(actual_company_details[key], expected_details)
+                    self.assertListEqual(actual_details, expected_details)
                 else:
                     self.assertEqual(expected_details, actual_company_details[key])
 
