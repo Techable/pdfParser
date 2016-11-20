@@ -579,8 +579,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
-                # TODO: bhavani 'index = self.get_proper_index(key, 50.34, [50.37, 39.32, 39.25], page_values)' has been removed below which fixes new pdfs but failing old ones
-                index = self.get_proper_index(key, 50.34, [50.37], page_values)
+                index = self.get_proper_index(key, 50.34, [50.37, 39.32, 39.25], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -603,8 +602,8 @@ class PdfParserProvider:
                         capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.paidup_capital_details.append(capital_dict)
                         records_id = records_id + 1
-                        # TODO: bhavani 'index = self.get_proper_index(index, 26, [21.3], page_values)' has been removed below which fixes new pdfs but failing old ones
-                        index = round(index - 26, 2)
+                        index = self.get_proper_index(index, 26, [21.3], page_values)
+                        #index = round(index - 26, 2)
                     if index in page_values:
                         capital_table_fields = \
                             len(page_values[index])
@@ -834,7 +833,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/asr.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/nalli_chinna.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
