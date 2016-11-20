@@ -121,7 +121,7 @@ class PdfParserProvider:
         resource_manager_obj = PDFResourceManager()
 
         #Set parameters for analysis
-        laparams = LAParams(detect_vertical=True, all_texts=True, line_margin=0.1)
+        laparams = LAParams(line_margin=0.1, detect_vertical=True, all_texts=True)
 
         #laparams = LAParams(detect_vertical=True,line_margin=0.3)
         #Create PDF aggregator object
@@ -627,16 +627,18 @@ class PdfParserProvider:
             values = [t.text.split("\n") for t in list_of_t]
             values = [x for v in values for x in v]
             # TODO: bhavani 'Officers/Agents' has been removed below which fixes new pdfs but failing old ones
-            if 'Officers/Authorised Representative(s)' in values:
+            if 'Officers/Authorised Representative(s)' in values or 'Officers/Agents' in values:
+                for x, y in page_values.iteritems():
+                    print x, y
                 # TODO: bhavani 'index = self.get_proper_index(key, 74.34, [98, 74.37, 58.52], page_values)' has been removed below which fixes new pdfs but failing old ones
-                index = self.get_proper_index(key, 74.34, [98, 74.37], page_values)
+                index = self.get_proper_index(key, 74.34, [98, 74.37, 58.45, 74.37, 58.52, 59.18], page_values)
                 if index in page_values:
                     charge_table_fields = \
                         len(page_values[index])
                 else:
                     charge_table_fields = 0
-                # TODO Bhavani below updated code while(charge_table_fields == 5 or charge_table_fields == 2):
-                while(charge_table_fields == 5 or charge_table_fields == 2):
+                # TODO Bhavani below updated code while(charge_table_fields == 5 or charge_table_fields == 2 or charge_table_fields == 4):
+                while(charge_table_fields == 5 or charge_table_fields == 4 or charge_table_fields == 3 or charge_table_fields == 2  or charge_table_fields == 1):
                     officer_details = page_values[index]
                     officer_details.sort(key=lambda x:x.x)
                     if index in page_values:
@@ -651,30 +653,52 @@ class PdfParserProvider:
                         }
 
                         # TODO bhavani below is the updated code
-                        # if(charge_table_fields == 4):
-                        #     if parser_obj.pending_officers_table is None:
-                        #         officers_dict['name'] = officer_details[0].text
-                        #         officers_dict['officer_id'] = officer_details[1].text
-                        #         officers_dict['source_of_address'] = officer_details[2].text
-                        #         officers_dict['date_of_appointment'] = officer_details[3].text
-                        #         index = self.get_proper_index(index, 25, [35, 42.95, 18.7], page_values)
-                        # else:
-                        #     if parser_obj.pending_officers_table is None:
-                        #         officers_dict['name'] = officer_details[0].text
-                        #         officers_dict['officer_id'] = officer_details[1].text
-                        #         officers_dict['nationality'] = officer_details[2].text
-                        #         officers_dict['source_of_address'] = officer_details[3].text
-                        #         date_of_appointment_str = officer_details[4].text
-                        #         officers_dict['date_of_appointment'] = date_of_appointment_str
-                        #         index = self.get_proper_index(index, 25, [35], page_values)
-                        if parser_obj.pending_officers_table is None:
-                            officers_dict['name'] = officer_details[0].text
-                            officers_dict['officer_id'] = officer_details[1].text
-                            officers_dict['nationality'] = officer_details[2].text
-                            officers_dict['source_of_address'] = officer_details[3].text
-                            date_of_appointment_str = officer_details[4].text
-                            officers_dict['date_of_appointment'] = date_of_appointment_str
-                            index = self.get_proper_index(index, 25, [35], page_values)
+                        if(charge_table_fields == 4):
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                officers_dict['officer_id'] = officer_details[1].text
+                                officers_dict['source_of_address'] = officer_details[2].text
+                                officers_dict['date_of_appointment'] = officer_details[3].text
+                                index = round(index + 0.75, 2)
+                                officers_dict['nationality'] = page_values[index][0].text
+                                index = self.get_proper_index(index, 25, [35, 42.95, 18.7, 19.45], page_values)
+                        elif(charge_table_fields == 1):
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                index = round(index + 0.8, 2)
+                                officers_dict['officer_id'] = page_values[index][0].text
+                                officers_dict['source_of_address'] = page_values[index][1].text
+                                officers_dict['date_of_appointment'] = page_values[index][2].text
+                                index = round(index + 0.75, 2)
+                                officers_dict['nationality'] = page_values[index][0].text
+                                index = round(index - 31.30, 2)
+                        elif(charge_table_fields == 3):
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                officers_dict['officer_id'] = officer_details[1].text
+                                officers_dict['source_of_address'] = officer_details[2].text
+                                index = round(index + 0.75, 2)
+                                officers_dict['nationality'] = page_values[index][0].text
+                                index = round(index - 0.7, 2)
+                                officers_dict['date_of_appointment'] = page_values[index][0].text
+                                index = round(index - 89.80, 2)
+                        else:
+                            if parser_obj.pending_officers_table is None:
+                                officers_dict['name'] = officer_details[0].text
+                                officers_dict['officer_id'] = officer_details[1].text
+                                officers_dict['nationality'] = officer_details[2].text
+                                officers_dict['source_of_address'] = officer_details[3].text
+                                date_of_appointment_str = officer_details[4].text
+                                officers_dict['date_of_appointment'] = date_of_appointment_str
+                                index = self.get_proper_index(index, 25, [35], page_values)
+                        # if parser_obj.pending_officers_table is None:
+                        #     officers_dict['name'] = officer_details[0].text
+                        #     officers_dict['officer_id'] = officer_details[1].text
+                        #     officers_dict['nationality'] = officer_details[2].text
+                        #     officers_dict['source_of_address'] = officer_details[3].text
+                        #     date_of_appointment_str = officer_details[4].text
+                        #     officers_dict['date_of_appointment'] = date_of_appointment_str
+                        #     index = self.get_proper_index(index, 25, [35], page_values)
                         if parser_obj.pending_officers_table is not None:
                             officers_dict = parser_obj.pending_officers_table
                             parser_obj.pending_officers_table = None
@@ -682,15 +706,19 @@ class PdfParserProvider:
                             parser_obj.pending_officers_table = officers_dict
                             break
 
-                        officers_dict['address'] = page_values[index][0].text
-                        officers_dict['position'] = page_values[index][1].text
-                        index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39],page_values)
+                        # officers_dict['address'] = page_values[index][0].text
+                        # officers_dict['position'] = page_values[index][1].text
+                        # index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39],page_values)
                         # TODO bhavani below is the fix for new pdfs
-                        # if(len(page_values[index]) == 1):
-                        #     officers_dict['address'] = page_values[index][0].text
-                        # else:
-                        #     officers_dict['position'] = page_values[index][1].text
-                        # index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95], page_values)
+                        if(len(page_values[index]) == 1):
+                            officers_dict['address'] = page_values[index][0].text
+                            index = round(index + 0.80, 2)
+                            officers_dict['position'] = page_values[index][0].text
+                            index = self.get_proper_index(index, 43.75, [44.55, 55.75], page_values)
+                        else:
+                            officers_dict['address'] = page_values[index][0].text
+                            officers_dict['position'] = page_values[index][1].text
+                            index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95], page_values)
                         parser_obj.officers_details.append(officers_dict)
 
                     if index in page_values:
