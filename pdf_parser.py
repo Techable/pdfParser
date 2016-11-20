@@ -270,9 +270,10 @@ class PdfParserProvider:
             values = [t.text for t in list_of_t]
             # for tmp_key, list_of_t in page_values.iteritems():
             #     print tmp_key, list_of_t
-            if 'Shareholder(s)' in values:
+            #if 'Shareholder(s)' in values:
+            if 'Shareholder(s)' or 'Shareholder (s)'in values:
                 # TODO: bhavani 54.82 has been removed below which fixes new pdfs but failing old ones
-                index = self.get_index(key, 74.34, [97.34, 121.34], page_values)
+                index = self.get_index(key, 74.34, [54.82, 97.34, 121.34], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -307,8 +308,8 @@ class PdfParserProvider:
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
-                            # TODO: bhavani 'self.get_index(index, 27.0, [20.20], page_values)' has been removed below which fixes new pdfs but failing old ones
-                            index = round(index - 27.0, 2)
+                            index = self.get_index(index, 27.0, [20.20], page_values)
+                            #index = round(index - 27.0, 2)
 
                         if not index in page_values:
                             index = round(index  - 10, 2)
@@ -325,11 +326,11 @@ class PdfParserProvider:
                             shareholders_table_fields = len(page_values[index])
                             if (shareholders_table_fields == 1):
                                 shareholders_dict['address'] = page_values[index][0].text
-                        #     elif (shareholders_table_fields == 2):
-                        #         shareholders_dict['ordinary_num'] = page_values[index][0].text
-                        #         shareholders_dict['currency'] = page_values[index][1].text
+                            #elif (shareholders_table_fields == 2):
+                                #shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                #shareholders_dict['currency'] = page_values[index][1].text
                         # TODO: bhavani '55.18' has been removed below which fixes new pdfs but failing old ones
-                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 58, 70, 99, 1495], page_values)
+                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54 ,55.18, 58, 70, 99, 1495], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -338,20 +339,21 @@ class PdfParserProvider:
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
                                 pref_index = round(index - 47, 2)
-                                # ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
+                                ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
                                 # TODO: page_values[index][0].text in ordinary_numbers
-                                if page_values[index][0].text in "Ordinary(Number)":
-                                    index = round(index - 27, 2)
-                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                    shareholders_dict['currency'] = page_values[index][1].text
-                                    # index = self.get_index(index, 27, [22.62], page_values)
-                                    # shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                    # if len(page_values[index]) == 1:
-                                    #     index = round(index + 0.5, 2)
-                                    #     currency = page_values[index][0]
-                                    # else:
-                                    #     currency = page_values[index][1]
-                                    # shareholders_dict['currency'] = currency.text
+                                if page_values[index][0].text in ordinary_numbers:
+                                    #index = self.get_index(index, 27, [22.62], page_values)
+                                    #index = round(index - 27, 2)
+                                    #shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                    #shareholders_dict['currency'] = page_values[index][1].text
+                                    index = self.get_index(index, 27, [22.62], page_values)
+                                    shareholders_dict['ordinary_num'] = int(page_values[index][0].text)
+                                    if len(page_values[index]) == 1:
+                                        index = round(index + 0.5, 2)
+                                        currency = page_values[index][0]
+                                    else:
+                                        currency = page_values[index][1]
+                                    shareholders_dict['currency'] = currency.text
                                 if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
                                     index = round(pref_index - 27, 2)
                                     shareholders_dict['pref_num'] = page_values[index][0].text
@@ -832,7 +834,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/nalli_chinna.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/asr.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
