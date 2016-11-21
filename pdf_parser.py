@@ -266,7 +266,8 @@ class PdfParserProvider:
     Populate the table containing shareholders object
     """
     def populate_shareholders_table(self, parser_obj, page_values):
-        for key, list_of_t in page_values.iteritems():
+        temp_page_values = page_values.copy()
+        for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
             # for tmp_key, list_of_t in page_values.iteritems():
             #     print tmp_key, list_of_t
@@ -661,7 +662,7 @@ class PdfParserProvider:
                                 officers_dict['date_of_appointment'] = officer_details[3].text
                                 index = round(index + 0.75, 2)
                                 officers_dict['nationality'] = page_values[index][0].text
-                                index = self.get_proper_index(index, 25, [35, 42.95, 18.7, 19.45], page_values)
+                                index = self.get_proper_index(index, 25, [35, 42.95, 18.7, 19.45, 18.65], page_values)
                         elif(charge_table_fields == 1):
                             if parser_obj.pending_officers_table is None:
                                 officers_dict['name'] = officer_details[0].text
@@ -714,11 +715,11 @@ class PdfParserProvider:
                             officers_dict['address'] = page_values[index][0].text
                             index = round(index + 0.80, 2)
                             officers_dict['position'] = page_values[index][0].text
-                            index = self.get_proper_index(index, 43.75, [44.55, 55.75], page_values)
+                            index = self.get_proper_index(index, 43.75, [44.55, 55.75, 67.75], page_values)
                         else:
                             officers_dict['address'] = page_values[index][0].text
                             officers_dict['position'] = page_values[index][1].text
-                            index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95], page_values)
+                            index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95, 29, 32.75], page_values)
                         parser_obj.officers_details.append(officers_dict)
 
                     if index in page_values:
@@ -862,7 +863,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/asr.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/world_network.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
