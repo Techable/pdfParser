@@ -31,6 +31,7 @@ class TestStringMethods(unittest.TestCase):
                     actual_details = actual_company_details[key]
                     actual_details.sort()
                     actual_company_details[key].sort()
+                    self.assertEqual(len(actual_details), len(expected_details))
                     self.assertListEqual(actual_details, expected_details)
                 else:
                     self.assertEqual(expected_details, actual_company_details[key])
