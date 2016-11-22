@@ -272,7 +272,7 @@ class PdfParserProvider:
             # for tmp_key, list_of_t in page_values.iteritems():
             #     print tmp_key, list_of_t
             #if 'Shareholder(s)' in values:
-            if 'Shareholder(s)' or 'Shareholder (s)'in values:
+            if 'Shareholder(s)' in values or 'Shareholder (s)'in values:
                 # TODO: bhavani 54.82 has been removed below which fixes new pdfs but failing old ones
                 index = self.get_index(key, 74.34, [54.82, 97.34, 121.34], page_values)
                 records_id = 0
@@ -348,7 +348,7 @@ class PdfParserProvider:
                                     #shareholders_dict['ordinary_num'] = page_values[index][0].text
                                     #shareholders_dict['currency'] = page_values[index][1].text
                                     index = self.get_index(index, 27, [22.62], page_values)
-                                    shareholders_dict['ordinary_num'] = int(page_values[index][0].text)
+                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
                                     if len(page_values[index]) == 1:
                                         index = round(index + 0.5, 2)
                                         currency = page_values[index][0]
