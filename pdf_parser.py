@@ -240,6 +240,14 @@ class PdfParserProvider:
             index = round((index-default_index),2)
         return index
 
+    def get_index_by_addition(self, index, default_index, possible_deltas, page_values):
+        temp_index = [round(index + delta, 2) for delta in possible_deltas if round(index + delta, 2) in page_values]
+        if temp_index:
+            index = temp_index[0]
+        else:
+            index = round(index+default_index,2)
+        return index
+
     def update_pending_shareholders_table(self, parser_obj, page_values, index):
         """
         updates the pending shareholders table by looking at address and ordinary number consecutively.
@@ -269,12 +277,12 @@ class PdfParserProvider:
         temp_page_values = page_values.copy()
         for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
-            # for tmp_key, list_of_t in page_values.iteritems():
-            #     print tmp_key, list_of_t
+            for tmp_key, list_of_t in page_values.iteritems():
+                print tmp_key, list_of_t
             #if 'Shareholder(s)' in values:
             if 'Shareholder(s)' in values or 'Shareholder (s)'in values:
                 # TODO: bhavani 54.82 has been removed below which fixes new pdfs but failing old ones
-                index = self.get_index(key, 74.34, [54.82, 97.34, 121.34], page_values)
+                index = self.get_index(key, 74.34, [54.82, 97.34, 121.34, 55.48], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -283,7 +291,7 @@ class PdfParserProvider:
                 else:
                     shareholders_table_fields = 0
 
-                while(shareholders_table_fields in [6, 5, 1, 2]):
+                while(shareholders_table_fields in [6, 5, 4, 1, 2]):
                     if index in page_values:
                         shareholders_dict = {'name':'',
                                             'address':'',
@@ -304,13 +312,18 @@ class PdfParserProvider:
                             except:
                                 break
                         shareholders_table_fields == len(page_values[index])
-                        if(shareholders_table_fields == 6) or \
-                           (shareholders_table_fields == 5):
+                        if shareholders_table_fields in [6, 5]:
                             shareholders_dict['name'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][3].text
                             shareholders_dict['source_of_address'] = page_values[index][4].text
                             index = self.get_index(index, 27.0, [20.20], page_values)
                             #index = round(index - 27.0, 2)
+                        elif shareholders_table_fields == 4:
+                            shareholders_dict['name'] = page_values[index][0].text
+                            shareholders_dict['shareholder_id'] = page_values[index][1].text
+                            shareholders_dict['nationality'] = page_values[index][2].text
+                            shareholders_dict['source_of_address'] = page_values[index][3].text
+                            index = round(index - 19.40, 2)
 
                         if not index in page_values:
                             index = round(index  - 10, 2)
@@ -331,7 +344,7 @@ class PdfParserProvider:
                                 #shareholders_dict['ordinary_num'] = page_values[index][0].text
                                 #shareholders_dict['currency'] = page_values[index][1].text
                         # TODO: bhavani '55.18' has been removed below which fixes new pdfs but failing old ones
-                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54 ,55.18, 58, 70, 99, 1495], page_values)
+                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 55.18, 58, 70, 99, 1495, 42.02], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -347,10 +360,10 @@ class PdfParserProvider:
                                     #index = round(index - 27, 2)
                                     #shareholders_dict['ordinary_num'] = page_values[index][0].text
                                     #shareholders_dict['currency'] = page_values[index][1].text
-                                    index = self.get_index(index, 27, [22.62], page_values)
+                                    index = self.get_index(index, 27, [22.62, 22.73], page_values)
                                     shareholders_dict['ordinary_num'] = page_values[index][0].text
                                     if len(page_values[index]) == 1:
-                                        index = round(index + 0.5, 2)
+                                        index = self.get_index_by_addition(index, 0.5, [0.45], page_values)
                                         currency = page_values[index][0]
                                     else:
                                         currency = page_values[index][1]
@@ -365,7 +378,8 @@ class PdfParserProvider:
 
                         parser_obj.shareholders_details.append(shareholders_dict)
                         records_id = records_id + 1
-                        index = self.get_index(index, 24, [71], page_values)
+                        # import ipdb;ipdb.set_trace()
+                        index = self.get_index(index, 24, [71, 28.5], page_values)
 
                     if index in page_values:
                         shareholders_table_fields = len(page_values[index])
@@ -628,8 +642,8 @@ class PdfParserProvider:
             values = [x for v in values for x in v]
             # TODO: bhavani 'Officers/Agents' has been removed below which fixes new pdfs but failing old ones
             if 'Officers/Authorised Representative(s)' in values or 'Officers/Agents' in values:
-                for x, y in page_values.iteritems():
-                    print x, y
+                # for x, y in page_values.iteritems():
+                #     print x, y
                 # TODO: bhavani 'index = self.get_proper_index(key, 74.34, [98, 74.37, 58.52], page_values)' has been removed below which fixes new pdfs but failing old ones
                 index = self.get_proper_index(key, 74.34, [98, 74.37, 58.45, 74.37, 58.52, 59.18], page_values)
                 if index in page_values:
@@ -862,7 +876,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/classic.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/avalontech_engineering.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
