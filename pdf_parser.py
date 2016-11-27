@@ -194,7 +194,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Charge No.' in values:
-                index = self.get_proper_index(key, 28.34, [17.8, 28.37], page_values)
+                index = self.get_proper_index(key, 28.34, [17.8, 28.37, 17.87], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -203,7 +203,7 @@ class PdfParserProvider:
                 else:
                     charge_table_fields = 0
 
-                while(charge_table_fields == 4):
+                while(charge_table_fields in [3,4]):
                     charge_ids = [charge['charge_no'] \
                         for charge in parser_obj.charges]
                     charge_no = page_values[index][0].text
@@ -219,10 +219,10 @@ class PdfParserProvider:
                         charges_dict['charge_no'] = charge_no
                         charges_dict['date_registered'] = page_values[index][1].text
                         charges_dict['amount_secured'] = page_values[index][2].text
-                        charges_dict['charge_org'] = page_values[index][3].text
+                        charges_dict['charge_org'] = page_values[index][3].text if charge_table_fields == 4 else page_values[round(index - 0.8, 2)][0].text
                         parser_obj.charges.append(charges_dict)
                         records_id = records_id + 1
-                        index = self.get_index(index, 36, [20.15, 24, 28, 48, 36, 26], page_values)
+                        index = self.get_index(index, 36, [20.15, 24, 28, 48, 36, 26, 17.15], page_values)
                     if index in page_values:
                         charge_table_fields = \
                             len(page_values[index])
@@ -548,7 +548,7 @@ class PdfParserProvider:
             values = [t.text for t in list_of_t]
             if 'Capital' in values:
                 # TODO: bhavani '59.75, 59.82' has been removed below which fixes new pdfs but failing old ones
-                index = self.get_proper_index(key, 75.34, [75.37], page_values)
+                index = self.get_proper_index(key, 75.34, [75.37, 59.75, 59.82, 60.48], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -577,8 +577,7 @@ class PdfParserProvider:
                         capital_dict['share_type'] = page_values[index][2].text
                         parser_obj.capital_details.append(capital_dict)
                         records_id = records_id + 1
-                        # TODO: bhavani 'index = self.get_proper_index(index, 26, [21.3], page_values)' has been removed below which fixes new pdfs but failing old ones
-                        index = round(index - 26, 2)
+                        index = self.get_proper_index(index, 26, [21.3], page_values)
                     if index in page_values:
                         capital_table_fields = \
                             len(page_values[index])
@@ -594,7 +593,7 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Paid-Up Capital' in values:
-                index = self.get_proper_index(key, 50.34, [50.37, 39.32, 39.25], page_values)
+                index = self.get_proper_index(key, 50.34, [50.37, 39.32, 39.25, 39.48], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -640,19 +639,14 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text.split("\n") for t in list_of_t]
             values = [x for v in values for x in v]
-            # TODO: bhavani 'Officers/Agents' has been removed below which fixes new pdfs but failing old ones
             if 'Officers/Authorised Representative(s)' in values or 'Officers/Agents' in values:
-                # for x, y in page_values.iteritems():
-                #     print x, y
-                # TODO: bhavani 'index = self.get_proper_index(key, 74.34, [98, 74.37, 58.52], page_values)' has been removed below which fixes new pdfs but failing old ones
                 index = self.get_proper_index(key, 74.34, [98, 74.37, 58.45, 74.37, 58.52, 59.18], page_values)
                 if index in page_values:
                     charge_table_fields = \
                         len(page_values[index])
                 else:
                     charge_table_fields = 0
-                # TODO Bhavani below updated code while(charge_table_fields == 5 or charge_table_fields == 2 or charge_table_fields == 4):
-                while(charge_table_fields == 5 or charge_table_fields == 4 or charge_table_fields == 3 or charge_table_fields == 2  or charge_table_fields == 1):
+                while(charge_table_fields in [5,4,3,2,1]):
                     officer_details = page_values[index]
                     officer_details.sort(key=lambda x:x.x)
                     if index in page_values:
