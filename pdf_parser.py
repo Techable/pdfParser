@@ -95,6 +95,7 @@ class PdfParser:
         self.ordinary_num = None
         self.currency = None
         self.activities = None
+        self.temp_officer_names = []
 
 class PdfParserProvider:
 
@@ -287,11 +288,11 @@ class PdfParserProvider:
         temp_page_values = page_values.copy()
         for key, list_of_t in temp_page_values.iteritems():
             values = [t.text for t in list_of_t]
-            # for tmp_key, list_of_t in page_values.iteritems():
-            #     print tmp_key, list_of_t
+            for tmp_key, list_of_t in page_values.iteritems():
+                print tmp_key, list_of_t
             #if 'Shareholder(s)' in values:
             if 'Shareholder(s)' in values or 'Shareholder (s)'in values:
-                index = self.get_index(key, 74.34, [54.82, 97.34, 121.34, 55.48, 55.62], page_values)
+                index = self.get_index(key, 74.34, [54.82, 97.34, 121.34, 55.48, 55.62, 54.75, 74.37], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
                 if index in page_values:
@@ -328,11 +329,13 @@ class PdfParserProvider:
                             index = self.get_index(index, 27.0, [20.20], page_values)
                             #index = round(index - 27.0, 2)
                         elif shareholders_table_fields == 4:
-                            shareholders_dict['name'] = page_values[index][0].text
+                            name_index = round(index - 0.8, 2) if re.match('\d+', page_values[index][0].text) else index
+                            shareholders_dict['name'] = page_values[name_index][0].text
                             shareholders_dict['shareholder_id'] = page_values[index][1].text
                             shareholders_dict['nationality'] = page_values[index][2].text
                             shareholders_dict['source_of_address'] = page_values[index][3].text
-                            index = round(index - 19.40, 2)
+                            index = self.get_index(index, 19.40, [28.80], page_values)
+                            # index = round(index - 19.40, 2)
 
                         if not index in page_values:
                             index = round(index  - 10, 2)
@@ -349,8 +352,9 @@ class PdfParserProvider:
                             shareholders_table_fields = len(page_values[index])
                             if (shareholders_table_fields == 1):
                                 shareholders_dict['address'] = page_values[index][0].text
-                        index = self.get_index(index, 81, [21, 31, 24, 48, 43, 54, 55.18, 58, 70, 99, 1495, 42.02, 43.18, 31.18], page_values)
-
+                        index = self.get_index(index, 81,
+                            [21, 31, 24, 48, 43, 54, 54.58, 55.18, 58, 70, 99, 1495, 42.02, 43.18, 43.25, 31.18,
+                             77.80, 34.98, 31.25, 42.58], page_values)
 
                         if index not in page_values:
                             parser_obj.pending_shareholders_table = shareholders_dict
@@ -361,7 +365,7 @@ class PdfParserProvider:
                                 pref_index = round(index - 47, 2)
                                 ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
                                 if page_values[index][0].text in ordinary_numbers:
-                                    index = self.get_index(index, 27, [22.62, 22.73], page_values)
+                                    index = self.get_index(index, 27, [22.62, 22.73, 22.55], page_values)
                                     shareholders_dict['ordinary_num'] = page_values[index][0].text
                                     if len(page_values[index]) == 1:
                                         index = self.get_index_by_operation(index, 0.5, [0.45], page_values)
@@ -373,13 +377,16 @@ class PdfParserProvider:
                                     index = round(pref_index - 27, 2)
                                     shareholders_dict['pref_num'] = page_values[index][0].text
                                     shareholders_dict['pref_currency'] = page_values[index][1].text
+                            elif shareholders_table_fields == 1:
+                                shareholders_dict['ordinary_num'] = page_values[index][0].text
+                                shareholders_dict['currency'] = page_values[round(index + 0.5, 2)][0].text
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             break
 
                         parser_obj.shareholders_details.append(shareholders_dict)
                         records_id = records_id + 1
-                        index = self.get_index(index, 24, [71, 28.5], page_values)
+                        index = self.get_index(index, 24, [71, 28.5, 28.0], page_values)
 
                     if index in page_values:
                         shareholders_table_fields = len(page_values[index])
@@ -547,7 +554,6 @@ class PdfParserProvider:
         for key, list_of_t in page_values.iteritems():
             values = [t.text for t in list_of_t]
             if 'Capital' in values:
-                # TODO: bhavani '59.75, 59.82' has been removed below which fixes new pdfs but failing old ones
                 index = self.get_proper_index(key, 75.34, [75.37, 59.75, 59.82, 60.48], page_values)
                 records_id = 0
                 #To check if the Charges table is empty
@@ -571,7 +577,7 @@ class PdfParserProvider:
                                         'share_type':''}
 
                         capital_dict['amount'] = amount
-                        # TODO: bhavani shares is float type
+                        # TODO: shares is float type
                         capital_dict['shares'] = float(page_values[index][0].text)
                         capital_dict['currency'] = page_values[index][1].text
                         capital_dict['share_type'] = page_values[index][2].text
@@ -661,8 +667,6 @@ class PdfParserProvider:
                             'address': '',
                             'position': ''
                         }
-
-                        # TODO bhavani below is the updated code
                         if(charge_table_fields == 4):
                             if parser_obj.pending_officers_table is None:
                                 officers_dict['name'] = officer_details[0].text
@@ -684,19 +688,28 @@ class PdfParserProvider:
                                 index = round(index - 31.30, 2)
                         elif(charge_table_fields == 3):
                             if parser_obj.pending_officers_table is None:
-                                officers_dict['name'] = officer_details[0].text
-                                officers_dict['officer_id'] = officer_details[1].text
-                                officers_dict['source_of_address'] = officer_details[2].text
-                                index = round(index + 0.75, 2)
-                                officers_dict['nationality'] = page_values[index][0].text
-                                index = round(index - 0.7, 2)
-                                officers_dict['date_of_appointment'] = page_values[index][0].text
-                                # temp_index = round(index + 53.90, 2)
-                                # import ipdb;ipdb.set_trace()
-                                # if temp_index in page_values and officers_dict not in parser_obj.officers_details:
-                                #     index = temp_index
-                                # else:
-                                index = round(index - 89.80, 2)
+                                date_of_appointment_match = re.match('\d+/\d+/\d+', officer_details[2].text)
+                                if date_of_appointment_match:
+                                    officers_dict['officer_id'] = officer_details[0].text
+                                    officers_dict['source_of_address'] = officer_details[1].text
+                                    officers_dict['date_of_appointment'] = officer_details[2].text
+                                    index = round(index - 0.8, 2)
+                                    officers_dict['name'] = page_values[index][0].text
+                                    index = round(index + 1.55, 2)
+                                    officers_dict['nationality'] = page_values[index][0].text
+                                    index = round(index - 31.3, 2)
+                                else:
+                                    officers_dict['name'] = officer_details[0].text
+                                    officers_dict['officer_id'] = officer_details[1].text
+                                    officers_dict['source_of_address'] = officer_details[2].text
+                                    index = round(index + 0.75, 2)
+                                    officers_dict['nationality'] = page_values[index][0].text
+                                    index = round(index - 0.7, 2)
+                                    officers_dict['date_of_appointment'] = page_values[index][0].text
+                                    officer_names = {officer['name'] for officer in parser_obj.officers_details}
+                                    index = self.get_index(index, 17.95, [89.80], page_values)
+                                    if officers_dict['name'] in officer_names:
+                                        break
                         else:
                             if parser_obj.pending_officers_table is None:
                                 officers_dict['name'] = officer_details[0].text
@@ -706,14 +719,8 @@ class PdfParserProvider:
                                 date_of_appointment_str = officer_details[4].text
                                 officers_dict['date_of_appointment'] = date_of_appointment_str
                                 index = self.get_proper_index(index, 25, [35], page_values)
-                        # if parser_obj.pending_officers_table is None:
-                        #     officers_dict['name'] = officer_details[0].text
-                        #     officers_dict['officer_id'] = officer_details[1].text
-                        #     officers_dict['nationality'] = officer_details[2].text
-                        #     officers_dict['source_of_address'] = officer_details[3].text
-                        #     date_of_appointment_str = officer_details[4].text
-                        #     officers_dict['date_of_appointment'] = date_of_appointment_str
-                        #     index = self.get_proper_index(index, 25, [35], page_values)
+                                parser_obj.temp_officer_names.append(officers_dict['name'])
+
                         if parser_obj.pending_officers_table is not None:
                             officers_dict = parser_obj.pending_officers_table
                             parser_obj.pending_officers_table = None
@@ -721,9 +728,6 @@ class PdfParserProvider:
                             parser_obj.pending_officers_table = officers_dict
                             break
 
-                        # officers_dict['address'] = page_values[index][0].text
-                        # officers_dict['position'] = page_values[index][1].text
-                        # index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39],page_values)
                         if(len(page_values[index]) == 1):
                             officers_dict['address'] = page_values[index][0].text
                             index = round(index + 0.80, 2)
@@ -732,9 +736,11 @@ class PdfParserProvider:
                         else:
                             officers_dict['address'] = page_values[index][0].text
                             officers_dict['position'] = page_values[index][1].text
-                            temp_index = self.get_index_by_operation(index, 17.9, [17.9], page_values)
+                            temp_index = self.get_proper_index(index, 36,
+                                                              [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95, 29, 32.75],
+                                                              page_values)
                             if temp_index not in page_values:
-                                index = self.get_proper_index(index, 36, [49, 37, 49, 51, 47, 60, 62, 39, 42.95, 54.95, 29, 32.75], page_values)
+                                index = self.get_index_by_operation(index, 17.9, [17.9], page_values)
                             else:
                                 index = temp_index
                         parser_obj.officers_details.append(officers_dict)
@@ -928,7 +934,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/classic_consumer.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/asr_global.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
