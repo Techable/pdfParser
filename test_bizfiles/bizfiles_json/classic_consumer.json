@@ -1,0 +1,132 @@
+{
+    "activites_description": "TO PROVIDE SERVICES OF SHIP MANAGEMENT, SHIP CHANDLERS \n& OTHER RELATED SERVICE", 
+    "activites_description_2": "HAIR SALON AND RETAILING OF HAIR CARE PRODUCTS", 
+    "activities_1": "47721", 
+    "activities_2": "46900", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "09/01/2012", 
+    "capital": [
+        {
+            "amount": "300000.00", 
+            "capital_type": "capital", 
+            "currency": "300000", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 300000.0
+        }, 
+        {
+            "amount": "300000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200710725", 
+            "charge_org": "STANDARD CHARTERED BANK", 
+            "currency": "", 
+            "date_registered": "05/12/2007", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201114078", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "08/11/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201113940", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "03/11/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200710738", 
+            "charge_org": "STANDARD CHARTERED BANK", 
+            "currency": "", 
+            "date_registered": "05/12/2007", 
+            "id": ""
+        }
+    ], 
+    "company_name": "CLASSIC CONSUMER PRODUCTS PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "31/12/2010", 
+    "date_of_address": "15/09/2010", 
+    "date_of_last_agm": "07/12/2011", 
+    "date_of_last_ar": "03/01/2012", 
+    "date_of_lodgment_of_ar": "03/01/2012", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "29/04/2003", 
+    "officers": [
+        {
+            "address": "124 ANG MO KIO AVENUE 6\n#06-4071\nSINGAPORE (560124)", 
+            "date_of_appointment": "29/04/2003", 
+            "name": "SOWRIRAJAN SRINIVASAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "A0961957", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "99 MEYER ROAD\n#05-02\nSOVEREIGN, THE\nSINGAPORE (437920)", 
+            "date_of_appointment": "29/04/2003", 
+            "name": "SALONI VINAYKANT", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S2592011B", 
+            "position": "DIRECTOR", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "99 MEYER ROAD\n#05-02\nSOVEREIGN, THE\nSINGAPORE (437920)", 
+            "date_of_appointment": "01/07/2007", 
+            "name": "SALONI VINAYKANT", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S2592011B", 
+            "position": "SECRETARY", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000004425652A", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "200303908R", 
+    "shareholders": [
+        {
+            "address": "99 MEYER ROAD\n#05-02\nSOVEREIGN, THE\nSINGAPORE (437920)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS",
+            "name": "SALONI VINAYKANT", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": "299999",
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2592011B", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "124 ANG MO KIO AVENUE 6\n#06-4071\nSINGAPORE (560124)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SOWRIRAJAN SRINIVASAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "A0961957", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "29/04/2003"
+}

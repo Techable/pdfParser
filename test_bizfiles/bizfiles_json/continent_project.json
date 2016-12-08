@@ -1,0 +1,95 @@
+{
+    "activites_description": "MANUFACTURE AND REPAIR OF MARINE ENGINE AND SHIP PARTS", 
+    "activites_description_2": "PETROLEUM, MINING AND PROSPECTING SERVICES", 
+    "activities_1": "30113", 
+    "activities_2": "71126", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "27/01/2014", 
+    "capital": [
+        {
+            "amount": "2000000.00", 
+            "capital_type": "capital", 
+            "currency": "2000000", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 2000000.0
+        }, 
+        {
+            "amount": "2000000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201101702", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "10/02/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201101703", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "10/02/2011", 
+            "id": ""
+        }
+    ], 
+    "company_name": "CONTINENT PROJECTS TECHNOLOGIES PTE LTD", 
+    "company_type": "LIMITED PRIVATE COMPANY", 
+    "date_of_ac_at_last": "30/09/2011", 
+    "date_of_address": "20/01/2010", 
+    "date_of_last_agm": "15/09/2012", 
+    "date_of_last_ar": "15/10/2012", 
+    "date_of_lodgment_of_ar": "15/10/2012", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "02/08/2000", 
+    "officers": [
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "19/08/2005", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "52 STRATHMORE AVENUE\n#09-237\nSINGAPORE (141052)", 
+            "date_of_appointment": "21/10/2010", 
+            "name": "ABBURU VENKATA ANANDA BABU", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7571485H", 
+            "position": "DIRECTOR", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000005408302A", 
+    "registered_office_address": "30 SHAW ROAD\n#04-06\nROCHE BUILDING\nSINGAPORE (367957)", 
+    "registration_no": "200006767K", 
+    "shareholders": [
+        {
+            "address": "30 SHAW ROAD\n#04-06\nROCHE BUILDING\nSINGAPORE (367957)",
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "PACIFIC AND ATLANTIC TRADING PTE. \nLTD.",
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "2000000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201004007E", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "02/08/2000"
+}

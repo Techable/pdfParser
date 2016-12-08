@@ -1,0 +1,144 @@
+{
+    "activites_description": "REPAIR OF SHIPS, TANKERS AND OTHER OCEAN-GOING VESSELS", 
+    "activites_description_2": "MARINE SURVEYING SERVICES OTHER THAN CLASSIFICATION \nSOCIETIES", 
+    "activities_1": "30112", 
+    "activities_2": "52252", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "07/04/2015", 
+    "capital": [
+        {
+            "amount": "500000.00", 
+            "capital_type": "capital", 
+            "currency": "500000", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 500000.0
+        }, 
+        {
+            "amount": "500000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "AVALONTEC ENGINEERING PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "31/03/2014", 
+    "date_of_address": "19/11/2009", 
+    "date_of_last_agm": "19/09/2014", 
+    "date_of_last_ar": "17/10/2014", 
+    "date_of_lodgment_of_ar": "17/10/2014", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "10/03/2009", 
+    "officers": [
+        {
+            "address": "1001-02 RIYA PALACE 4TH CROSS LANE \nLOKHANDWALA COMPLEX\nANDHERI (W) MUMBAI - 53 INDIA", 
+            "date_of_appointment": "10/03/2009", 
+            "name": "CHANDER PRAKASH", 
+            "nationality": "INDIAN", 
+            "officer_id": "B1516340", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "26 JALAN LIMAU BALI\nLIMAU PARK\nSINGAPORE (468497)", 
+            "date_of_appointment": "10/03/2009", 
+            "name": "ANIL KUMAR LUTHRA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2603582A", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "83 HILLVIEW AVENUE\n#07-08\nSINGAPORE (669583)", 
+            "date_of_appointment": "10/03/2009", 
+            "name": "DHEERAJ SONI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7766286C", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "83 HILLVIEW AVENUE\n#07-08\nMERALODGE\nSINGAPORE (669583)", 
+            "date_of_appointment": "31/10/2013", 
+            "name": "SONI KARISHMA MATTA", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S7787677D", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006003724A", 
+    "registered_office_address": "1 BUKIT BATOK CRESCENT\n#05-30\nWCEGA PLAZA\nSINGAPORE (658064)", 
+    "registration_no": "200904266G", 
+    "shareholders": [
+        {
+            "address": "26 JALAN LIMAU BALI\nLIMAU PARK\nSINGAPORE (468497)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "ANIL KUMAR LUTHRA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "100000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2603582A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1001-02 RIYA PALACE 4TH CROSS \nLANE LOKHANDWALA COMPLEX\nANDHERI (W) MUMBAI - 53 INDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "CHANDER PRAKASH", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "22000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "B1516340", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "83 HILLVIEW AVENUE\n#07-08\nMERALODGE\nSINGAPORE (669583)", 
+            "address_changed": null, 
+            "currency": "", 
+            "name": "SONI KARISHMA MATTA", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": null, 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7787677D", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "153 PAVILION CIRCLE\nSINGAPORE (658564)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "JAGJIT SINGH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "50000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1698958D", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "83 HILLVIEW AVENUE\n#07-08\nSINGAPORE (669583)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "DHEERAJ SONI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "258000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7766286C", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "10/03/2009"
+}

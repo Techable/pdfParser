@@ -1,0 +1,114 @@
+{
+    "activites_description": "DEVELOPMENT OF E-COMMERCE APPLICATIONS", 
+    "activites_description_2": "OTHER INFORMATION TECHNOLOGY AND COMPUTER SERVICE \nACTIVITIES", 
+    "activities_1": "62011", 
+    "activities_2": "62090", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "08/11/2013", 
+    "capital": [
+        {
+            "amount": "537887.00", 
+            "capital_type": "capital", 
+            "currency": "537887", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 537887.0
+        }, 
+        {
+            "amount": "537887.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200505766", 
+            "charge_org": "OVERSEA-CHINESE BANKING CORPORATION \nLIMITED", 
+            "currency": "", 
+            "date_registered": "23/09/2005", 
+            "id": ""
+        }
+    ], 
+    "company_name": "VMOKSHA TECHNOLOGIES PTE LTD(w.e.f. 09/07/2001)", 
+    "company_type": "LIMITED PRIVATE COMPANY", 
+    "date_of_ac_at_last": "31/03/2011", 
+    "date_of_address": "12/12/2011", 
+    "date_of_last_agm": "16/08/2013", 
+    "date_of_last_ar": "16/09/2013", 
+    "date_of_lodgment_of_ar": "16/09/2013", 
+    "description": "", 
+    "former_name": "KEMEFS E-SOLUTIONS PTE LTD", 
+    "id": "", 
+    "incorp_date": "07/02/2001", 
+    "officers": [
+        {
+            "address": "219 WEST,81ST STREET,APARTMENT 5-B\nNEWYORK,NY 10024,USA", 
+            "date_of_appointment": "24/02/2011", 
+            "name": "GITANJALI SAWHNEY", 
+            "nationality": "AMERICAN", 
+            "officer_id": "096936879", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "3437 NICHOLSON ROAD DELHI 110006", 
+            "date_of_appointment": "30/05/2006", 
+            "name": "POONAM SAWHNEY", 
+            "nationality": "AMERICAN", 
+            "officer_id": "474190870", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "21/04/2005", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "62 SOUTH BUONA VISTA ROAD\n#01-03\nVISTA PARK\nSINGAPORE (118173)", 
+            "date_of_appointment": "02/07/2012", 
+            "name": "PAWAN GANDHI", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S7165177J", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "3437 NICHOLSON ROAD DELHI 110006\nINDIA", 
+            "date_of_appointment": "28/01/2006", 
+            "name": "RAJEEV SAWHNEY", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1562027", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000005309360A", 
+    "registered_office_address": "1003 BUKIT MERAH CENTRAL\n#04-06\nSINGAPORE (159836)", 
+    "registration_no": "200100799R", 
+    "shareholders": [
+        {
+            "address": "328,BLOCK 309,ROAD 912,NORTH \nSEGAIYA\nP.O. BOX 5485,MANAMA,BAHRAIN", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "CHANCE WORLD INTERNATIONAL \nB.S.C.",
+            "nationality": "BAHRAIN", 
+            "ordinary_num": "537887", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T06UF1032J", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "07/02/2001"
+}

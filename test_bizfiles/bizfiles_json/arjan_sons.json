@@ -1,0 +1,111 @@
+{
+    "activites_description": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL", 
+    "activites_description_2": "", 
+    "activities_1": "46900", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "13/12/2010", 
+    "capital": [
+        {
+            "amount": "3.00", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 3.0
+        }, 
+        {
+            "amount": "3.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "B. ARJAN & SONS PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "13/12/2010", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "13/12/2010", 
+    "officers": [
+        {
+            "address": "8 DUNBAR WALK", 
+            "date_of_appointment": "13/12/2010", 
+            "name": "SUNIL ARJANDAS HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1582997D", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8 DUNBAR WALK", 
+            "date_of_appointment": "13/12/2010", 
+            "name": "VARKHA S HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1780012D", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8 DUNBAR WALK", 
+            "date_of_appointment": "13/12/2010", 
+            "name": "VIVEK SUNILCHAND HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S9211066D", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD", 
+    "registration_no": "201026310N", 
+    "shareholders": [
+        {
+            "address": "8 DUNBAR WALK", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "VARKHA S HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1780012D", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8 DUNBAR WALK", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "VIVEK SUNILCHAND HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S9211066D", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8 DUNBAR WALK", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SUNIL ARJANDAS HATHIRAMANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1582997D", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "13/12/2010"
+}

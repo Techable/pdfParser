@@ -1,0 +1,221 @@
+{
+    "activites_description": "EXPLORATION,DRILLING,EXTRACTION,PRODUCTION OF MINERAL OILS,NATYRAL GAS.", 
+    "activites_description_2": "BUSINESS OF FINANCE,INVESTMENT & TRADING,HIRE PURCHASE,LEASING & FINANCE\nLEASE",
+    "activities_1": "PETROLEUM, MINING AND PROSPECTING SERVICES (71126)", 
+    "activities_2": "OTHER INVESTMENT HOLDING COMPANIES (64202)", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "52318750", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 52318750.0
+        }, 
+        {
+            "amount": "52318750", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201404925", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "20/05/2014", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201506669", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "12/06/2015", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201407663", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "23/07/2014", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201404921", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "20/05/2014", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201414570", 
+            "charge_org": "AXIS BANK LIMITED\nSINGAPORE BRANCH", 
+            "currency": "", 
+            "date_registered": "19/12/2014", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201404920", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "20/05/2014", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201503642", 
+            "charge_org": "AXIS BANK LIMITED\nSINGAPORE BRANCH", 
+            "currency": "", 
+            "date_registered": "20/03/2015", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201406448", 
+            "charge_org": "THE BANK OF NOVA SCOTIA\nASIA LIMITED", 
+            "currency": "", 
+            "date_registered": "30/06/2014", 
+            "id": ""
+        }
+    ], 
+    "company_name": "VIRTUE DRILLING PTE. LTD.", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "31/03/2015", 
+    "date_of_address": "31/07/2013", 
+    "date_of_last_agm": "18/08/2015", 
+    "date_of_last_ar": "14/09/2015", 
+    "date_of_lodgment_of_ar": "14/09/2015", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "25/04/2006", 
+    "officers": [
+        {
+            "address": "132 LORONG L TELOK KURAU\n#02-04\nSINGAPORE (425569)", 
+            "date_of_appointment": "02/11/2015", 
+            "name": "RAJ KUMAR SAH", 
+            "nationality": "INDIAN", 
+            "officer_id": "G6274881N", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "14 BEDOK SOUTH AVENUE 2\n#09-582\nSINGAPORE (460014)", 
+            "date_of_appointment": "12/06/2014", 
+            "name": "SUBRAMANIAN SATHISH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2599941Z", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "61 MEYER ROAD\n#16-07\nTHE ATRIA AT MEYER\nSINGAPORE (437885)", 
+            "date_of_appointment": "01/07/2006", 
+            "name": "RAGHAV JINDAL", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S8068665Z", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "203E COMPASSVALE ROAD\n#14-79\nSINGAPORE (545203)", 
+            "date_of_appointment": "24/10/2014", 
+            "name": "MANICKAM CHETTIAR NACHIAPPAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2742392B", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "60 ANSON ROAD\n#18-03A\nMAPLETREE ANSON\nSINGAPORE (079914)", 
+    "registration_no": "200605972D", 
+    "shareholders": [
+        {
+            "address": "C/O OCRA (MAURITIUS) LIMITED,\nMAX CITY BUILDING\n2ND FLOOR, REMY OILER STREET,\nPORT LOUIS, MAURITIUS", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "T07UF1046C", 
+            "nationality": "ACRA", 
+            "ordinary_num": "3805000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "MAURITIUS", 
+            "source_of_address": "DEEP VALLEY METAL TRADING CO\nLTD"
+        }, 
+        {
+            "address": "60 ANSON ROAD\n#18-03A\nMAPLETREE ANSON\nSINGAPORE (079914)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "MAHARASHTRA SEAMLESS\n(SINGAPORE) PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "4661125", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201113703H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "MAX CITY BLG, II FLOOR, REMY\nOILER ST, PORT LOUIS", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "VICTORIA METALS INTERNATIONAL\nLTD", 
+            "nationality": "OTHERS", 
+            "ordinary_num": "2891800", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T07UF1045G", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "PLOT NO:30,INSTITUTIONAL\nSECTOR 44,GURGAON\nHARYANA  122002, INDIA.", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "JINDAL DRILLING & INDUSTRIES\nLTD", 
+            "nationality": "INDIA", 
+            "ordinary_num": "13983375", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T07UF0928A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "60 ANSON ROAD\n#18-03A\nMAPLETREE ANSON\nSINGAPORE (079914)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "DISCOVERY DRILLING PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "570750", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "200605955K", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "MILL MALL TOWER,2ND FLOOR\nWICKHAMS CAY 1\nP.O.BOX 4406,ROAD TOWN,\nTORTOLA BRITISH VIRGIN ISLAND", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "GATALINIA LIMITED", 
+            "nationality": "VIRGIN ISLANDS, BRITISH", 
+            "ordinary_num": "2625450", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T14UF3533A", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "25/04/2006"
+}

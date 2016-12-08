@@ -1,0 +1,87 @@
+{
+    "activites_description": "WHOLESALE OF CHEMICALS AND CHEMICAL PRODUCTS NEC", 
+    "activites_description_2": "64202", 
+    "activities_1": "46649", 
+    "activities_2": "64202", 
+    "audit_firm_name": "", 
+    "bizfile_date": "14/07/2015", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "1", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "SAARTHY GROUP PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "14/07/2015", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "14/07/2015", 
+    "officers": [
+        {
+            "address": "8/3, PARSON TOWER B PANTHEON ROAD \nEGMORE\nCHENNAI INDIA", 
+            "date_of_appointment": "14/07/2015", 
+            "name": "SHIKHAR HARNWAL", 
+            "nationality": "INDIAN", 
+            "officer_id": "M3040692", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "506 WEST COAST DRIVE\n#11-209\nWEST COAST VISTA\nSINGAPORE (120506)", 
+            "date_of_appointment": "14/07/2015", 
+            "name": "RAJA MUHAMMAD SHAH BIN ABDULLAH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1392101F", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "506 WEST COAST DRIVE\n#11-209\nWEST COAST VISTA\nSINGAPORE (120506)", 
+            "date_of_appointment": "14/07/2015", 
+            "name": "RAJA MUHAMMAD SHAH BIN ABDULLAH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1392101F", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006157499A", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "201528926K", 
+    "shareholders": [
+        {
+            "address": "8/3, PARSON TOWER B PANTHEON \nROAD EGMORE\nCHENNAI INDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SHIKHAR HARNWAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "M3040692", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "14/07/2015"
+}

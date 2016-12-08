@@ -1,0 +1,87 @@
+{
+    "activites_description": "BUSINESS AND MANAGEMENT CONSULTANCY SERVICES", 
+    "activites_description_2": "", 
+    "activities_1": "70201", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "07/11/2013", 
+    "capital": [
+        {
+            "amount": "100.00", 
+            "capital_type": "capital", 
+            "currency": "100", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 100.0
+        }, 
+        {
+            "amount": "100.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "WORLD NETWORK CONSULTING PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "22/10/2012", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "22/10/2012", 
+    "officers": [
+        {
+            "address": "FLAT - B, SERENE APARTMENTS, AI / \n92/2,\n9TH MAIN ROAD, ANNA NAGAR, CHENNAI \n- 600040, TAMILNADU", 
+            "date_of_appointment": "05/11/2013", 
+            "name": "DHANYA PANDALAI NAYAR", 
+            "nationality": "INDIAN", 
+            "officer_id": "J4443211", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "22/10/2012", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "NO AI, FLAT B 9TH MAIN ROAD \nANNANAGAR\nCHENNAI 600040 TAMILNADU INDIA", 
+            "date_of_appointment": "23/10/2012", 
+            "name": "JAGADAMBIKA PANDALAI NAYAR", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1745868", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000005307220A", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "201225993G", 
+    "shareholders": [
+        {
+            "address": "", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "S2662860A", 
+            "nationality": "ACRA", 
+            "ordinary_num": "100", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "SINGAPORE CITIZEN", 
+            "source_of_address": "14/03/2013"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "22/10/2012"
+}

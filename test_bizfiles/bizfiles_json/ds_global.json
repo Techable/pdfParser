@@ -1,0 +1,158 @@
+{
+    "activites_description": "", 
+    "activites_description_2": "", 
+    "activities_1": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS AND EXPORTERS)\n(46900)", 
+    "activities_2": "", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "6155000", 
+            "capital_type": "capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "PREFERENCE", 
+            "shares": 6155000.0
+        }, 
+        {
+            "amount": "2200000", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "PREFERENCE", 
+            "shares": 2200000.0
+        }, 
+        {
+            "amount": "6279000", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 6279000.0
+        }, 
+        {
+            "amount": "6155000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "PREFERENCE", 
+            "shares": null
+        }, 
+        {
+            "amount": "2200000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "PREFERENCE", 
+            "shares": null
+        }, 
+        {
+            "amount": "6279000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "DS GLOBAL MARKETING PTE. LTD.", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "31/03/2015", 
+    "date_of_address": "30/10/2015", 
+    "date_of_last_agm": "09/03/2016", 
+    "date_of_last_ar": "16/03/2016", 
+    "date_of_lodgment_of_ar": "16/03/2016", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "05/10/2013", 
+    "officers": [
+        {
+            "address": "133 EDGEDALE PLAINS\n#06-56\nSINGAPORE (820133)", 
+            "date_of_appointment": "17/02/2014", 
+            "name": "BHATIA PHALJOT KAUR", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S8277818G", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "53A GRANGE ROAD\n#02-04\nSPRING GROVE\nSINGAPORE (249566)", 
+            "date_of_appointment": "17/05/2016", 
+            "name": "BANERJEE PRIYANKA", 
+            "nationality": "INDIAN", 
+            "officer_id": "S7966902D", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "3 CENTRAL BOULEVARD\n#11-02\nMARINA BAY SUITES\nSINGAPORE (018965)", 
+            "date_of_appointment": "22/09/2015", 
+            "name": "JOENSSON BENGT SIMON", 
+            "nationality": "SWEDISH", 
+            "officer_id": "G3191739K", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "33 JALAN MUTIARA\n#11-04\nLATITUDE\nSINGAPORE (249208)", 
+            "date_of_appointment": "04/05/2016", 
+            "name": "RAJIV KUMAR GUPTA", 
+            "nationality": "INDIAN", 
+            "officer_id": "S2771098J", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "E-1A MAHARANI BAGH NEW DELHI 110065\nINDIA", 
+            "date_of_appointment": "05/10/2013", 
+            "name": "ROHAN KUMAR GUPTA", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2098536", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "506 WEST COAST DRIVE\n#11-209\nWEST COAST VISTA\nSINGAPORE (120506)", 
+            "date_of_appointment": "01/09/2015", 
+            "name": "RAJA MUHAMMAD SHAH BIN ABDULLAH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1392101F", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "77 ROBINSON ROAD\n#34-21\nROBINSON 77\nSINGAPORE (068896)", 
+    "registration_no": "201327053C", 
+    "shareholders": [
+        {
+            "address": "171 TRAS STREET\n#04-171A\nUNION BUILDING\nSINGAPORE (079025)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "DSL GLOBAL PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "3767400", 
+            "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "pref_num": "6155000", 
+            "shareholder_id": "201218830N", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "77 ROBINSON ROAD\n#34-00\nROBINSON 77\nSINGAPORE (068896)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "RK TECHNOLOGY & INVESTMENTS\nPTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "2511600", 
+            "pref_currency": "SINGAPORE, DOLLARS", 
+            "pref_num": "2200000", 
+            "shareholder_id": "201320101R", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "05/10/2013"
+}

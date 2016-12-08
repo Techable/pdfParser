@@ -1,0 +1,78 @@
+{
+    "activites_description": "FUND MANAGEMENT ACTIVITIES NEC", 
+    "activites_description_2": "", 
+    "activities_1": "66309", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "24/08/2015", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "1", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "THE ALTERNATIVE ENERGY FUND CAPITAL ADVISORS PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "24/08/2015", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "24/08/2015", 
+    "officers": [
+        {
+            "address": "6 WINDSOR PARK HILL\nWINDSOR PARK ESTATE\nSINGAPORE (574198)", 
+            "date_of_appointment": "24/08/2015", 
+            "name": "WONG HSIEN XIONG", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S8341014J", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B1/302 THE WORLD SPA-WEST, \nSECTOR-30\nGURGAON-122001, HARYANA INDIA", 
+            "date_of_appointment": "24/08/2015", 
+            "name": "AJOY BIJAPURKAR", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2009154", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006225626A", 
+    "registered_office_address": "30 RAFFLES PLACE\n#12-01\nCHEVRON HOUSE\nSINGAPORE (048622)", 
+    "registration_no": "201532729N", 
+    "shareholders": [
+        {
+            "address": "30 RAFFLES PLACE\n#12-01\nCHEVRON HOUSE\nSINGAPORE (048622)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "CHAWLA ANIL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G6283931M", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "24/08/2015"
+}

@@ -1,0 +1,147 @@
+{
+    "activites_description": "", 
+    "activites_description_2": "", 
+    "activities_1": "SOFTWARE CONSULTANCY (62022)", 
+    "activities_2": "DEVELOPMENT OF E-COMMERCE APPLICATIONS (62011)", 
+    "audit_firm_name": "", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [], 
+    "charges": [], 
+    "company_name": "MINDTREE LIMITED (SINGAPORE BRANCH) (w.e.f.28/03/2008)", 
+    "company_type": "FOREIGN COMPANY REGISTERED IN SINGAPORE", 
+    "date_of_ac_at_last": "31/03/2015", 
+    "date_of_address": "16/10/2012", 
+    "date_of_last_agm": "22/06/2015", 
+    "date_of_last_ar": "21/12/2015", 
+    "date_of_lodgment_of_ar": "21/12/2015", 
+    "description": "", 
+    "former_name": "MINDTREE CONSULTING LIMITED SINGAPORE BRANCH", 
+    "id": "", 
+    "incorp_date": "29/05/2001", 
+    "officers": [
+        {
+            "address": "FLAT NO 641, THE EMBASSY\n15 ALI ASKER ROAD, BANGALORE - 560 052", 
+            "date_of_appointment": "20/05/2014", 
+            "name": "ROSTOW RAVANAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1865171", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "#248, 19TH MAIN, 15TH CROSS, HSR LAYOUT,\nSTAGE IV,, BANGALORE, 560034, KARNATAKA,\nINDIA", 
+            "date_of_appointment": "05/08/1999", 
+            "name": "SUBROTO BAGCHI", 
+            "nationality": "INDIAN", 
+            "officer_id": "H0248118", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT NO. 402, SUNRISE APARTMENT, SAI\nROAD, OFF AMBEDKAR ROAD\nNR. PALI NAKA, MUMBAI, 400050,\nMAHARASHTRA, INDIA", 
+            "date_of_appointment": "01/01/2014", 
+            "name": "APURVA PUROHIT", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1893778", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "565, 3RD BLOCK RMV 2ND STAGE BANGALORE\n- 560 094\nINDIA", 
+            "date_of_appointment": "02/05/2012", 
+            "name": "SHRI RAMESH RAMANATHAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1181212", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "IIM BANGALORE CAMPUS, BANNERGHATTA\nROAD,\nBANGALORE 560076, KARNATAKA, INDIA", 
+            "date_of_appointment": "19/03/2012", 
+            "name": "PANKAJ CHANDRA", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2342412", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "E/201-202, SITA VIHAR, NEAR DAMANI ESTATE\nLBS MARG, NAUPADA,THANE WEST, MS -\n400602", 
+            "date_of_appointment": "19/07/2016", 
+            "name": "SARWATE MILIND SHRIPAD", 
+            "nationality": "INDIAN", 
+            "officer_id": "H4769263", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "71, CHITRAKOOT ALTAMOUNT ROAD,\nMUMBAI 400026 MAHARASHTRA, INDIA", 
+            "date_of_appointment": "20/05/2014", 
+            "name": "MANISHA GIROTRA", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2477247", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "S-67, GOLDEN ENCLAVE APARTMENTS\nHAL AIRPORT ROAD, BANGALORE - 560 017", 
+            "date_of_appointment": "01/04/2014", 
+            "name": "KRISHNA KUMAR NATARAJAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1730813", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "AMALGAMATED BEAN COFFEE TRADING CO\nLTD, 23/2,\nVITTAL MALLYA ROAD,, BANGALORE, 560001,\nKARNATAKA, INDIA", 
+            "date_of_appointment": "20/01/2000", 
+            "name": "VG SIDDHARTHA", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1558049", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "36, 'BILAHARI', 4TH CROSS, KEB LAYOUT,\nGEDDALAHALLI,\nBANGALORE, 560094, KARNATAKA, INDIA", 
+            "date_of_appointment": "01/01/2014", 
+            "name": "NAMAKAL SRINIVASAN  PARTHASARATHY", 
+            "nationality": "INDIAN", 
+            "officer_id": "G1213170", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "PFAFFEN AECKER 6A, LOHR AM MAIN, 97816,\nGERMANY", 
+            "date_of_appointment": "24/10/2006", 
+            "name": "ALBERT HIERONIMUS", 
+            "nationality": "DUTCH", 
+            "officer_id": "CGKVVXZ8K", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "Authorised Representative", 
+            "date_of_appointment": "22/03/2015", 
+            "name": "MOHAMMAD ABDUL SHAMSHEER", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S8064693C", 
+            "position": "269 TAMPINES STREET 21\n#02-223\nSINGAPORE (520269)", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "Authorised Representative", 
+            "date_of_appointment": "24/11/2008", 
+            "name": "SAGAR PAUL", 
+            "nationality": "INDIAN", 
+            "officer_id": "G6081645Q", 
+            "position": "62 BAYSHORE ROAD\n#22-01\nBAYSHORE PARK\nSINGAPORE (469983)", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "17 CHANGI BUSINESS PARK\nCENTRAL 1\n#05-03\nHONEYWELL BUILDING\nSINGAPORE (486073)", 
+    "registration_no": "T01FC6073G", 
+    "shareholders": [], 
+    "status": "Live Company", 
+    "status_date": "29/05/2001"
+}

@@ -1,0 +1,335 @@
+{
+    "activites_description": "", 
+    "activites_description_2": "", 
+    "activities_1": "DEPARTMENT STORES CUM SUPERMARKETS (INCLUDING HYPERMARKETS) (47192)", 
+    "activities_2": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS AND EXPORTERS)\n(46900)", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "13340000", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 13340000.0
+        }, 
+        {
+            "amount": "13340000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200806091", 
+            "charge_org": "CITIBANK N.A.", 
+            "currency": "", 
+            "date_registered": "04/07/2008", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201506860", 
+            "charge_org": "EXPORT-IMPORT BANK OF\nINDIA", 
+            "currency": "", 
+            "date_registered": "18/06/2015", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201202023", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "22/02/2012", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200700135", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "08/01/2007", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201007219", 
+            "charge_org": "UNITED OVERSEAS BANK\nLIMITED", 
+            "currency": "", 
+            "date_registered": "17/08/2010", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200700134", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "08/01/2007", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201205484", 
+            "charge_org": "OVERSEA-CHINESE BANKING\nCORPORATION LIMITED", 
+            "currency": "", 
+            "date_registered": "18/05/2012", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201603716", 
+            "charge_org": "THE HONGKONG AND\nSHANGHAI BANKING\nCORPORATION LIMITED", 
+            "currency": "", 
+            "date_registered": "05/04/2016", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200608068", 
+            "charge_org": "AUSTRALIA AND NEW\nZEALAND BANKING GROUP\nLIMITED", 
+            "currency": "", 
+            "date_registered": "29/11/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201105789", 
+            "charge_org": "INDIAN OVERSEAS BANK", 
+            "currency": "", 
+            "date_registered": "12/05/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201603718", 
+            "charge_org": "THE HONGKONG AND\nSHANGHAI BANKING\nCORPORATION LIMITED", 
+            "currency": "", 
+            "date_registered": "05/04/2016", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200305669", 
+            "charge_org": "MALAYAN BANKING BERHAD", 
+            "currency": "", 
+            "date_registered": "26/11/2003", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201603720", 
+            "charge_org": "THE HONGKONG AND\nSHANGHAI BANKING\nCORPORATION LIMITED", 
+            "currency": "", 
+            "date_registered": "05/04/2016", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201604578", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "04/05/2016", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201112082", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "27/09/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201112085", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "27/09/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201008079", 
+            "charge_org": "INDIAN OVERSEAS BANK", 
+            "currency": "", 
+            "date_registered": "11/09/2010", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200403202", 
+            "charge_org": "UCO BANK", 
+            "currency": "", 
+            "date_registered": "02/07/2004", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200502824", 
+            "charge_org": "STANDARD CHARTERED\nBANK (SINGAPORE) LIMITED", 
+            "currency": "", 
+            "date_registered": "17/05/2005", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200803214", 
+            "charge_org": "INDIAN OVERSEAS BANK", 
+            "currency": "", 
+            "date_registered": "08/04/2008", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200305316", 
+            "charge_org": "THE HONGKONG AND\nSHANGHAI BANKING\nCORPORATION LIMITED", 
+            "currency": "", 
+            "date_registered": "07/11/2003", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201202022", 
+            "charge_org": "DBS BANK LTD.", 
+            "currency": "", 
+            "date_registered": "22/02/2012", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201402458", 
+            "charge_org": "CTBC BANK CO., LTD.", 
+            "currency": "", 
+            "date_registered": "06/03/2014", 
+            "id": ""
+        }
+    ], 
+    "company_name": "MOHAMED MUSTAFA & SAMSUDDIN CO. PTE LTD", 
+    "company_type": "EXEMPT PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "30/06/2015", 
+    "date_of_address": "28/02/1989", 
+    "date_of_last_agm": "05/11/2015", 
+    "date_of_last_ar": "01/12/2015", 
+    "date_of_lodgment_of_ar": "01/12/2015", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "21/02/1989", 
+    "officers": [
+        {
+            "address": "119 KENG LEE ROAD\n#01-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "24/12/2014", 
+            "name": "ABU OSAMA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7170545E", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#03-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "03/09/2001", 
+            "name": "IQBAL AHMAD", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2586147G", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#07-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "14/02/2001", 
+            "name": "SHAMA BANO", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7770799I", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "21/02/1989", 
+            "name": "MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2019378F", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "19/06/1991", 
+            "name": "ISHRET JAHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2595621D", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#03-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "17/01/1994", 
+            "name": "IQBAL AHMAD", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2586147G", 
+            "position": "Secretary", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "668 CHANDER ROAD\n#02-18\nSINGAPORE (210668)", 
+    "registration_no": "198900680Z", 
+    "shareholders": [
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "ISHRET JAHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "1165667", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2595621D", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\nSINGAPORE (308405)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "ESTATE OF MUSTAFA (DECEASED)", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": "2000914", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2101665I", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "MUSTAQ AHMAD @ MUSHTAQ\nAHMAD S/O MUSTAFA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "8172504", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2019378F", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "5 VERDUN ROAD\n#07-02\nSPA BUILDING\nSINGAPORE (207274)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "ESTATE OF SHAMSUDDIN\n(DECEASED)", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": "2000915", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2077946B", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "21/02/1989"
+}

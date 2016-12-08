@@ -1,0 +1,120 @@
+{
+    "activites_description": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS \nAND EXPORTERS)", 
+    "activites_description_2": "WHOLESALE OF OTHER SPECIFIC COMMODITIES NEC", 
+    "activities_1": "46900", 
+    "activities_2": "46699", 
+    "audit_firm_name": "", 
+    "bizfile_date": "21/07/2015", 
+    "capital": [
+        {
+            "amount": "4.00", 
+            "capital_type": "capital", 
+            "currency": "4", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 4.0
+        }, 
+        {
+            "amount": "4.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "FORTUNE8 ACCESS PTE. LTD.", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "21/07/2015", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "21/07/2015", 
+    "officers": [
+        {
+            "address": "3069 GLANCY DR SAN DIEGO CALIFORNIA\nUSA 92173", 
+            "date_of_appointment": "21/07/2015", 
+            "name": "PEREZ CARINA AMIX", 
+            "nationality": "AMERICAN", 
+            "officer_id": "506211451", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "5090 FILMORE ST PALANAN\nMAKATI CITY PHILIPPINES", 
+            "date_of_appointment": "21/07/2015", 
+            "name": "CAPARROS NORA DE LEON", 
+            "nationality": "FILIPINO", 
+            "officer_id": "EB6845132", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "44 JALAN PARI KIKIS\nPEAKVIEW ESTATE\nSINGAPORE (488574)", 
+            "date_of_appointment": "21/07/2015", 
+            "name": "MOHAMAD NASIR BIN MOHAMAD ISMAIL", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1198399E", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "44 JALAN PARI KIKIS\nPEAKVIEW ESTATE\nSINGAPORE (488574)", 
+            "date_of_appointment": "21/07/2015", 
+            "name": "MOHAMAD NASIR BIN MOHAMAD ISMAIL", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1198399E", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006168175A", 
+    "registered_office_address": "113 EUNOS AVENUE 3\n#07-10\nGORDON INDUSTRIAL BUILDING\nSINGAPORE (409838)", 
+    "registration_no": "201529534Z", 
+    "shareholders": [
+        {
+            "address": "3069 GLANCY DR SAN DIEGO \nCALIFORNIA\nUSA 92173", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "PEREZ CARINA AMIX", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": "2", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "506211451", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "5090 FILMORE ST PALANAN\nMAKATI CITY PHILIPPINES", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "CAPARROS NORA DE LEON", 
+            "nationality": "FILIPINO", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "EB6845132", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SINGAPORE CITIZEN", 
+            "nationality": "15/12/2013", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "ACRA", 
+            "source_of_address": "3"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "21/07/2015"
+}

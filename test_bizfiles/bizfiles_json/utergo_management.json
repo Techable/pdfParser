@@ -1,0 +1,69 @@
+{
+    "activites_description": "OTHER RESTAURANTS, CAFES AND BARS", 
+    "activites_description_2": "CABARETS, NIGHT CLUBS, DISCOTHEQUES AND KARAOKE \nLOUNGES", 
+    "activities_1": "56190", 
+    "activities_2": "93203", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "27/05/2015", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "1", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "UTERO MANAGEMENT PTE. LTD.", 
+    "company_type": "LIMITED PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "26/02/2015", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "26/02/2015", 
+    "officers": [
+        {
+            "address": "57 MIMOSA ROAD\n#07-59\nMIMOSA PARK\nSINGAPORE (808014)", 
+            "date_of_appointment": "26/02/2015", 
+            "name": "JULIUS HARRISON PEREIRA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1510444I", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006072774A", 
+    "registered_office_address": "15 HONGKONG STREET\n#03-01\nNOVELTY HOUSE, THE\nSINGAPORE (059658)", 
+    "registration_no": "201505167K", 
+    "shareholders": [
+        {
+            "address": "15 HONGKONG STREET\n#03-01\nNOVELTY HOUSE, THE\nSINGAPORE (059658)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "LEC GROUP PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201427604Z", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "26/02/2015"
+}

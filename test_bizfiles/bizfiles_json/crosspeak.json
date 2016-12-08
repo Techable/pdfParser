@@ -1,0 +1,78 @@
+{
+    "activites_description": "", 
+    "activites_description_2": "", 
+    "activities_1": "DEVELOPMENT OF OTHER SOFTWARE AND PROGRAMMING ACTIVITIES NEC (62019)", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "30/03/2016", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS",
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "CROSSPEAK PTE. LTD.", 
+    "company_type": "EXEMPT PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "30/03/2016", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "30/03/2016", 
+    "officers": [
+        {
+            "address": "2 ESSEX ROAD\n#10-08\nLION TOWERS\nSINGAPORE (309330)", 
+            "date_of_appointment": "30/03/2016", 
+            "name": "N SRIRAM", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S8924780B", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2 ESSEX ROAD\n#10-08\nLION TOWERS\nSINGAPORE (309330)", 
+            "date_of_appointment": "30/03/2016", 
+            "name": "RAJALAKSHMI NARAYANAMOHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2574106D", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160330003988", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#10-05/06\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "201608222M", 
+    "shareholders": [
+        {
+            "address": "2 ESSEX ROAD\n#10-08\nLION TOWERS\nSINGAPORE (309330)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "N SRIRAM", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "1", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S8924780B", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "30/03/2016"
+}

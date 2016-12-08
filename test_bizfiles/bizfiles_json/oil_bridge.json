@@ -1,0 +1,121 @@
+{
+    "activites_description": "OIL TRADING, LOGISTICS & STORAGE", 
+    "activites_description_2": "", 
+    "activities_1": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS AND EXPORTERS)\n(46900)", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "13/04/2016", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "CREDIT SUISSE AG", 
+            "charge_no": "05/01/2015", 
+            "charge_org": "C201500142", 
+            "currency": "", 
+            "date_registered": "All Monies", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "CREDIT SUISSE AG", 
+            "charge_no": "05/01/2015", 
+            "charge_org": "C201500145", 
+            "currency": "", 
+            "date_registered": "All Monies", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "CREDIT SUISSE AG", 
+            "charge_no": "05/01/2015", 
+            "charge_org": "C201500150", 
+            "currency": "", 
+            "date_registered": "All Monies", 
+            "id": ""
+        }
+    ], 
+    "company_name": "OIL BRIDGE PTE. LTD.", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "12/11/2014", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "12/11/2014", 
+    "officers": [
+        {
+            "address": "THAYULLATHIL POST PALLOOR MAHE", 
+            "date_of_appointment": "12/11/2014", 
+            "name": "AJIT KUMAR THAROOR PUTHANVEETIL", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2660394", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "203E COMPASSVALE ROAD\n#14-79\nSINGAPORE (545203)", 
+            "date_of_appointment": "12/11/2014", 
+            "name": "MANICKAM CHETTIAR NACHIAPPAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2742392B", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "KOZHIKODE DIST KERALA 673020", 
+            "date_of_appointment": "12/11/2014", 
+            "name": "ANIL NAIR", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2696151", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "506 WEST COAST DRIVE\n#11-209\nWEST COAST VISTA\nSINGAPORE (120506)", 
+            "date_of_appointment": "12/11/2014", 
+            "name": "RAJA MUHAMMAD SHAH BIN ABDULLAH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1392101F", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160413002021", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "201433809R", 
+    "shareholders": [
+        {
+            "address": "P.O.BOX 1146 DUBAI, UAE", 
+            "address_changed": null, 
+            "currency": "", 
+            "name": "QUEBEC ENERGY (LLC)", 
+            "nationality": "UNITED ARAB EMIRATES", 
+            "ordinary_num": null, 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T14UF4589D", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "12/11/2014"
+}

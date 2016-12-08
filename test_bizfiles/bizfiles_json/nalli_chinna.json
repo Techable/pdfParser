@@ -1,0 +1,141 @@
+{
+    "activites_description": "WHOLESALE OF TEXTILES", 
+    "activites_description_2": "WHOLESALE OF METALS AND METAL ORES EXCEPT GENERAL \nHARDWARE (EG STEEL PIPES)", 
+    "activities_1": "46411", 
+    "activities_2": "46620", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "04/05/2012", 
+    "capital": [
+        {
+            "amount": "1200002.00", 
+            "capital_type": "capital", 
+            "currency": "1200002", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 1200002.0
+        }, 
+        {
+            "amount": "1200002.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "NALLI CHINNASAMI CHETTY PTE LTD(w.e.f. 19/04/1997)", 
+    "company_type": "LIMITED PRIVATE COMPANY", 
+    "date_of_ac_at_last": "31/12/2010", 
+    "date_of_address": "10/06/1998", 
+    "date_of_last_agm": "31/08/2011", 
+    "date_of_last_ar": "19/09/2011", 
+    "date_of_lodgment_of_ar": "19/09/2011", 
+    "description": "", 
+    "former_name": "CHINNASAMI CHETTY PTE LTD", 
+    "id": "", 
+    "incorp_date": "21/07/1992", 
+    "officers": [
+        {
+            "address": "9 NAGESWARA ROAD, CHENNAI,\nCHENNAI - 600017", 
+            "date_of_appointment": "02/02/2012", 
+            "name": "NALLI NIRANTH", 
+            "nationality": "INDIAN", 
+            "officer_id": "G4197619", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "402 ANG MO KIO AVENUE 10\n#07-611\nSINGAPORE (560402)", 
+            "date_of_appointment": "03/02/2012", 
+            "name": "TAMAS VATHA MANNIKAM @ THOMAS \nS/O VETHAMANICKAM", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S1024674A", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "113 WHAMPOA ROAD\n#04-89\nSINGAPORE (320113)", 
+            "date_of_appointment": "02/02/2012", 
+            "name": "VIJAYALAKSHMI MOHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2625332B", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9 NAGESWARA RAO ROAD\nT'NAGAR MADRAS 600017", 
+            "date_of_appointment": "24/09/1992", 
+            "name": "NALLI KUPPUSWAMI CHETTI", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1762893", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9 NAGESWARA RAO RD\nT'NAGAR MADRAS 600017", 
+            "date_of_appointment": "24/09/1992", 
+            "name": "NALLI RAMANATHAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1763864", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000004563915A", 
+    "registered_office_address": "32 BUFFALO ROAD\nSINGAPORE (219795)", 
+    "registration_no": "199203884C", 
+    "shareholders": [
+        {
+            "address": "9 NAGESWARA RAO ROAD\nT'NAGAR MADRAS 600017", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "NALLI KUPPUSWAMI CHETTI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "45000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1762893", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9 NAGESWARAN ROAD TNAGAR \nCHENNAI 600017\nINDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "NALLI PROCESSING PRIVATE LIMITED", 
+            "nationality": "INDIA", 
+            "ordinary_num": "1000000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T12UF0788E", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9 NAGESWARA RAO ROAD T'NAGAR\nMADRAS 600017", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "NALLI CHINNASAMI CHETTY PVT LTD", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "140002", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "RCB0091574", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9 NAGESWARA RAO RD\nT'NAGAR MADRAS 600017", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "NALLI RAMANATHAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "15000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1763864", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "21/07/1992"
+}

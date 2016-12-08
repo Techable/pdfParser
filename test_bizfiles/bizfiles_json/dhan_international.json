@@ -1,0 +1,138 @@
+{
+    "activites_description": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS \nAND EXPORTERS)", 
+    "activites_description_2": "WHOLESALE ON A FEE OR CONTRACT BASIS (EG COMMISSION \nAGENTS)", 
+    "activities_1": "46900", 
+    "activities_2": "46100", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "27/03/2012", 
+    "capital": [
+        {
+            "amount": "550000.00", 
+            "capital_type": "capital", 
+            "currency": "550000", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 550000.0
+        }, 
+        {
+            "amount": "550000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201202305", 
+            "charge_org": "MALAYAN BANKING BERHAD", 
+            "currency": "", 
+            "date_registered": "29/02/2012", 
+            "id": ""
+        }
+    ], 
+    "company_name": "DHAN INTERNATIONAL EXIM PTE LTD", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "30/06/2011", 
+    "date_of_address": "15/03/2000", 
+    "date_of_last_agm": "30/12/2011", 
+    "date_of_last_ar": "03/02/2012", 
+    "date_of_lodgment_of_ar": "03/02/2012", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "04/04/1988", 
+    "officers": [
+        {
+            "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
+            "date_of_appointment": "04/04/1988", 
+            "name": "SUNDER JASHANMAL SAMNANI S/O J G \nSAMNANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S0712492I", 
+            "position": "DIRECTOR", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "68 GEYLANG BAHRU\n#02-3239\nSINGAPORE (330068)", 
+            "date_of_appointment": "15/06/1988", 
+            "name": "THIYAGARAJAN S/O SUBBIAH \nAMBALAM_(DECEASED)", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S2135389B", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
+            "date_of_appointment": "01/07/2007", 
+            "name": "SANJAY SUNDER SAMNANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7110180J", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
+            "date_of_appointment": "01/08/2007", 
+            "name": "SANJAY SUNDER SAMNANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7110180J", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "66 MEYER ROAD\n#02-01\nSINGAPORE (437894)", 
+            "date_of_appointment": "01/07/2007", 
+            "name": "SAMNANI NEERAJ SUNDER", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7241802F", 
+            "position": "DIRECTOR", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000004516962A", 
+    "registered_office_address": "NO 1 NORTH BRIDGE ROAD\n#11-08\nSINGAPORE (179094)", 
+    "registration_no": "198800995G", 
+    "shareholders": [
+        {
+            "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SUNDER JASHANMAL SAMNANI S/O J \nG SAMNANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "374000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S0712492I", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "66 MEYER ROAD\n#02-01\nSINGAPORE (437894)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SAMNANI NEERAJ SUNDER", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "88000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7241802F", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SANJAY SUNDER SAMNANI", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": "88000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7110180J", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "04/04/1988"
+}

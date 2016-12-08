@@ -1,0 +1,145 @@
+{
+    "activites_description": "", 
+    "activites_description_2": "", 
+    "activities_1": "MANUFACTURE OF OTHER TEXTILES NEC (EG UPHOLSTERY FILLING) (13990)", 
+    "activities_2": "", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "3900000", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 3900000.0
+        }, 
+        {
+            "amount": "3900000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "M I TEXTILES PTE LTD", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "31/03/2015", 
+    "date_of_address": "", 
+    "date_of_last_agm": "25/02/2016", 
+    "date_of_last_ar": "29/03/2016", 
+    "date_of_lodgment_of_ar": "29/03/2016", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "11/10/1997", 
+    "officers": [
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "18/10/2011", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "767 BEDOK RESERVOIR VIEW\n#06-227\nLONGVALE\nSINGAPORE (470767)", 
+            "date_of_appointment": "27/09/1999", 
+            "name": "RAKESH BAJAJ", 
+            "nationality": "INDIAN", 
+            "officer_id": "G3161606P", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "81 VIGYAN VIHAR DELHI 110092\nINDIA", 
+            "date_of_appointment": "05/10/2011", 
+            "name": "SEEMA BAJAJ", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z2766204", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "199707087C", 
+    "shareholders": [
+        {
+            "address": "81 VIGYAN VIHAR DELHI 110092\nINDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SEEMA BAJAJ", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "25000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z2766204", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "767 BEDOK RESERVOIR VIEW\n#06-227\nLONGVALE\nSINGAPORE (470767)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "RAKESH BAJAJ", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "25000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G3161606P", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "MORGAN & MORGAN BUILDING,\nPASEA ESTATE ROAD TOWN\nTORTOLA, BRITISH VIRGIN ISLANDS", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SIDRA FINANCE LTD.", 
+            "nationality": "VIRGIN ISLANDS, BRITISH", 
+            "ordinary_num": "1100000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T16UF0580J", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "807 ROHIT HSE 3 TOLSTOY MARG\nNEW DELHI 110001 INDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "VEENA ENTERPRISES LTD", 
+            "nationality": "INDIA", 
+            "ordinary_num": "1000000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T04UF0058E", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "81 VIGYAN VIHAR\nNEW DELHI-110092, INDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "RAKESH BAJAJ", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "100000", 
+            "shareholder_id": "Z1903897", 
+            "shareholder_type": "A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "81 VIGYAN VIHAR DELHI 110092\nINDIA", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "SEEMA BAJAJ", 
+            "nationality": "INDIAN", 
+            "ordinary_num": "100000", 
+            "shareholder_id": "Z2766204", 
+            "shareholder_type": "A", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "11/10/1997"
+}

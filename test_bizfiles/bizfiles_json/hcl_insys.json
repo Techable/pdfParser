@@ -1,0 +1,124 @@
+{
+    "activites_description": "COMPUTER FACILITIES MANAGEMENT ACTIVITIES, MANAGED SERVICES, CLOUD\nCOMPUTING", 
+    "activites_description_2": "ICT, IT HARDWARE & SOFTWARE, LEARNING SOLUTIONS & SYSTEMS INTEGRATION",
+    "activities_1": "COMPUTER FACILITIES MANAGEMENT ACTIVITIES (62023)", 
+    "activities_2": "OTHER INFORMATION TECHNOLOGY AND COMPUTER SERVICE ACTIVITIES (62090)",
+    "audit_firm_name": "PRICEWATERHOUSECOOPERS  LLP", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "6199991", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 6199991.0
+        }, 
+        {
+            "amount": "11347619", 
+            "capital_type": "capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 11347619.0
+        }, 
+        {
+            "amount": "11347619", 
+            "capital_type": "paid_up_capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }, 
+        {
+            "amount": "6199991", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201303388", 
+            "charge_org": "STANDARD CHARTERED\nBANK", 
+            "currency": "", 
+            "date_registered": "01/03/2013", 
+            "id": ""
+        }
+    ], 
+    "company_name": "HCL INSYS PTE. LTD.", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "30/06/2015", 
+    "date_of_address": "17/12/2009", 
+    "date_of_last_agm": "28/01/2016", 
+    "date_of_last_ar": "18/02/2016", 
+    "date_of_lodgment_of_ar": "18/02/2016", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "17/12/2009", 
+    "officers": [
+        {
+            "address": "37 JURONG EAST AVENUE 1\n#15-04\nPARC OASIS\nSINGAPORE (609775)", 
+            "date_of_appointment": "17/12/2009", 
+            "name": "SUNDARAM SRIDHARAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2664431C", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "C-5/253 SECTOR 31, NOIDA, GAUTAM BUDH\nNAGAR - 201301\nUTTAR PRADESH, INDIA", 
+            "date_of_appointment": "29/05/2015", 
+            "name": "RAVI SHANKAR PADI SUBRAMANIAN", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1941719", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "17/12/2009", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "200923568M", 
+    "shareholders": [
+        {
+            "address": "806, SIDDHARTH, 96, NEHRU PLACE,\nNEW DELHI - 110019", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "HCL SERVICES LIMITED", 
+            "nationality": "OTHERS", 
+            "ordinary_num": "6199991", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T15UF2810A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "806, SIDDHARTH, 96, NEHRU PLACE,\nNEW DELHI - 110019", 
+            "address_changed": null, 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "name": "HCL SERVICES LIMITED", 
+            "nationality": "INDIA", 
+            "ordinary_num": "11347619", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T15UF2809D", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "17/12/2009"
+}

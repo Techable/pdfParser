@@ -1,0 +1,210 @@
+{
+    "activites_description": "",
+    "activites_description_2": "BUSINESS CONSULTANCY SERVICES",
+    "activities_1": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS AND EXPORTERS)\n(46900)", 
+    "activities_2": "OTHER PERSONAL SERVICE ACTIVITIES NEC (96099)", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "21/08/2016", 
+    "capital": [
+        {
+            "amount": "3000000", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 3000000.0
+        }, 
+        {
+            "amount": "3000000", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200601607", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "13/03/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200603373", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "30/05/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200607522", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "09/11/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200601867", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "22/03/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200602593", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "21/04/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200600167", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "06/01/2006", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201104250", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "06/04/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201104249", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "06/04/2011", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201311204", 
+            "charge_org": "UNITED OVERSEAS BANK\nLIMITED", 
+            "currency": "", 
+            "date_registered": "16/08/2013", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C201311205", 
+            "charge_org": "UNITED OVERSEAS BANK\nLIMITED", 
+            "currency": "", 
+            "date_registered": "16/08/2013", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200507788", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "16/12/2005", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200806465", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "16/07/2008", 
+            "id": ""
+        }, 
+        {
+            "amount_secured": "All Monies", 
+            "charge_no": "C200806466", 
+            "charge_org": "SING INVESTMENTS &\nFINANCE LIMITED", 
+            "currency": "", 
+            "date_registered": "16/07/2008", 
+            "id": ""
+        }
+    ], 
+    "company_name": "B.I. DISTRIBUTORS PTE LTD (w.e.f.11/05/2002)", 
+    "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "31/12/2015", 
+    "date_of_address": "15/02/2003", 
+    "date_of_last_agm": "31/05/2016", 
+    "date_of_last_ar": "09/06/2016", 
+    "date_of_lodgment_of_ar": "09/06/2016", 
+    "description": "", 
+    "former_name": "BUSHRA INVESTMENTS PTE LTD", 
+    "id": "", 
+    "incorp_date": "23/08/1997", 
+    "officers": [
+        {
+            "address": "119 KENG LEE ROAD\n#01-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "24/12/2014", 
+            "name": "ABU OSAMA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7170545E", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "23/08/1997", 
+            "name": "MUSTAQ AHMAD @ MUSHTAQ AHMAD S/O\nMUSTAFA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2019378F", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#07-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "24/12/2014", 
+            "name": "SHAMA BANO", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S7770799I", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "23/08/1997", 
+            "name": "ISHRET JAHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2595621D", 
+            "position": "Director", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "119 KENG LEE ROAD\n#03-01\nSINGAPORE (308405)", 
+            "date_of_appointment": "15/09/2008", 
+            "name": "IQBAL AHMAD", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2586147G", 
+            "position": "Secretary", 
+            "source_of_address": "OSCARS"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160821006509", 
+    "registered_office_address": "668 CHANDER ROAD\n#02-18\nSINGAPORE (210668)", 
+    "registration_no": "199705899Z", 
+    "shareholders": [
+        {
+            "address": "668 CHANDER ROAD\n#02-18\nSINGAPORE (210668)", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "MOHAMED MUSTAFA & SAMSUDDIN\nCO. PTE LTD", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": "3000000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "198900680Z", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "23/08/1997"
+}

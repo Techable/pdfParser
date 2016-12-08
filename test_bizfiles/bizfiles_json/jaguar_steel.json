@@ -1,0 +1,96 @@
+{
+    "activites_description": "INTERNATIONAL TRADING & BROKERAGE IN METAL, STEEL, COAL ETC", 
+    "activites_description_2": "", 
+    "activities_1": "GENERAL WHOLESALE TRADE (INCLUDING GENERAL IMPORTERS AND EXPORTERS)\n(46900)", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "28/03/2016", 
+    "capital": [
+        {
+            "amount": "100000.00", 
+            "capital_type": "capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": 100000.0
+        }, 
+        {
+            "amount": "100000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "JAGUAR STEEL & COAL PTE. LTD.", 
+    "company_type": "EXEMPT PRIVATE COMPANY LIMITED BY SHARES", 
+    "date_of_ac_at_last": "31/03/2014", 
+    "date_of_address": "05/06/2015", 
+    "date_of_last_agm": "30/09/2014", 
+    "date_of_last_ar": "30/10/2014", 
+    "date_of_lodgment_of_ar": "30/10/2014", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "05/11/2012", 
+    "officers": [
+        {
+            "address": "B - 4/43, PASCHIM VIHAR,\nNEW DELHI - 110063, INDIA", 
+            "date_of_appointment": "05/11/2012", 
+            "name": "AKSHAY KHARBANDA", 
+            "nationality": "INDIAN", 
+            "officer_id": "N3024618", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B-4/43 PASCHIM VIHAR\nNEW DELHI, INDIA - 110063", 
+            "date_of_appointment": "15/09/2013", 
+            "name": "SANYA KHARBANDA", 
+            "nationality": "INDIAN", 
+            "officer_id": "K8853368", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "307D ANCHORVALE ROAD\n#14-82\nANCHORVALE PLACE\nSINGAPORE (544307)", 
+            "date_of_appointment": "30/01/2016", 
+            "name": "PREETHI BALA", 
+            "nationality": "INDIAN", 
+            "officer_id": "S7673646D", 
+            "position": "Director", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "307D ANCHORVALE ROAD\n#14-82\nANCHORVALE PLACE\nSINGAPORE (544307)", 
+            "date_of_appointment": "26/02/2016", 
+            "name": "PREETHI BALA", 
+            "nationality": "INDIAN", 
+            "officer_id": "S7673646D", 
+            "position": "Secretary", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACRA160328103026", 
+    "registered_office_address": "8 MARINA BOULEVARD\n#11-30\nMARINA BAY FINANCIAL CENTRE\nSINGAPORE (018981)", 
+    "registration_no": "201227177C", 
+    "shareholders": [
+        {
+            "address": "804, GOPAL HEIGHTS,NETAJI\nSUBHASH PLACE\nPITAMPURA,NEW DELHI110034", 
+            "address_changed": null, 
+            "currency": "SINGAPORE, DOLLARS", 
+            "name": "NEW METAL VISION PRIVATE\nLIMITED", 
+            "nationality": "INDIA", 
+            "ordinary_num": "100000", 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T16UF2162J", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "05/11/2012"
+}
