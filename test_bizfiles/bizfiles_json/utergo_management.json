@@ -53,11 +53,15 @@
     "shareholders": [
         {
             "address": "15 HONGKONG STREET\n#03-01\nNOVELTY HOUSE, THE\nSINGAPORE (059658)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "LEC GROUP PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "1", 
+            "nationality": "SINGAPORE",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "201427604Z", 

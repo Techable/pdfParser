@@ -80,11 +80,15 @@
     "shareholders": [
         {
             "address": "26 JALAN LIMAU BALI\nLIMAU PARK\nSINGAPORE (468497)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "ANIL KUMAR LUTHRA", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "100000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2603582A", 
@@ -92,11 +96,15 @@
         }, 
         {
             "address": "1001-02 RIYA PALACE 4TH CROSS \nLANE LOKHANDWALA COMPLEX\nANDHERI (W) MUMBAI - 53 INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "CHANDER PRAKASH", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "22000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "22000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "B1516340", 
@@ -104,11 +112,10 @@
         }, 
         {
             "address": "83 HILLVIEW AVENUE\n#07-08\nMERALODGE\nSINGAPORE (669583)", 
-            "address_changed": null, 
-            "currency": "", 
+            "address_changed": null,
             "name": "SONI KARISHMA MATTA", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": null, 
+            "ordinary_num": [],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7787677D", 
@@ -116,11 +123,15 @@
         }, 
         {
             "address": "153 PAVILION CIRCLE\nSINGAPORE (658564)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "JAGJIT SINGH", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "50000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "50000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S1698958D", 
@@ -128,11 +139,15 @@
         }, 
         {
             "address": "83 HILLVIEW AVENUE\n#07-08\nSINGAPORE (669583)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "DHEERAJ SONI", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "258000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "258000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7766286C", 

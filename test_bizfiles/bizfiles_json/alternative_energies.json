@@ -62,11 +62,15 @@
     "shareholders": [
         {
             "address": "30 RAFFLES PLACE\n#12-01\nCHEVRON HOUSE\nSINGAPORE (048622)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "CHAWLA ANIL", 
             "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "ordinary_number": "1",
+                    "currency": "SINGAPORE, DOLLARS"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "G6283931M", 

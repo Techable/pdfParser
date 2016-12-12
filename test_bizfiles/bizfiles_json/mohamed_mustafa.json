@@ -283,11 +283,15 @@
     "shareholders": [
         {
             "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "ISHRET JAHAN", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "1165667", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1165667"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2595621D", 
@@ -295,11 +299,15 @@
         }, 
         {
             "address": "119 KENG LEE ROAD\nSINGAPORE (308405)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "ESTATE OF MUSTAFA (DECEASED)", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "2000914", 
+            "nationality": "SINGAPORE P.R.",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2000914"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2101665I", 
@@ -307,11 +315,15 @@
         }, 
         {
             "address": "119 KENG LEE ROAD\n#09-01\nSINGAPORE (308405)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "MUSTAQ AHMAD @ MUSHTAQ\nAHMAD S/O MUSTAFA", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "8172504", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "8172504"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2019378F", 
@@ -319,11 +331,15 @@
         }, 
         {
             "address": "5 VERDUN ROAD\n#07-02\nSPA BUILDING\nSINGAPORE (207274)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "ESTATE OF SHAMSUDDIN\n(DECEASED)", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "2000915", 
+            "nationality": "SINGAPORE P.R.",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2000915"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2077946B", 

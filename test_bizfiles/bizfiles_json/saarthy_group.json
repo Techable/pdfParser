@@ -71,11 +71,15 @@
     "shareholders": [
         {
             "address": "8/3, PARSON TOWER B PANTHEON \nROAD EGMORE\nCHENNAI INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SHIKHAR HARNWAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "M3040692", 

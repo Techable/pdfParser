@@ -1,0 +1,93 @@
+{
+    "activites_description": "SOFTWARE DEVELOPMENT", 
+    "activites_description_2": "", 
+    "activities_1": "62019", 
+    "activities_2": "", 
+    "audit_firm_name": "", 
+    "bizfile_date": "17/06/2015", 
+    "capital": [
+        {
+            "amount": "1.00", 
+            "capital_type": "capital", 
+            "currency": "1", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 1.0
+        }, 
+        {
+            "amount": "100000.00", 
+            "capital_type": "capital", 
+            "currency": "100000", 
+            "id": "", 
+            "share_type": "UNITED STATES OF AMERICA, DOLLARS", 
+            "shares": 100000.0
+        }, 
+        {
+            "amount": "1.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }, 
+        {
+            "amount": "100000.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "DAILY KARMA PTE. LTD.(w.e.f. 17/06/2015)", 
+    "company_type": "LIMITED EXEMPT PRIVATE COMPANY", 
+    "date_of_ac_at_last": "", 
+    "date_of_address": "15/01/2015", 
+    "date_of_last_agm": "", 
+    "date_of_last_ar": "", 
+    "date_of_lodgment_of_ar": "", 
+    "description": "", 
+    "former_name": "URBAN LIFE PTE. LTD.", 
+    "id": "", 
+    "incorp_date": "15/01/2015", 
+    "officers": [
+        {
+            "address": "771 BEDOK RESERVOIR VIEW\n#10-157\nSINGAPORE (470771)", 
+            "date_of_appointment": "15/01/2015", 
+            "name": "RAMACHANDRAN RAVI", 
+            "nationality": "SINGAPORE P.R.", 
+            "officer_id": "S6963465F", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000006104605A", 
+    "registered_office_address": "20 SCIENCE PARK ROAD\n#02-37\nTELETECH PARK\nSINGAPORE (117674)", 
+    "registration_no": "201501594H", 
+    "shareholders": [
+        {
+            "address": "9 NATHAN ROAD\n#14-01\nREGENCY PARK\nSINGAPORE (248730)", 
+            "address_changed": null, 
+            "name": "ANAND MECHERI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "100000"
+                }, 
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G5201054W", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "15/01/2015"
+}

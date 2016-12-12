@@ -71,11 +71,15 @@
     "shareholders": [
         {
             "address": "8 DUNBAR WALK", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "VARKHA S HATHIRAMANI", 
             "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S1780012D", 
@@ -83,11 +87,15 @@
         }, 
         {
             "address": "8 DUNBAR WALK", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "VIVEK SUNILCHAND HATHIRAMANI", 
             "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S9211066D", 
@@ -95,11 +103,15 @@
         }, 
         {
             "address": "8 DUNBAR WALK", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SUNIL ARJANDAS HATHIRAMANI", 
             "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S1582997D", 

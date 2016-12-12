@@ -105,11 +105,10 @@
     "shareholders": [
         {
             "address": "P.O.BOX 1146 DUBAI, UAE", 
-            "address_changed": null, 
-            "currency": "", 
+            "address_changed": null,
             "name": "QUEBEC ENERGY (LLC)", 
             "nationality": "UNITED ARAB EMIRATES", 
-            "ordinary_num": null, 
+            "ordinary_num": [],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T14UF4589D", 

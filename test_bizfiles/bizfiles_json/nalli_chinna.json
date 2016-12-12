@@ -89,11 +89,15 @@
     "shareholders": [
         {
             "address": "9 NAGESWARA RAO ROAD\nT'NAGAR MADRAS 600017", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "NALLI KUPPUSWAMI CHETTI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "45000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "45000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "Z1762893", 
@@ -101,11 +105,15 @@
         }, 
         {
             "address": "9 NAGESWARAN ROAD TNAGAR \nCHENNAI 600017\nINDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "NALLI PROCESSING PRIVATE LIMITED", 
-            "nationality": "INDIA", 
-            "ordinary_num": "1000000", 
+            "nationality": "INDIA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1000000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T12UF0788E", 
@@ -113,11 +121,15 @@
         }, 
         {
             "address": "9 NAGESWARA RAO ROAD T'NAGAR\nMADRAS 600017", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "NALLI CHINNASAMI CHETTY PVT LTD", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "140002", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "140002"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "RCB0091574", 
@@ -125,11 +137,15 @@
         }, 
         {
             "address": "9 NAGESWARA RAO RD\nT'NAGAR MADRAS 600017", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "NALLI RAMANATHAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "15000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "15000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "Z1763864", 

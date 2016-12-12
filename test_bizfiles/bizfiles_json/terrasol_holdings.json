@@ -62,11 +62,15 @@
     "shareholders": [
         {
             "address": "10 PEIRCE HILL\nSINGAPORE (248566)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "BUDHRANI POOJA HARICHANDRA", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "100000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7721669C", 

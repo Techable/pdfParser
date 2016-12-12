@@ -145,11 +145,15 @@
     "shareholders": [
         {
             "address": "C/O OCRA (MAURITIUS) LIMITED,\nMAX CITY BUILDING\n2ND FLOOR, REMY OILER STREET,\nPORT LOUIS, MAURITIUS", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "T07UF1046C", 
-            "nationality": "ACRA", 
-            "ordinary_num": "3805000", 
+            "nationality": "ACRA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "3805000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "MAURITIUS", 
@@ -157,11 +161,15 @@
         }, 
         {
             "address": "60 ANSON ROAD\n#18-03A\nMAPLETREE ANSON\nSINGAPORE (079914)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "MAHARASHTRA SEAMLESS\n(SINGAPORE) PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "4661125", 
+            "nationality": "SINGAPORE",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "4661125"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "201113703H", 
@@ -169,11 +177,15 @@
         }, 
         {
             "address": "MAX CITY BLG, II FLOOR, REMY\nOILER ST, PORT LOUIS", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "VICTORIA METALS INTERNATIONAL\nLTD", 
-            "nationality": "OTHERS", 
-            "ordinary_num": "2891800", 
+            "nationality": "OTHERS",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2891800"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T07UF1045G", 
@@ -181,11 +193,15 @@
         }, 
         {
             "address": "PLOT NO:30,INSTITUTIONAL\nSECTOR 44,GURGAON\nHARYANA  122002, INDIA.", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "JINDAL DRILLING & INDUSTRIES\nLTD", 
-            "nationality": "INDIA", 
-            "ordinary_num": "13983375", 
+            "nationality": "INDIA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "13983375"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T07UF0928A", 
@@ -193,11 +209,15 @@
         }, 
         {
             "address": "60 ANSON ROAD\n#18-03A\nMAPLETREE ANSON\nSINGAPORE (079914)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "DISCOVERY DRILLING PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "570750", 
+            "nationality": "SINGAPORE",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "570750"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "200605955K", 
@@ -205,11 +225,15 @@
         }, 
         {
             "address": "MILL MALL TOWER,2ND FLOOR\nWICKHAMS CAY 1\nP.O.BOX 4406,ROAD TOWN,\nTORTOLA BRITISH VIRGIN ISLAND", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "GATALINIA LIMITED", 
-            "nationality": "VIRGIN ISLANDS, BRITISH", 
-            "ordinary_num": "2625450", 
+            "nationality": "VIRGIN ISLANDS, BRITISH",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2625450"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T14UF3533A", 

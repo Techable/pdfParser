@@ -96,11 +96,15 @@
     "shareholders": [
         {
             "address": "806, SIDDHARTH, 96, NEHRU PLACE,\nNEW DELHI - 110019", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "HCL SERVICES LIMITED", 
-            "nationality": "OTHERS", 
-            "ordinary_num": "6199991", 
+            "nationality": "OTHERS",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "6199991"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T15UF2810A", 
@@ -108,11 +112,15 @@
         }, 
         {
             "address": "806, SIDDHARTH, 96, NEHRU PLACE,\nNEW DELHI - 110019", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "address_changed": null,
             "name": "HCL SERVICES LIMITED", 
-            "nationality": "INDIA", 
-            "ordinary_num": "11347619", 
+            "nationality": "INDIA",
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS",
+                    "ordinary_number": "11347619"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T15UF2809D", 

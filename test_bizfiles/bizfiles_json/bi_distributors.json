@@ -194,11 +194,15 @@
     "shareholders": [
         {
             "address": "668 CHANDER ROAD\n#02-18\nSINGAPORE (210668)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "MOHAMED MUSTAFA & SAMSUDDIN\nCO. PTE LTD", 
             "nationality": "SINGAPORE", 
-            "ordinary_num": "3000000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "3000000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "198900680Z", 

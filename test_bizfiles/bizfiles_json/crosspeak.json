@@ -62,11 +62,15 @@
     "shareholders": [
         {
             "address": "2 ESSEX ROAD\n#10-08\nLION TOWERS\nSINGAPORE (309330)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "N SRIRAM", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "1", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S8924780B", 

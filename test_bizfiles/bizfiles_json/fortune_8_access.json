@@ -80,11 +80,15 @@
     "shareholders": [
         {
             "address": "3069 GLANCY DR SAN DIEGO \nCALIFORNIA\nUSA 92173", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "PEREZ CARINA AMIX", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "2", 
+            "nationality": "AMERICAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "506211451", 
@@ -92,11 +96,15 @@
         }, 
         {
             "address": "5090 FILMORE ST PALANAN\nMAKATI CITY PHILIPPINES", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "CAPARROS NORA DE LEON", 
-            "nationality": "FILIPINO", 
-            "ordinary_num": "1", 
+            "nationality": "FILIPINO",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "EB6845132", 
@@ -104,11 +112,15 @@
         }, 
         {
             "address": "", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SINGAPORE CITIZEN", 
-            "nationality": "15/12/2013", 
-            "ordinary_num": "1", 
+            "nationality": "15/12/2013",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "ACRA", 

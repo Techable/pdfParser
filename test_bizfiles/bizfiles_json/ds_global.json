@@ -130,11 +130,15 @@
     "shareholders": [
         {
             "address": "171 TRAS STREET\n#04-171A\nUNION BUILDING\nSINGAPORE (079025)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "DSL GLOBAL PTE. LTD.", 
             "nationality": "SINGAPORE", 
-            "ordinary_num": "3767400", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "3767400"
+                }
+            ],
             "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "pref_num": "6155000", 
             "shareholder_id": "201218830N", 
@@ -142,11 +146,15 @@
         }, 
         {
             "address": "77 ROBINSON ROAD\n#34-00\nROBINSON 77\nSINGAPORE (068896)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "RK TECHNOLOGY & INVESTMENTS\nPTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "2511600", 
+            "nationality": "SINGAPORE",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2511600"
+                }
+            ],
             "pref_currency": "SINGAPORE, DOLLARS", 
             "pref_num": "2200000", 
             "shareholder_id": "201320101R", 

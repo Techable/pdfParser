@@ -161,7 +161,7 @@
             "id": ""
         }
     ], 
-    "company_name": "INMOBI PTE. LTD. (w.e.f.09/04/2010)",
+    "company_name": "INMOBI PTE. LTD. (w.e.f.09/04/2010)", 
     "company_type": "PRIVATE COMPANY LIMITED BY SHARES", 
     "date_of_ac_at_last": "31/03/2015", 
     "date_of_address": "30/01/2015", 
@@ -234,756 +234,1751 @@
     "registration_no": "200811408G", 
     "shareholders": [
         {
-            "address": "C/O AAROHA PTE LTD, 20\nBENDEMEER ROAD\n#03-12, SINGAPORE 339914", 
+            "address": "46A, ST GEORGES DRIVE, LONDON\nSW1V 4BT, UNITED KINGDOM", 
             "address_changed": null, 
-            "currency": "", 
-            "name": "DILEEP RAGHUNATH", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
+            "name": "RAPHAELLE, CLEMENCE TRIPET", 
+            "nationality": "FRENCH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "G3329666", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "35 BERNARD ST, MILL VALLEY, CA\n94941, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MARSEILLE MICHELLE STEELE", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "308799953", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "C-1/202 NEELPADAM KUNJU\nOPPOSITE, OSITE DABUR VAISHALI,\nDISTT GHAZIABAD U.P. INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "HIMANSHU AGRAWAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F7956728", 
+            "shareholder_id": "05HH65178", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "531 E 20TH ST APT 14E NEW YORK\nNY 10010-7606\nUNITED STATES OF AMERICA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "DANIEL ALLEN MARTIN", 
             "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "113027215", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "201 OLD NOTTINGHAM RD\nEPPING NH 03042-2707, USA", 
+            "address": "1675 YORK AVE APT 27L\nNEW YORK, NY 10128-6895, USA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MATTHEW SHERMAN MCNEELY", 
+            "name": "DAVID MATTHEW SMITH", 
             "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "210464305", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "43 CHARLES ST NEW YORK NY\n10014-2895\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "FRANCISCO CORDERO", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "504539425", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "111 BEACH ST 1G BOSTON MA\n02111-2532\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CRID YU", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "483653908", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "6 LOCKSLEY AVE, APT 10-J SAN\nFRANCISCO, CA 94122\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MICHAEL JASON COHEN", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "452110688", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "C 501 AMRAPALI EXOTICA, SECTOR\n50 NOIDA\nUTTAR PRADESH - 201301, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MOHAN NARAYANA SWAMY\nNATARAJAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H9141767", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "76 WOLFINGTON ROAD, LONDON\nSE27 0RQ\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ROBIN DANIEL JONAS", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "540667858", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "G-703, ROHAN JHAROKA, YEMLU\nBANGALORE, KARNATAKA-560037,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PARVESH GARG", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8538134", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "430 HAYES ST, APT 302, SF, CA\n94102 USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MELISSA LAUREN LAU", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "480402357", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "125 BUNCE MEADOWS DR ALAMO,\nCA 94507, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "BRITTANY ALIX SOLOMON", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "426259354", 
+            "shareholder_id": "113362248", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "6 RUE EREYCINET, 75116 PARIS,\nFRANCE", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "DENITZA MIHAYLOVA", 
             "nationality": "FRENCH", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "11AX70678", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "#205, ADITYA HOMES, 8TH MAIN,\n14TH CR. JUDICIAL L\nYELAHANKA, BANGALORE 560064,\nINDIA", 
+            "address": "74 MONTAGU MANSIONS\n LONDON W1U 6LE, UNITED\nKINGDOM", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "LOHITH VRUSHABENDRAPPA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "name": "CHEA LIMVIRAK ONG", 
+            "nationality": "FRENCH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "ADHPV0558J", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "C1 - 1708, L AND T SOUTH CITY\nAREKERE MICO LAYOUT,\nBANERGHATTA MN RD,\nBANGALORE 560076", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "VENKATRAMAN\nLAKSHMINARAYANAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H0942866", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "AS GROUP HOLDINGS PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "2351034", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "201120614G", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "20403 CROW CREEK RD CASTRO\nVALLEY, CA 94552\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "NALIN MITTAL", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "464407589", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "33. RAMJHARUKHA SOC, S.V. ROAD,\nANDHERI (W), MUMBAI\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAM PRADEEP KAKKAD", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "486947930", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "NO 2827 CH13 1ST FLOOR 1ST MAIN\n8TH CROSS PAMPAPATHI ROAD\nJAYANAGAR MYSORE 570014\nKARNATAKA INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PRAVEEN ALEVOOR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J0765239", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1621 KALANIUKA PL, HONOLULU HI\n96821-1208, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CARNET WILLIAMS", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "488702429", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "339 LINCOLN WAY SAN FRANCISCO,\nCA 94122", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ELIZABETH IRENE PAVAGEAU", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "476139365", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "67-419 KUKEA CIR WAIALUA HI\n96791-9522\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ROBERT ROY BARRECA", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "488840483", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SACHCHI PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "3966380", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "201120574H", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "20 TIGER LILY STREET, RICHMOND\nHILL, ONT, L4E 5B2, CANADA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ARTHI SPENCE", 
-            "nationality": "CANADIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "JX450926", 
+            "shareholder_id": "12CC74623", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "7 GUINIONS ROAD HIGH WYCOMBE\nBUCKINGHAMSHIRE HP13 7NT\nUNITED KINGDOM", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "HATIME LACHHEB", 
             "nationality": "FRENCH", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "13AC20030", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "2800 WOODLAWN DR STE 138,\nHONOLULU, HAWAII 96822,\nUNITED STATES", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CHIPIN EQUITIES I, LLLP", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "79562", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "T11UF3568C", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "111 INDUSTRIAL AREA , SION EAST,\nMUMBAI 400022, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "POLARIS VENTURE PARTNERS\nSPECIAL FOUNDERS\u00c3\u00a2\u00c2\u00bf\u00c2\u00bf FUND\nV, L.P.", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "19400", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "T11UF3574B", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "4944 CASS ST 509 SAN DIEGO CA\n92109-2070\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ALEXANDER RICHARD CRAM", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "486960508", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "B 606 PRESTIGE ST JOHNS WOOD\n80 ST JOHNS ROAD TAVEREKERE,\nBANGALORE KARNATAKA, INDIA\n560029", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PRATIK HIRACHAND SHAH", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z2680663", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "TYPE 4 FLAT NO 2 PRESS COLONY\nMAYAPURI RING ROAD\nNEW DELHI 110064 INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ABHISHEK JAIN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H1563780", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT 3 3 CROUCH HALL RD\nLONDON N8 8HT UNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "FIONA JILL ELLIS-SMITH", 
-            "nationality": "NEW ZEALANDER", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "EB508367", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "7 WATCOMBE COTTAGES KEW\nGREEN RICHMOND SURREY TW9\n38O\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ROLAND LLEWELLYN DREWELL", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "720145777", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "B-87, 7TH CROSS STREET,\nMAHARAJA NAGAR, 2ND MAIN\nROAD,\nTIRUNELVELI-DT-627011,\nTAMILNADU, INDIA", 
-            "address_changed": null, 
-            "currency": "", 
-            "name": "ASHWIN SHEKHAR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H2234637", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "5 HEAVEN PARK\nVAKILWADIMANINAGARAHMEDABA\nD 380008\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "KUSHAL MANOHAR THAKKAR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G6881930", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "7C ANNAPURNA, ANUSHAKTI\nNAGAR, MUMBAI, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "JASWINDER SINGH SETHI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "A3241798", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT NO 008 SHIVA ENCLAVE 7TH\nCROSS KONENA AGRAHARA\nVINAYAKA\nNAGAR BANGALORE KAR - 560017\nINDIA", 
-            "address_changed": null, 
-            "currency": "", 
-            "name": "GOVARDHAN REDDY MUCHARLA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J2644713", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "32, NEW KHADI COLONY\nINDUSTRIAL AREA NEAR LAKE\nPANIPAT-132103, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ANIL KUNDU", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F7468118", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1286 GUERRERO ST APT 9 SAN\nFRANCISCO CA 94110-3634\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "URBELLA YOUSIF", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "492985617", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "16 BROOKLAND HILL\nNW11 6DX, LONDON, UNITED\nKINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "NOAM JOSEPH YASOUR", 
-            "nationality": "GERMAN", 
-            "ordinary_num": "1279", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "C4JT6NTKJ", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "348/5, JAYADURGA NAGAR,\nBOMIKHAL,\nBHUBANESWAR, 751 006, ORISSA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "AYAN DASGUPTA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8764558", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "54 BRAEMONT AVENUE KELLYVILLE\nRIDGE NSW 2155 AUSTRALIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GUPTA AMIT", 
-            "nationality": "AUSTRALIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "E4087093", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "003 VASWANI GOLD VISTA APTS\nTULIP BLOCK, CHALAGATTA\nYAMALUR POST, BANGALORE\n560037, KARNATAKA, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PAULSON WILSON", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "455", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K9796927", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "F 6 PEARL CORONET SG PALYA, CV\nRAMAN NAGAR\nBANGALORE, KARNATAKA 560093\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RITESH AGARWAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F7507332", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "NAIK NIVAS, SURLU, P. O. R. D.\nNAGAR OPP.\nGANESH BHAJANAMANDIR\nKASARAGOD DT., KERALA. 671 124,\nINDIA", 
-            "address_changed": null, 
-            "currency": "", 
-            "name": "ASHWITHA NAIK", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F0376211", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "BETHAL, 526/2, 3RD CROSS,\nBYERAVESHWARA LAYOUT,\nHENNUR BANDE, BANGALORE-\n5600343, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAJKUMAR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "AHOPK7478B", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "22, ANUPAM APTS, ST. FRANCIS,\nCROSS ROAD, VILE PARLE(W)\nMUMBAI-400 056, M.S, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PRANJAL MAULIK DESAI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G9427895", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "BANSAL EYE HOSPITAL NEAR BUS\nSTAND RISHI NAGAR HISAR\nHARYANA\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "JIVITESH", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G6063206", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "NO K 43, SHRIRAM SADANA\nGOKULA, BANGALORE 560054\nKARNATAKA , INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SRIDHAR RANGANATHAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J0381116", 
-            "source_of_address": "ACRA"
-        }, 
-        {
             "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SAM HOLDINGS GROUP PTE. LTD.", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "281665", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "201120581H", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "A101, ANEESHA MEADOWS,\nVENKAT REDDY LAYOUT\nKORAMANGALA 6TH BLOCK,\nBANGALORE 560095, KARNATAKA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "", 
-            "name": "ROHAN RAI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z2724969", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "13 SOLVAGEN  TABY,\n183 52 SWEDEN", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MARTA SANVICENTE CLEMENTS", 
-            "nationality": "SPANISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "BF095619", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "3-W-31-262/1  DNO 001 MITHILA\nAPTS KARANGALAPADY\nMANGALORE KARNATAKA 575003,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GIRISH MANGALORE PRABHU", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8731884", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1000, WINTER STREET, SUITE 3350,\nWALTHAM, MA 02451\nUNITED STATES", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "POLARIS VENTURE PARTNERS\nENTREPRENEURS' FUND V, L.P.", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "9603", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "T11UF3572K", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "ROOM NO. D004 HOSTEL BLOCKS\nINDIAN INSTITUTE OF\nMANAGEMENT\nBANGALORE-560 076", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAHUL AGARWAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H0598184", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "AG GROUP HOLDINGS PTE. LTD.", 
             "nationality": "SINGAPORE", 
-            "ordinary_num": "2351034", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "2351034"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "201120521M", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "36 FIRST C CROSS, 3RD MAIN ROAD\nMATHIKERE\nBANGALORE 560054, KARNATAKA,\nINDIA", 
+            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "WILLIAM CHITLA", 
+            "name": "SACHCHI PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "3966380"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201120574H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
+            "address_changed": null, 
+            "name": "SAM HOLDINGS GROUP PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "281665"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201120581H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "30 CECIL STREET\n#19-08\nPRUDENTIAL TOWER\nSINGAPORE (049712)", 
+            "address_changed": null, 
+            "name": "AS GROUP HOLDINGS PTE. LTD.", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "2351034"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "201120614G", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "14 VICTORIA CRESCENT, POOLE,\nBH12 2JH\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "THOMAS JAMES BISHOP", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "207176116", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "201 OLD NOTTINGHAM RD\nEPPING NH 03042-2707, USA", 
+            "address_changed": null, 
+            "name": "MATTHEW SHERMAN MCNEELY", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "210464305", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1164 BISHOP ST 124 29\nHONOLULU, HI 96813, USA", 
+            "address_changed": null, 
+            "name": "KEVIN MING-WEI HUGHES", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "213241882", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2937 PIERCE ST, SAN FRANCISCO,\nCA 94123, USA", 
+            "address_changed": null, 
+            "name": "ADAM GORDON TAISCH", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "215010786", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "300 IVY ST APT 315 SAN\nFRANCISCO, CA 94102\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "NUMAZER DINYAR PAVRI", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "220939895", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2673 SUISUN AVE, SAN JOSE, CA\n95121, USA", 
+            "address_changed": null, 
+            "name": "ERON ANTHONY VILLARREAL", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "303909690", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "21 ST CHRISTOPHERS ROAD\nHASLEMERE GU27 1DQ\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "ANDREW GRAHAM HILLIER", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "304247182", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "90 KYNANCE GARDENS\nSTANMORE  HA7  2QL  UK", 
+            "address_changed": null, 
+            "name": "RAKHEE KAUSHIK SHAH", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "305209643", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2110 CALIFORNIA ST, SAN\nFRANCISCO, CA 94115, USA", 
+            "address_changed": null, 
+            "name": "PETER JOHN BASSETT", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "307022554", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "35 BERNARD ST, MILL VALLEY, CA\n94941, USA", 
+            "address_changed": null, 
+            "name": "MARSEILLE MICHELLE STEELE", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "308799953", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "125 BUNCE MEADOWS DR ALAMO,\nCA 94507, USA", 
+            "address_changed": null, 
+            "name": "BRITTANY ALIX SOLOMON", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "426259354", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "532 N 16TH STREET\nSAN JOSE CA 95112, USA", 
+            "address_changed": null, 
+            "name": "TRACIE LYNN TUNNELL", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "427394435", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "250 E 63 ST 504 NEW YORK NY\n10065-7615\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "MITCHELL HARRIS PALETZ", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "444478976", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "# 013 SHANTHINIVAS MBR STARRY\nBANNERGHATTA ROAD\nBANGALORE SOUTH BANGALORE,\nKARNATAKA 560076, INDIA", 
+            "address_changed": null, 
+            "name": "GOPAL DEVARAJAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "G1870021", 
+            "shareholder_id": "4515 8073\n9286", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "FLAT 116 BEDFORD COURT\nMANSIONS BEDFORD AVENUE\nLONDON WC1B 3AG", 
+            "address": "6 LOCKSLEY AVE, APT 10-J SAN\nFRANCISCO, CA 94122\nUNITED STATES OF AMERICA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "FRANCOIS DESCHENES", 
-            "nationality": "CANADIAN", 
-            "ordinary_num": "1", 
+            "name": "MICHAEL JASON COHEN", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "GA165636", 
+            "shareholder_id": "452110688", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "1050 BISHOP ST STE 225,\nHONOLULU, HAWAII 96813\nUNITED STATES", 
+            "address": "170 KING ST, APT 1001, SAN\nFRANCISCO\nCA 94107, USA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CHIPIN INVESTMENTS 2006, LLC", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "3978", 
+            "name": "JENNIFER YIP", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "T11UF3569K", 
+            "shareholder_id": "455423694", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "9B PRIORY ROAD SOUTH\nHAMPSTEAD\nLONDON NW6 4 NN UNITED\nKINGDOM", 
+            "address_changed": null, 
+            "name": "JAMES PAUL CHRISTIAN ERSKINE\nDEMETRIADI", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "458135581", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "20403 CROW CREEK RD CASTRO\nVALLEY, CA 94552\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "NALIN MITTAL", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "464407589", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "339 LINCOLN WAY SAN FRANCISCO,\nCA 94122", 
+            "address_changed": null, 
+            "name": "ELIZABETH IRENE PAVAGEAU", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "476139365", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2400, BUCHANAN ST. APT, 301 SAN\nFRANSCISCO\nCA 94115, USA", 
+            "address_changed": null, 
+            "name": "BRIAN RANDALL NEISLER", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "478090341", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "430 HAYES ST, APT 302, SF, CA\n94102 USA", 
+            "address_changed": null, 
+            "name": "MELISSA LAUREN LAU", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "480402357", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "111 BEACH ST 1G BOSTON MA\n02111-2532\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "CRID YU", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "483653908", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "22951 STONEBRIDGE CUPERTINO,\nCA 95014-5640\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "SHRIKANT GANESH LATKAR", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "483662601", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "237 LA CUESTA DR, MENLO PARK,\nCA 94028-7532, USA", 
+            "address_changed": null, 
+            "name": "SURAG I PATEL", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "483680903", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "33. RAMJHARUKHA SOC, S.V. ROAD,\nANDHERI (W), MUMBAI\nINDIA", 
+            "address_changed": null, 
+            "name": "RAM PRADEEP KAKKAD", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "486947930", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "4944 CASS ST 509 SAN DIEGO CA\n92109-2070\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "ALEXANDER RICHARD CRAM", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "486960508", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "315 KINGSLAND RD QUEBEC\nWHARF UNIT 28 LONDON E8 4DL\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "ADAM CHARLES POBIAK", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "488062211", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1621 KALANIUKA PL, HONOLULU HI\n96821-1208, USA", 
+            "address_changed": null, 
+            "name": "CARNET WILLIAMS", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "488702429", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "67-419 KUKEA CIR WAIALUA HI\n96791-9522\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "ROBERT ROY BARRECA", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "488840483", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1866 TERSINI COURT, SAN JOSE,\nCA, 95131\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "SHIAO-CHEN TANG", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "562"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "492833603", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1286 GUERRERO ST APT 9 SAN\nFRANCISCO CA 94110-3634\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "URBELLA YOUSIF", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "492985617", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "43 CHARLES ST NEW YORK NY\n10014-2895\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "FRANCISCO CORDERO", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "504539425", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "101 BAGLEYS LANE LONDON SW6\n2FW", 
+            "address_changed": null, 
+            "name": "VICTORIA ALEXIS CHARALAMBOUS", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "523600195", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "76 WOLFINGTON ROAD, LONDON\nSE27 0RQ\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "ROBIN DANIEL JONAS", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "540667858", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "7 WATCOMBE COTTAGES KEW\nGREEN RICHMOND SURREY TW9\n38O\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "ROLAND LLEWELLYN DREWELL", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "720145777", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "88 CHESTNUT AVE GREAT NOTLEY\nBRAINTREE CM77 7YJ, UK", 
+            "address_changed": null, 
+            "name": "JOHN PETER STONEMAN", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "801681011", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "7C ANNAPURNA, ANUSHAKTI\nNAGAR, MUMBAI, INDIA", 
+            "address_changed": null, 
+            "name": "JASWINDER SINGH SETHI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "A3241798", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "615 MALARIN AVE SANTA CLARA\nCA-95050,\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "RAJAGOPAL BASKARAN", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "A711907", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "#205, ADITYA HOMES, 8TH MAIN,\n14TH CR. JUDICIAL L\nYELAHANKA, BANGALORE 560064,\nINDIA", 
+            "address_changed": null, 
+            "name": "LOHITH VRUSHABENDRAPPA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "ADHPV0558J", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "NO G32 SRIRAM SADHANA GOKULA\nEXTN\nOFF MS RAMAIAH ROAD\nBANGALORE, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "RAMANUJAM RAGHUNANDHAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "AEFPR3514K", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "500  DELAWARE AVENUE, SUITE\n1500, WILMINGTON, NEW CASTLE\nDELAWARE, UNITED STATES", 
+            "address": "BETHAL, 526/2, 3RD CROSS,\nBYERAVESHWARA LAYOUT,\nHENNUR BANDE, BANGALORE-\n5600343, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GVC V LIMITED PARTNERSHIP", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "84687", 
+            "name": "RAJKUMAR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "T11UF3571C", 
+            "shareholder_id": "AHOPK7478B", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "IFS COURT, TEWNTYEIGHT,\nCYBERCITY, EBENE, MAURITIUS", 
+            "address": "NO - 1 / 5319 - A, STREET NO-13,\nNEAR RISHI RAJ CHOWK\nBALBIR NAGAR EXTN., SHAHDARA,\nEASTDELHI, DELHI,110032, INDIA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SHERPALO MAURITIUS LLC", 
-            "nationality": "MAURITIUS", 
-            "ordinary_num": "50000", 
-            "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "pref_num": "6342945", 
-            "shareholder_id": "T11UF3579D", 
+            "name": "ANUBHAV JAIN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "AKLPJ9654L", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B NO-, 4TH STREET, DOOR NO-11\nHALASURU, BANGALORE-56008,\nINDIA", 
+            "address_changed": null, 
+            "name": "MOHAMMED SHAD JAMAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "AMRPJ9511G", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "VAISHARI SUMMIT 7TH MAIN ROAD\n80 FEET ROAD\nKORAMANGALA 3RD BLOCK,\nBANGALORE 560095, INDIA", 
+            "address_changed": null, 
+            "name": "VAISAKH B", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "25"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "AYRPB1051F", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "MONTROSA/QB2-503, ALPINE ECO\nDODDANEKUNDI\nBANGALORE, KARNATAKA - 560037\nINDIA", 
+            "address_changed": null, 
+            "name": "SREENIVASA PRASAD SISTA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "B0249547", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "13 SOLVAGEN  TABY,\n183 52 SWEDEN", 
+            "address_changed": null, 
+            "name": "MARTA SANVICENTE CLEMENTS", 
+            "nationality": "SPANISH", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "BF095619", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "16 BROOKLAND HILL\nNW11 6DX, LONDON, UNITED\nKINGDOM", 
+            "address_changed": null, 
+            "name": "NOAM JOSEPH YASOUR", 
+            "nationality": "GERMAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1279"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "C4JT6NTKJ", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT 7 PARK HOUSE 55 HIGHBURY\nPARK LONDON N5 ITJ\nUNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "SEBASTIEN MICHAEL ANTHONY\nTOTTE", 
+            "nationality": "BELGIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "E1350273", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "54 BRAEMONT AVENUE KELLYVILLE\nRIDGE NSW 2155 AUSTRALIA", 
+            "address_changed": null, 
+            "name": "GUPTA AMIT", 
+            "nationality": "AUSTRALIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "E4087093", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "4/22, DR NATESAN ROAD, ASHOK\nNAGAR\nCHENNAI 600 083, TAMILNADU,\nINDIA", 
+            "address_changed": null, 
+            "name": "DIVYA AMARNATH", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "E7677656", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8/49 ASHEERVAD ROAD NO 2 SION\n(E) MUMBAI 22", 
+            "address_changed": null, 
+            "name": "RISHIT RATNAKAR SHETTY", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "E8367192", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT 3 3 CROUCH HALL RD\nLONDON N8 8HT UNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "FIONA JILL ELLIS-SMITH", 
+            "nationality": "NEW ZEALANDER", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "EB508367", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "NAIK NIVAS, SURLU, P. O. R. D.\nNAGAR OPP.\nGANESH BHAJANAMANDIR\nKASARAGOD DT., KERALA. 671 124,\nINDIA", 
+            "address_changed": null, 
+            "name": "ASHWITHA NAIK", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F0376211", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "32, NEW KHADI COLONY\nINDUSTRIAL AREA NEAR LAKE\nPANIPAT-132103, INDIA", 
+            "address_changed": null, 
+            "name": "ANIL KUNDU", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F7468118", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "F 6 PEARL CORONET SG PALYA, CV\nRAMAN NAGAR\nBANGALORE, KARNATAKA 560093\nINDIA", 
+            "address_changed": null, 
+            "name": "RITESH AGARWAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F7507332", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "C-1/202 NEELPADAM KUNJU\nOPPOSITE, OSITE DABUR VAISHALI,\nDISTT GHAZIABAD U.P. INDIA", 
+            "address_changed": null, 
+            "name": "HIMANSHU AGRAWAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F7956728", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT NO 1107, OAK WOOD\nAPARTMENT, 8TH MAIN\n3RD BLOCK, KORAMANGALA,\nBANGALORE, KAR-560034, INDIA", 
+            "address_changed": null, 
+            "name": "KARTHIK SANGAMESWARAN\nMAHADEVAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8139072", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "102 SATYAM, RUNGTA LANE,\nNEPEAN SEA ROAD, MUMBAI\n400006\nINDIA", 
+            "address_changed": null, 
+            "name": "VIKAS CHOUDHURY", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "4136"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8293872", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "G-703, ROHAN JHAROKA, YEMLU\nBANGALORE, KARNATAKA-560037,\nINDIA", 
+            "address_changed": null, 
+            "name": "PARVESH GARG", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8538134", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "3-W-31-262/1  DNO 001 MITHILA\nAPTS KARANGALAPADY\nMANGALORE KARNATAKA 575003,\nINDIA", 
+            "address_changed": null, 
+            "name": "GIRISH MANGALORE PRABHU", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8731884", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "348/5, JAYADURGA NAGAR,\nBOMIKHAL,\nBHUBANESWAR, 751 006, ORISSA,\nINDIA", 
+            "address_changed": null, 
+            "name": "AYAN DASGUPTA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8764558", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "7-6-40, UPSTAIRS, CHENNAPPA\nCOMPOUND, KAMSALPETA\nHINDUPUR, 515201, ANDHRA\nPRADESH, INDIA", 
+            "address_changed": null, 
+            "name": "SAYEESH KATTA RAMA KUMAR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "156"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8952445", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "H NO 15/38 GANDHI CHOWK,\nGUNTAKAL POST\nANANTAPUR - 515801 AP, INDIA", 
+            "address_changed": null, 
+            "name": "RUPA SATRASALA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F9083328", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "#97, 2ND B MAIN ROAD,\nKARNATAKA HOUSING BOARD,\n1ST STAGE YELAHANKA NEW\nTOWN, BANGALORE-64", 
+            "address_changed": null, 
+            "name": "GURUDUTT RANGANATHAN\nVENKATARAMANAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G0026495", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1887, NEAR FREE CHURCH\nGUPTESHWAR ROAD\nMADAN MAHAL, JABALPUR, MP,\nINDIA", 
+            "address_changed": null, 
+            "name": "PRABHJYOT SINGH KALSI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G1431070", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "36 FIRST C CROSS, 3RD MAIN ROAD\nMATHIKERE\nBANGALORE 560054, KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "WILLIAM CHITLA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G1870021", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "VILLA 26 VASWAMI ASHTOM\nWOODS KARIYAMMANA AGRAHARA\nMAIN ROAD\nBANGALORE KAR-560103 INDIA", 
+            "address_changed": null, 
+            "name": "MINU KATARIA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G2480167", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "C/O AAROHA PTE LTD, 20\nBENDEMEER ROAD\n#03-12, SINGAPORE 339914", 
+            "address_changed": null, 
+            "name": "DILEEP RAGHUNATH", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G3329666", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "BANSAL EYE HOSPITAL NEAR BUS\nSTAND RISHI NAGAR HISAR\nHARYANA\nINDIA", 
+            "address_changed": null, 
+            "name": "JIVITESH", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G6063206", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "46-ROAD NO.B, WEST LAY OUT,\nSONARI, JAMSHEDPUR\nEAST SINGHBHUM, JHARKHAND,\nINDIA", 
+            "address_changed": null, 
+            "name": "KUSHAL DUDANI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "150"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G6385642", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "5 HEAVEN PARK\nVAKILWADIMANINAGARAHMEDABA\nD 380008\nINDIA", 
+            "address_changed": null, 
+            "name": "KUSHAL MANOHAR THAKKAR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G6881930", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "#290, 38TH CROSS, 8TH BLOCK,\nJAYANAGAR\nBANGALORE, 560082, INDIA", 
+            "address_changed": null, 
+            "name": "ABHIJIT GUPTA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "130"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G6894073", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "48-11/3-6/2B CURRENCY NAGAR\nVIJAYAWADA, AP 8, INDIA", 
+            "address_changed": null, 
+            "name": "ANANTHAVIJAYA RAGHU GORTHI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G7049397", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "A6 POSTAL COLONY, PERUR\nCHETTIPALAYAM COIMBATORE 641\n010\nTAMILNADU, INDIA", 
+            "address_changed": null, 
+            "name": "MURALIDHARAN RANGAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G7337043", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "PAREKH ST., AT-KALAWAD SHITLA\nJAMNAGAR 361160, INDIA", 
+            "address_changed": null, 
+            "name": "DHAVALKUMAR MAKAWANA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "875"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G9102492", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "22, ANUPAM APTS, ST. FRANCIS,\nCROSS ROAD, VILE PARLE(W)\nMUMBAI-400 056, M.S, INDIA", 
+            "address_changed": null, 
+            "name": "PRANJAL MAULIK DESAI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G9427895", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2707 18 TH MAIN 5 TH CROSS HAL 2\nND STAGE INDIRA NAGAR\nBANGALORE 560008", 
+            "address_changed": null, 
+            "name": "ARIJIT BHATTACHARYYA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G9612972", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT 116 BEDFORD COURT\nMANSIONS BEDFORD AVENUE\nLONDON WC1B 3AG", 
+            "address_changed": null, 
+            "name": "FRANCOIS DESCHENES", 
+            "nationality": "CANADIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "GA165636", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "NO 44 1ST FLOOR RAMYA ROYAL\nAPTS NANDI DURG ROAD\nBANGALORE 560046 KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "SITARA THOMAS", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H0138784", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "ROOM NO. D004 HOSTEL BLOCKS\nINDIAN INSTITUTE OF\nMANAGEMENT\nBANGALORE-560 076", 
+            "address_changed": null, 
+            "name": "RAHUL AGARWAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H0598184", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "C1 - 1708, L AND T SOUTH CITY\nAREKERE MICO LAYOUT,\nBANERGHATTA MN RD,\nBANGALORE 560076", 
+            "address_changed": null, 
+            "name": "VENKATRAMAN\nLAKSHMINARAYANAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H0942866", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "TYPE 4 FLAT NO 2 PRESS COLONY\nMAYAPURI RING ROAD\nNEW DELHI 110064 INDIA", 
+            "address_changed": null, 
+            "name": "ABHISHEK JAIN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H1563780", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "N0168/4 2ND  D MAIN ROAD 6TH\nBLOCK JAYANAGAR\nBANGALORE 560082", 
+            "address_changed": null, 
+            "name": "PRASANNA KARUNAKAR HEGDE", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H2155392", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B-87, 7TH CROSS STREET,\nMAHARAJA NAGAR, 2ND MAIN\nROAD,\nTIRUNELVELI-DT-627011,\nTAMILNADU, INDIA", 
+            "address_changed": null, 
+            "name": "ASHWIN SHEKHAR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H2234637", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "C 501 AMRAPALI EXOTICA, SECTOR\n50 NOIDA\nUTTAR PRADESH - 201301, INDIA", 
+            "address_changed": null, 
+            "name": "MOHAN NARAYANA SWAMY\nNATARAJAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "H9141767", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "2322 ELKHORN CT SAN JOSE CA\n95125-4734\nUNITED STATES OF AMERICA", 
+            "address_changed": null, 
+            "name": "WASEEM AHMAD", 
+            "nationality": "PAKISTANI", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "HN1165551", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "NO K 43, SHRIRAM SADANA\nGOKULA, BANGALORE 560054\nKARNATAKA , INDIA", 
+            "address_changed": null, 
+            "name": "SRIDHAR RANGANATHAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J0381116", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "QUARTER NO 2307, SECTOR 4D\nBOKARO STEEL CITY DIST BOKARO,\nJHARKHAND, INDIA", 
+            "address_changed": null, 
+            "name": "CHINTAN VISMAY", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J0640906", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "NO 2827 CH13 1ST FLOOR 1ST MAIN\n8TH CROSS PAMPAPATHI ROAD\nJAYANAGAR MYSORE 570014\nKARNATAKA INDIA", 
+            "address_changed": null, 
+            "name": "PRAVEEN ALEVOOR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J0765239", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "4/313, HINDUKUSH BUILDING,\nCHANDAVARKAR ROAD\nMATUNGA, MUMBAI - 400019, INDIA", 
+            "address_changed": null, 
+            "name": "VIGNESH MURALIDHARAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J1663536", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B-102, NAVJYOTIRLING BLDG.,\nRIDDHI GARDENS, GEN. A. K.\nVAIDAYA MARG, FILM CITY ROAD ,\nMALLAD(E), 400097, INDIA", 
+            "address_changed": null, 
+            "name": "MUKESH PRABHUDAYAL KALRA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J1695793", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT NO 008 SHIVA ENCLAVE 7TH\nCROSS KONENA AGRAHARA\nVINAYAKA\nNAGAR BANGALORE KAR - 560017\nINDIA", 
+            "address_changed": null, 
+            "name": "GOVARDHAN REDDY MUCHARLA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "J2644713", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "20 TIGER LILY STREET, RICHMOND\nHILL, ONT, L4E 5B2, CANADA", 
+            "address_changed": null, 
+            "name": "ARTHI SPENCE", 
+            "nationality": "CANADIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "JX450926", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "302, SUBHODAYA RESIDENCY, 5TH\nMAIN, VIJAYA BANK LAYOUT\nBANGALORE-560076, KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "RENGITH JEROME", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "476"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K1729637", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "G-70, IIND FLOOR SCHOOL ROAD\nUTTAM NAGAR, DELHI,\nINDIA 110059", 
+            "address_changed": null, 
+            "name": "ANKIT GARG", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K1810532", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT 103 KRISHNEELA APRTS 2ND\nMAIN NEW THIPPASANDRA,\nBANGALORE-560075 KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "SHEETAL GUPTA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K2650129", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "3631A 17TH ST SAN FRANCISCO, CA\n94114, USA", 
+            "address_changed": null, 
+            "name": "GAUTAM PRADEEP TAMBAY", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K3677742", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "ROOM-NO-168-BHAGIRATH-\nBHAWAN BITS-VPO-PILANI\nJHUNJHUNU-[RAJASTHAN] INDIA", 
+            "address_changed": null, 
+            "name": "DEVI CHAND", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K5181633", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT NO 205 SPARTA 1 PRESTIGE\nACRDPOLIS 20\nHOSUR ROAD KORAMANGALA,\nBANGALORE 560095, KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "SUMIT KUMAR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K7139885", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "003 VASWANI GOLD VISTA APTS\nTULIP BLOCK, CHALAGATTA\nYAMALUR POST, BANGALORE\n560037, KARNATAKA, INDIA", 
+            "address_changed": null, 
+            "name": "PAULSON WILSON", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "455"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "K9796927", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "9, AMRUTHAVARSHINI APRTS, 2ND\nTEMPLE RD, 16TH CROSS\nMALLESHWARAM BANGALORE PIN:\n56000., KARNATAKA, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "DILIP RAMANATHAPURA SUNDAR", 
             "nationality": "INDIAN", 
-            "ordinary_num": "250", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "250"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "K9835939", 
@@ -992,778 +1987,255 @@
         {
             "address": "BLOCK A, FLAT NO 101, MAITHRI\nPRIDE, 5TH MAIN, 6TH CROSS,\nMALLESHPALYA, BANGALORE,\nKARNATAKA, INDIA 560075", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "SUDHA DAMODAR PRABHU", 
             "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "K9840832", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "102 SATYAM, RUNGTA LANE,\nNEPEAN SEA ROAD, MUMBAI\n400006\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "VIKAS CHOUDHURY", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "4136", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8293872", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "90 KYNANCE GARDENS\nSTANMORE  HA7  2QL  UK", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAKHEE KAUSHIK SHAH", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "305209643", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "B-102, NAVJYOTIRLING BLDG.,\nRIDDHI GARDENS, GEN. A. K.\nVAIDAYA MARG, FILM CITY ROAD ,\nMALLAD(E), 400097, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MUKESH PRABHUDAYAL KALRA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J1695793", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "A6 POSTAL COLONY, PERUR\nCHETTIPALAYAM COIMBATORE 641\n010\nTAMILNADU, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MURALIDHARAN RANGAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G7337043", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "B NO-, 4TH STREET, DOOR NO-11\nHALASURU, BANGALORE-56008,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MOHAMMED SHAD JAMAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "AMRPJ9511G", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "302, SUBHODAYA RESIDENCY, 5TH\nMAIN, VIJAYA BANK LAYOUT\nBANGALORE-560076, KARNATAKA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RENGITH JEROME", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "476", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K1729637", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "22951 STONEBRIDGE CUPERTINO,\nCA 95014-5640\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SHRIKANT GANESH LATKAR", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "483662601", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "2673 SUISUN AVE, SAN JOSE, CA\n95121, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ERON ANTHONY VILLARREAL", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "303909690", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "# 013 SHANTHINIVAS MBR STARRY\nBANNERGHATTA ROAD\nBANGALORE SOUTH BANGALORE,\nKARNATAKA 560076, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GOPAL DEVARAJAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "4515 8073\n9286", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "4/313, HINDUKUSH BUILDING,\nCHANDAVARKAR ROAD\nMATUNGA, MUMBAI - 400019, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "VIGNESH MURALIDHARAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J1663536", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "MONTROSA/QB2-503, ALPINE ECO\nDODDANEKUNDI\nBANGALORE, KARNATAKA - 560037\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SREENIVASA PRASAD SISTA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "B0249547", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1887, NEAR FREE CHURCH\nGUPTESHWAR ROAD\nMADAN MAHAL, JABALPUR, MP,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PRABHJYOT SINGH KALSI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G1431070", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "88 CHESTNUT AVE GREAT NOTLEY\nBRAINTREE CM77 7YJ, UK", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "JOHN PETER STONEMAN", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "801681011", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "2707 18 TH MAIN 5 TH CROSS HAL 2\nND STAGE INDIRA NAGAR\nBANGALORE 560008", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ARIJIT BHATTACHARYYA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G9612972", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "MANOA INNOVATION CTR,  2800\nWOODLAWN DR STE 138,\nHONOLULU,\nHAWAII 96822, UNITED STATES", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CHIPIN INVESTMENTS 2007, LLC", 
-            "nationality": "UNITED STATES", 
-            "ordinary_num": "7956", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "T11UF3570G", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "204 E, V S ENCLAVE, 6TH G CROSS,\nBALAJI LT KAGGADASAPURA\nPO CV RAMAN NAGAR, BANGALORE\nKARNATAKA, INDIA 560093", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MANEESH AGRAWAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z2668910", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "NO - 1 / 5319 - A, STREET NO-13,\nNEAR RISHI RAJ CHOWK\nBALBIR NAGAR EXTN., SHAHDARA,\nEASTDELHI, DELHI,110032, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ANUBHAV JAIN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "AKLPJ9654L", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "237 LA CUESTA DR, MENLO PARK,\nCA 94028-7532, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SURAG I PATEL", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "483680903", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "48-11/3-6/2B CURRENCY NAGAR\nVIJAYAWADA, AP 8, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ANANTHAVIJAYA RAGHU GORTHI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G7049397", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1164 BISHOP ST 124 29\nHONOLULU, HI 96813, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "KEVIN MING-WEI HUGHES", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "213241882", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "101 BAGLEYS LANE LONDON SW6\n2FW", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "VICTORIA ALEXIS CHARALAMBOUS", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "523600195", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "ROOM-NO-168-BHAGIRATH-\nBHAWAN BITS-VPO-PILANI\nJHUNJHUNU-[RAJASTHAN] INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "DEVI CHAND", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K5181633", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "3631A 17TH ST SAN FRANCISCO, CA\n94114, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GAUTAM PRADEEP TAMBAY", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K3677742", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "46A, ST GEORGES DRIVE, LONDON\nSW1V 4BT, UNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAPHAELLE, CLEMENCE TRIPET", 
-            "nationality": "FRENCH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "05HH65178", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "21 ST CHRISTOPHERS ROAD\nHASLEMERE GU27 1DQ\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ANDREW GRAHAM HILLIER", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "304247182", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT 103 KRISHNEELA APRTS 2ND\nMAIN NEW THIPPASANDRA,\nBANGALORE-560075 KARNATAKA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SHEETAL GUPTA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K2650129", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "PAREKH ST., AT-KALAWAD SHITLA\nJAMNAGAR 361160, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "DHAVALKUMAR MAKAWANA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "875", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G9102492", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "G2, 88, RNS HERITAGE 1ST MAIN\n4TH CROSS VIJAYA BANK LYT,\nB G ROAD, BANGALORE\nKARNATAKA, INDIA 560076", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RISHU MEHROTRA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z2668967", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "G-70, IIND FLOOR SCHOOL ROAD\nUTTAM NAGAR, DELHI,\nINDIA 110059", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ANKIT GARG", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K1810532", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "315 KINGSLAND RD QUEBEC\nWHARF UNIT 28 LONDON E8 4DL\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ADAM CHARLES POBIAK", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "488062211", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "IFS COURT, TEWNTYEIGHT,\nCYBERCITY, EBENE, MAURITIUS", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "MURUGAN CAPITAL", 
-            "nationality": "MAURITIUS", 
-            "ordinary_num": "50000", 
-            "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "pref_num": "6342945", 
-            "shareholder_id": "T11UF3578H", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "7-6-40, UPSTAIRS, CHENNAPPA\nCOMPOUND, KAMSALPETA\nHINDUPUR, 515201, ANDHRA\nPRADESH, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SAYEESH KATTA RAMA KUMAR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "156", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8952445", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "#290, 38TH CROSS, 8TH BLOCK,\nJAYANAGAR\nBANGALORE, 560082, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ABHIJIT GUPTA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "130", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G6894073", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "250 E 63 ST 504 NEW YORK NY\n10065-7615\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MITCHELL HARRIS PALETZ", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "444478976", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "VAISHARI SUMMIT 7TH MAIN ROAD\n80 FEET ROAD\nKORAMANGALA 3RD BLOCK,\nBANGALORE 560095, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "VAISAKH B", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "25", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "AYRPB1051F", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "14 VICTORIA CRESCENT, POOLE,\nBH12 2JH\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "THOMAS JAMES BISHOP", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "207176116", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "QUARTER NO 2307, SECTOR 4D\nBOKARO STEEL CITY DIST BOKARO,\nJHARKHAND, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CHINTAN VISMAY", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "J0640906", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "615 MALARIN AVE SANTA CLARA\nCA-95050,\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RAJAGOPAL BASKARAN", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "A711907", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "2322 ELKHORN CT SAN JOSE CA\n95125-4734\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "WASEEM AHMAD", 
-            "nationality": "PAKISTANI", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "HN1165551", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT 7 PARK HOUSE 55 HIGHBURY\nPARK LONDON N5 ITJ\nUNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SEBASTIEN MICHAEL ANTHONY\nTOTTE", 
-            "nationality": "BELGIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "E1350273", 
-            "source_of_address": "ACRA"
-        }, 
-        {
             "address": "S3,BLK-I,2 FLR,WILDGRAS APT,\nNIRUGUNA MANDIR LAYOUT,\nS T BED KORAMANGALA,\nBANGALORE KARNATAKA, INDIA\n560047", 
             "address_changed": null, 
-            "currency": "", 
             "name": "SATHEESH PRABU SATHIYA\nSEELAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": null, 
+            "ordinary_num": [], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "L1375677", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "532 N 16TH STREET\nSAN JOSE CA 95112, USA", 
+            "address": "2800 WOODLAWN DR STE 138,\nHONOLULU, HAWAII 96822,\nUNITED STATES", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "TRACIE LYNN TUNNELL", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
+            "name": "CHIPIN EQUITIES I, LLLP", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "79562"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "427394435", 
+            "shareholder_id": "T11UF3568C", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "2937 PIERCE ST, SAN FRANCISCO,\nCA 94123, USA", 
+            "address": "1050 BISHOP ST STE 225,\nHONOLULU, HAWAII 96813\nUNITED STATES", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "ADAM GORDON TAISCH", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
+            "name": "CHIPIN INVESTMENTS 2006, LLC", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "3978"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "215010786", 
+            "shareholder_id": "T11UF3569K", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "#97, 2ND B MAIN ROAD,\nKARNATAKA HOUSING BOARD,\n1ST STAGE YELAHANKA NEW\nTOWN, BANGALORE-64", 
+            "address": "MANOA INNOVATION CTR,  2800\nWOODLAWN DR STE 138,\nHONOLULU,\nHAWAII 96822, UNITED STATES", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "GURUDUTT RANGANATHAN\nVENKATARAMANAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "name": "CHIPIN INVESTMENTS 2007, LLC", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "7956"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "G0026495", 
+            "shareholder_id": "T11UF3570G", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "9B PRIORY ROAD SOUTH\nHAMPSTEAD\nLONDON NW6 4 NN UNITED\nKINGDOM", 
+            "address": "500  DELAWARE AVENUE, SUITE\n1500, WILMINGTON, NEW CASTLE\nDELAWARE, UNITED STATES", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "JAMES PAUL CHRISTIAN ERSKINE\nDEMETRIADI", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "1", 
+            "name": "GVC V LIMITED PARTNERSHIP", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "84687"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "458135581", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1866 TERSINI COURT, SAN JOSE,\nCA, 95131\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SHIAO-CHEN TANG", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "562", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "492833603", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "H NO 15/38 GANDHI CHOWK,\nGUNTAKAL POST\nANANTAPUR - 515801 AP, INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RUPA SATRASALA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F9083328", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "74 MONTAGU MANSIONS\n LONDON W1U 6LE, UNITED\nKINGDOM", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "CHEA LIMVIRAK ONG", 
-            "nationality": "FRENCH", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "12CC74623", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "300 IVY ST APT 315 SAN\nFRANCISCO, CA 94102\nUNITED STATES OF AMERICA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "NUMAZER DINYAR PAVRI", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "220939895", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT NO 205 SPARTA 1 PRESTIGE\nACRDPOLIS 20\nHOSUR ROAD KORAMANGALA,\nBANGALORE 560095, KARNATAKA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "", 
-            "name": "SUMIT KUMAR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": null, 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "K7139885", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "46-ROAD NO.B, WEST LAY OUT,\nSONARI, JAMSHEDPUR\nEAST SINGHBHUM, JHARKHAND,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "KUSHAL DUDANI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "150", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G6385642", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "170 KING ST, APT 1001, SAN\nFRANCISCO\nCA 94107, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "JENNIFER YIP", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "455423694", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "NO 44 1ST FLOOR RAMYA ROYAL\nAPTS NANDI DURG ROAD\nBANGALORE 560046 KARNATAKA,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "SITARA THOMAS", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "H0138784", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "VILLA 26 VASWAMI ASHTOM\nWOODS KARIYAMMANA AGRAHARA\nMAIN ROAD\nBANGALORE KAR-560103 INDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "MINU KATARIA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G2480167", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "8/49 ASHEERVAD ROAD NO 2 SION\n(E) MUMBAI 22", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "RISHIT RATNAKAR SHETTY", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "E8367192", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1675 YORK AVE APT 27L\nNEW YORK, NY 10128-6895, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "DAVID MATTHEW SMITH", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "113362248", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "2110 CALIFORNIA ST, SAN\nFRANCISCO, CA 94115, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PETER JOHN BASSETT", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "307022554", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "2400, BUCHANAN ST. APT, 301 SAN\nFRANSCISCO\nCA 94115, USA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "BRIAN RANDALL NEISLER", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "478090341", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "4/22, DR NATESAN ROAD, ASHOK\nNAGAR\nCHENNAI 600 083, TAMILNADU,\nINDIA", 
-            "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "DIVYA AMARNATH", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "E7677656", 
+            "shareholder_id": "T11UF3571C", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "1000, WINTER STREET, SUITE 3350,\nWALTHAM, MA 02451\nUNITED STATES", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "name": "POLARIS VENTURE PARTNERS\nENTREPRENEURS' FUND V, L.P.", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "9603"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T11UF3572K", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1000, WINTER STREET, SUITE 3350,\nWALTHAM, MA 02451\nUNITED STATES", 
+            "address_changed": null, 
             "name": "POLARIS VENTURE PARTNERS\nFOUNDERS' FUND V, L.P.", 
             "nationality": "UNITED STATES", 
-            "ordinary_num": "3375", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "3375"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T11UF3573F", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "FLAT NO 1107, OAK WOOD\nAPARTMENT, 8TH MAIN\n3RD BLOCK, KORAMANGALA,\nBANGALORE, KAR-560034, INDIA", 
+            "address": "111 INDUSTRIAL AREA , SION EAST,\nMUMBAI 400022, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "KARTHIK SANGAMESWARAN\nMAHADEVAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "name": "POLARIS VENTURE PARTNERS\nSPECIAL FOUNDERS\u00c3\u00a2\u00c2\u00bf\u00c2\u00bf FUND\nV, L.P.", 
+            "nationality": "UNITED STATES", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "19400"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "F8139072", 
+            "shareholder_id": "T11UF3574B", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "IFS COURT, TEWNTYEIGHT,\nCYBERCITY, EBENE, MAURITIUS", 
+            "address_changed": null, 
+            "name": "MURUGAN CAPITAL", 
+            "nationality": "MAURITIUS", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
+            "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "pref_num": "6342945", 
+            "shareholder_id": "T11UF3578H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "IFS COURT, TEWNTYEIGHT,\nCYBERCITY, EBENE, MAURITIUS", 
+            "address_changed": null, 
+            "name": "SHERPALO MAURITIUS LLC", 
+            "nationality": "MAURITIUS", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
+            "pref_currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "pref_num": "6342945", 
+            "shareholder_id": "T11UF3579D", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "112 NORTH CURRY STREET\nCARSON CITY, NV 89703-4934, USA", 
             "address_changed": null, 
-            "currency": "", 
             "name": "EAST RIVER ADVISORS, LLC", 
             "nationality": "UNITED STATES", 
-            "ordinary_num": null, 
+            "ordinary_num": [], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T11UF3580A", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "N0168/4 2ND  D MAIN ROAD 6TH\nBLOCK JAYANAGAR\nBANGALORE 560082", 
+            "address": "204 E, V S ENCLAVE, 6TH G CROSS,\nBALAJI LT KAGGADASAPURA\nPO CV RAMAN NAGAR, BANGALORE\nKARNATAKA, INDIA 560093", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
-            "name": "PRASANNA KARUNAKAR HEGDE", 
+            "name": "MANEESH AGRAWAL", 
             "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "H2155392", 
+            "shareholder_id": "Z2668910", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "G2, 88, RNS HERITAGE 1ST MAIN\n4TH CROSS VIJAYA BANK LYT,\nB G ROAD, BANGALORE\nKARNATAKA, INDIA 560076", 
+            "address_changed": null, 
+            "name": "RISHU MEHROTRA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z2668967", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "B 606 PRESTIGE ST JOHNS WOOD\n80 ST JOHNS ROAD TAVEREKERE,\nBANGALORE KARNATAKA, INDIA\n560029", 
+            "address_changed": null, 
+            "name": "PRATIK HIRACHAND SHAH", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z2680663", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "A101, ANEESHA MEADOWS,\nVENKAT REDDY LAYOUT\nKORAMANGALA 6TH BLOCK,\nBANGALORE 560095, KARNATAKA,\nINDIA", 
+            "address_changed": null, 
+            "name": "ROHAN RAI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z2724969", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "SPARTA 1, APT 205 PRESTIGE,\nACROPOLISE 20 HOSUR\nROAD, BANGALORE - 560029,\nKARNATAKA, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "SAXENA MOHIT KUMAR", 
             "nationality": "INDIAN", 
-            "ordinary_num": "37489", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "37489"
+                }
+            ], 
             "shareholder_id": "J7078240", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"
@@ -1771,10 +2243,14 @@
         {
             "address": "A-609 H M SYMPHONY,\nKASAVANAHALLI, OFF SARJAPUR\nROAD\nBANGALORE, BENGALURU KT\n560035, INDIA", 
             "address_changed": null, 
-            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
             "name": "ASHUTOSH SANDHAL", 
             "nationality": "INDIAN", 
-            "ordinary_num": "37489", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "37489"
+                }
+            ], 
             "shareholder_id": "H3337862", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"

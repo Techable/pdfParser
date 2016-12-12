@@ -98,11 +98,15 @@
     "shareholders": [
         {
             "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SUNDER JASHANMAL SAMNANI S/O J \nG SAMNANI", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "374000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "374000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S0712492I", 
@@ -110,11 +114,15 @@
         }, 
         {
             "address": "66 MEYER ROAD\n#02-01\nSINGAPORE (437894)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SAMNANI NEERAJ SUNDER", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "88000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "88000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7241802F", 
@@ -122,11 +130,15 @@
         }, 
         {
             "address": "48 MEYER ROAD\n#08-48\nEQUATORIAL APARTMENTS\nSINGAPORE (437872)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SANJAY SUNDER SAMNANI", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "88000", 
+            "nationality": "SINGAPORE CITIZEN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "88000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7110180J", 

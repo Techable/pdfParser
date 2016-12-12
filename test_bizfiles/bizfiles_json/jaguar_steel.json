@@ -80,11 +80,15 @@
     "shareholders": [
         {
             "address": "804, GOPAL HEIGHTS,NETAJI\nSUBHASH PLACE\nPITAMPURA,NEW DELHI110034", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "NEW METAL VISION PRIVATE\nLIMITED", 
-            "nationality": "INDIA", 
-            "ordinary_num": "100000", 
+            "nationality": "INDIA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T16UF2162J", 

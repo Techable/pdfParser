@@ -1,0 +1,136 @@
+{
+    "activites_description": "MINERAL TRADING, GEOLOGICAL SERVICES", 
+    "activites_description_2": "OTHER INVESTMENT HOLDING COMPANIES", 
+    "activities_1": "46900", 
+    "activities_2": "64202", 
+    "audit_firm_name": "NATARAJAN & SWAMINATHAN", 
+    "bizfile_date": "19/03/2014", 
+    "capital": [
+        {
+            "amount": "269901.00", 
+            "capital_type": "capital", 
+            "currency": "269901", 
+            "id": "", 
+            "share_type": "SINGAPORE, DOLLARS", 
+            "shares": 269901.0
+        }, 
+        {
+            "amount": "4475835.00", 
+            "capital_type": "capital", 
+            "currency": "4475835", 
+            "id": "", 
+            "share_type": "UNITED STATES OF AMERICA, DOLLARS", 
+            "shares": 4475835.0
+        }, 
+        {
+            "amount": "269901.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "SINGAPORE, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }, 
+        {
+            "amount": "4475835.00", 
+            "capital_type": "paid_up_capital", 
+            "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+            "id": "", 
+            "share_type": "ORDINARY", 
+            "shares": null
+        }
+    ], 
+    "charges": [], 
+    "company_name": "ASR GLOBAL PTE. LTD.", 
+    "company_type": "LIMITED PRIVATE COMPANY", 
+    "date_of_ac_at_last": "31/03/2012", 
+    "date_of_address": "06/07/2010", 
+    "date_of_last_agm": "27/12/2013", 
+    "date_of_last_ar": "27/01/2014", 
+    "date_of_lodgment_of_ar": "27/01/2014", 
+    "description": "", 
+    "former_name": "", 
+    "id": "", 
+    "incorp_date": "06/07/2010", 
+    "officers": [
+        {
+            "address": "168/A ROAD NO 10 JUBILEE HILLS\nHYDERABAD AP", 
+            "date_of_appointment": "19/10/2011", 
+            "name": "NEELAVATHI DEVI ALLURI", 
+            "nationality": "INDIAN", 
+            "officer_id": "G4990299", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "06/07/2010", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "207 SERANGOON CENTRAL\n#11-198\nSINGAPORE (550207)", 
+            "date_of_appointment": "06/07/2010", 
+            "name": "VANGAL RANGARAJAN RANGANATHAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "officer_id": "S2662860A", 
+            "position": "SECRETARY", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "168-A, RD NO. 10, JUBLEE \nHILLS,HYDERABAD\nANDHRA PRADESH 500034", 
+            "date_of_appointment": "10/08/2010", 
+            "name": "SRINIVAS RAMA RAJU ALLURI", 
+            "nationality": "INDIAN", 
+            "officer_id": "Z1866725", 
+            "position": "DIRECTOR", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "organization": "", 
+    "receipt_no": "ACR0000005469108A", 
+    "registered_office_address": "1 NORTH BRIDGE ROAD\n#19-04/05\nHIGH STREET CENTRE\nSINGAPORE (179094)", 
+    "registration_no": "201014257R", 
+    "shareholders": [
+        {
+            "address": "41,NAGARJUNA \nHILLS,PUNJAGUTTA,HYDERABAD \n500082\nANDHRA PRADESH,INDIA", 
+            "address_changed": null, 
+            "name": "A S R MINING PRIVATE LIMITED", 
+            "nationality": "INDIA", 
+            "ordinary_num": [
+                {
+                    "currency": "UNITED STATES OF AMERICA, DOLLARS", 
+                    "ordinary_number": "4475835"
+                }, 
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T11UF2907E", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "168-A, RD NO. 10, JUBLEE \nHILLS,HYDERABAD\nANDHRA PRADESH 500034", 
+            "address_changed": null, 
+            "name": "SRINIVAS RAMA RAJU ALLURI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "269900"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1866725", 
+            "source_of_address": "ACRA"
+        }
+    ], 
+    "status": "Live Company", 
+    "status_date": "06/07/2010"
+}

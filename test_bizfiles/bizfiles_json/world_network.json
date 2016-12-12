@@ -71,11 +71,15 @@
     "shareholders": [
         {
             "address": "", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "S2662860A", 
-            "nationality": "ACRA", 
-            "ordinary_num": "100", 
+            "nationality": "ACRA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "SINGAPORE CITIZEN", 

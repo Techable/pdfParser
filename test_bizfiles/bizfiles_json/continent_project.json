@@ -79,11 +79,15 @@
     "shareholders": [
         {
             "address": "30 SHAW ROAD\n#04-06\nROCHE BUILDING\nSINGAPORE (367957)",
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "PACIFIC AND ATLANTIC TRADING PTE. \nLTD.",
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "2000000", 
+            "nationality": "SINGAPORE",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "2000000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "201004007E", 

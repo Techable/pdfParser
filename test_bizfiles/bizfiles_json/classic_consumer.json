@@ -104,11 +104,15 @@
     "shareholders": [
         {
             "address": "99 MEYER ROAD\n#05-02\nSOVEREIGN, THE\nSINGAPORE (437920)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS",
+            "address_changed": null,
             "name": "SALONI VINAYKANT", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "299999",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "299999"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2592011B", 
@@ -116,11 +120,15 @@
         }, 
         {
             "address": "124 ANG MO KIO AVENUE 6\n#06-4071\nSINGAPORE (560124)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SOWRIRAJAN SRINIVASAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "1", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "A0961957", 

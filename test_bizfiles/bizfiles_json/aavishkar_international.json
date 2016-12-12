@@ -79,528 +79,304 @@
     "registration_no": "200106268M", 
     "shareholders": [
         {
-            "address": "#2, 1ST FL,SILVER OAK ESTATE\nB.DESAI RD,MUMBAI 40002 6, INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SADANAND BHALCHANDRA SULE", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "25000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2612744J", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "61 GRANGE ROAD\n#12-02\nBEVERLY HILL APARTMENTS\nSINGAPORE (249570)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "VINOD AACHI", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "110000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S7085108C", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "437 TANJONG KATONG ROAD\n#09-02\nKING'S MANSION\nSINGAPORE (437147)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RAMNATH IYER", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "24000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z1152867", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "JAYESH ARVIND PAREKH", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "112642",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2598645H", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1914 KENTSDALE LANE VIENNA VA\n22182 USA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "MARY KATHRYN BELLAMY", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "16286",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "432157464", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "68 BAYSHORE ROAD\n#12-02\nCOSTA DEL SOL\nSINGAPORE (469986)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "JASMEET WALIA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "10000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z1729263", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "151 STEVENS ROAD\n#04-07\nEQUATORIAL, THE\nSINGAPORE (257872)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ARVIND SINGH", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "70000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2608808I", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "JAI BUDDHICHAND MAROO", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "37643",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "G5683512T", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "11 NATHAN ROAD\n#02-04\nREGENCY PARK\nSINGAPORE (248732)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "VENKATESH SETHURAMAN", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "30000",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S6863685Z", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "29E, ADMIRALITY CENTRE TOWER\n1, 18 HARCOURT RD.", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SUNDER SHAM CHANRAI", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "12543",
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "761256743", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "5 TEMASEK BOULEVARD\n#08-00\nSUNTEC TOWER FIVE\nSINGAPORE (038985)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SANJEEV SANYAL", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F2420018M", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "VENDUVAS, VILLAGE STREET,\nPICKWORTH, U.K, NG34 OTD", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PALANISWAMY SUNDERRAJ", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "150000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "801618414", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "130 TANJONG RHU ROAD\n#03-23\nPEBBLE BAY\nSINGAPORE (436918)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "NAIK SHAILESHKUMAR SUMANTRAI S2697523I", 
-            "nationality": "ACRA", 
-            "ordinary_num": "25000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "SINGAPORE CITIZEN", 
-            "source_of_address": "11/11/2009"
-        }, 
-        {
-            "address": "13818 LA PALOMA RD\nLOS ALTOS, CA 94022", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "AMIT SHAH", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "0562604447", 
-            "source_of_address": "ACRA"
-        }, 
-        {
             "address": "GNELLENSTRASSE 16 8142\nUITIKON, SWITZERLAND", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "CHANTAL GANTENBEIN", 
             "nationality": "SWISS", 
-            "ordinary_num": "17000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "17000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "0194610", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "13687 ST JOHNS WOOD PL,\nHERNDON\nVA 20171", 
+            "address": "CREDIT SUISSE UETLIBERG\nSTRASSE 231\nCH-8070 ZURICH SWITZERLAND", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RAGHUVEER MUKKAMALLA", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "15075", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "F8734518", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "29E, ADMIRALITY CENTRE TOWER 1\n18 HARCOURT RD", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PRAMILA CHANRAI", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "12542", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z1228923", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "FLAT 1, 27 HYDE PARK GARDENS,\nLONDON W22LZ, UNITED KINGDOM", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PETER JAMES WILLIAMSON", 
+            "name": "NITIN BHIKHU PAREKH", 
             "nationality": "BRITISH", 
-            "ordinary_num": "35000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "118926"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "500199508", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "57 GRANGE ROAD\n#13-03\nGRAMERCY PARK\nSINGAPORE (249569)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SANDEEP MALIK", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "20000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z1545288", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "27C TOWER 3 TREGUNTER, 14\nTREGUNTERPATM,\nMID-LEVELS, HONG KONG", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RAJESH SUNDARESAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "E0244121", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "33 BALMORAL ROAD\n#02-03\nBALMORAL GATE\nSINGAPORE (259811)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RAVDEEP KAUR SINGH", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "1", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2614207E", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "80 RAFFLES PLACE\n#14-01\nUOB PLAZA\nSINGAPORE (048624)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SAT PAL S/O I D KHATTAR", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "25000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S0000747A", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "KOENIGIN-SOPHIE, STR. 19", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ANDRE PETER WEGNER", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "38287", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "093071649", 
+            "shareholder_id": "043100970", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "26 COURS F. DE LESSEPS 92500\nRUEIL FRANCE", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "BERNARD VIRONDEAU", 
             "nationality": "FRENCH", 
-            "ordinary_num": "20000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "04RE49047", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "23A RIDOUT ROAD\nSINGAPORE (248417)", 
+            "address": "13818 LA PALOMA RD\nLOS ALTOS, CA 94022", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SANKARAN LEENA MRS. LEENA\nPINSLER", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "25000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S1352147F", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "BLUEMLISALPSTRASSE 67, ZURICH\n8006, SWITZERLAND", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "DR. OLIVER ADLER", 
-            "nationality": "SWISS", 
-            "ordinary_num": "55000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "8491950", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "112 TANJONG RHU ROAD\n#09-02\nCAMELOT BY-THE-WATER\nSINGAPORE (436929)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "KANWALJIT SOIN", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "5000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S0083268E", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "26 JOHNSON DRIVE, NEWMARKET,\nNH 03857, USA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SESHAKRISHNAN SRINIVASAN", 
+            "name": "AMIT SHAH", 
             "nationality": "AMERICAN", 
-            "ordinary_num": "10000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "102442735", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "11 TANJONG RHU ROAD\n#23-04\nWATERSIDE, THE\nSINGAPORE (436896)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "P. VICTOR CHERIAN", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "20000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S7678503A", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "65 CORONATION ROAD\nSINGAPORE (269464)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "IYENGAR VIJAYKUMAR GOPALAN", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2592639J", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "103 CLEMENTI ROAD\n#07-01\nSINGAPORE (129788)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PARAYIL GOVINDAN", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z1003142", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "110 TANJONG RHU ROAD\n#14-02\nCAMELOT BY-THE-WATER\nSINGAPORE (436928)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ANAND RAMACHANDRAN", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "30000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S6978307D", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "44 MONK'S HILL ROAD\n#05-44\nMONKS HILL FLAT\nSINGAPORE (228575)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "VU TIEN VY", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S6884532G", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "9 BALMORAL PARK\n#11-01\nBALMORAL HILLS\nSINGAPORE (259844)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PICHUMONY SUNDARAM", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "20000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2667461A", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "43 POOLE ROAD\nSINGAPORE (437531)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "CHEN WEI CHING", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "30000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S1137211B", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "23 CHURCH STREET\n#16-01\nCAPITAL SQUARE\nSINGAPORE (049481)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "NARAYAN RAMACHANDRAN", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "66300", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "140742782", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "17 HAIG AVENUE\nSINGAPORE (438873)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "VENKATRAMAN ANANTHA\nNAGESWARAN", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "100001", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2697819Z", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "11 NATHAN ROAD\n#08-04\nREGENCY PARK\nSINGAPORE (248732)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ASHUTOSH SINHA", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2705970H", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "10 CUSCADEN WALK\n#23-01\nFOUR SEASONS PARK\nSINGAPORE (249693)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PRASAD PULAK CHANDAN", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S6884171B", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "4 THE LEAS INGATESTONE - CM4\n9AF -  ESSEX. ENGLAND", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "H.V. RUPARELIA", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "50000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "740215353", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "239 ARCADIA ROAD\n#03-03\nTHE ARCADIA\nSINGAPORE (289845)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RAKESH KUMAR AGGARWAL", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2591784G", 
+            "shareholder_id": "0562604447", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "GRASWINKELSTRASSE 7, CH-8302\nKLOTEN, SWITZERLAND", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "DR. MATTHIAS DENZLER", 
             "nationality": "SWISS", 
-            "ordinary_num": "60000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "60000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "0921795", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "33 BALMORAL ROAD\n#10-03\nBALMORAL GATE\nSINGAPORE (259811)", 
+            "address": "KOENIGIN-SOPHIE, STR. 19", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "CHAN MUI TIAN MONICA", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "20000", 
+            "name": "ANDRE PETER WEGNER", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "38287"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
-            "shareholder_id": "S1633859A", 
-            "source_of_address": "OSCARS"
+            "shareholder_id": "093071649", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "GNELLENSTRASSE 16 8142\nUITIKON, SWITZERLAND", 
+            "address_changed": null, 
+            "name": "RALPH GANTENBEIN", 
+            "nationality": "SWISS", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "17000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "0936212", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "26 JOHNSON DRIVE, NEWMARKET,\nNH 03857, USA", 
+            "address_changed": null, 
+            "name": "SESHAKRISHNAN SRINIVASAN", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "102442735", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "23 CHURCH STREET\n#16-01\nCAPITAL SQUARE\nSINGAPORE (049481)", 
+            "address_changed": null, 
+            "name": "NARAYAN RAMACHANDRAN", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "66300"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "140742782", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "77 ROBINSON ROAD\n#16-00\nROBINSON 77\nSINGAPORE (068896)", 
+            "address_changed": null, 
+            "name": "KYLIAN TECHNOLOGY\nMANAGEMENT PTE LTD", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "12000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "199702619Z", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "1914 KENTSDALE LANE VIENNA VA\n22182 USA", 
+            "address_changed": null, 
+            "name": "MARY KATHRYN BELLAMY", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "16286"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "432157464", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "FLAT 1, 27 HYDE PARK GARDENS,\nLONDON W22LZ, UNITED KINGDOM", 
+            "address_changed": null, 
+            "name": "PETER JAMES WILLIAMSON", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "35000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "500199508", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "A-12 IIT BOMBAY MUMBAI 400076\nINDIA", 
+            "address_changed": null, 
+            "name": "KRITHIVASAN RAMAMRITHAM", 
+            "nationality": "AMERICAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "710836013", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "4 THE LEAS INGATESTONE - CM4\n9AF -  ESSEX. ENGLAND", 
+            "address_changed": null, 
+            "name": "H.V. RUPARELIA", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "740215353", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "29E, ADMIRALITY CENTRE TOWER\n1, 18 HARCOURT RD.", 
+            "address_changed": null, 
+            "name": "SUNDER SHAM CHANRAI", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "12543"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "761256743", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "VENDUVAS, VILLAGE STREET,\nPICKWORTH, U.K, NG34 OTD", 
+            "address_changed": null, 
+            "name": "PALANISWAMY SUNDERRAJ", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "150000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "801618414", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "BLUEMLISALPSTRASSE 67, ZURICH\n8006, SWITZERLAND", 
+            "address_changed": null, 
+            "name": "DR. OLIVER ADLER", 
+            "nationality": "SWISS", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "55000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "8491950", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "395 ANO NUEVO AVE #213\nSUNNYVALE CA 94085", 
+            "address_changed": null, 
+            "name": "PARAG VIJAY THAKUR", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "A0698596", 
+            "source_of_address": "ACRA"
         }, 
         {
             "address": "12728 ADOLPHIA COURT\nSAN DIEGO, CA 92129 USA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "PALAMADAI KRISHNAN\nNEELAKANTAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "A1948060", 
@@ -609,226 +385,702 @@
         {
             "address": "9 BATTERY ROAD\n#04-01\nSTRAITS TRADING BUILDING\nSINGAPORE (049910)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "JAI MAROO", 
             "nationality": "INDIAN", 
-            "ordinary_num": "25000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "A6116832", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "THE LABURNUM, TH 2, PH 1, DLF,\nSUSHANT LOK, SEC 28,\nGURUAON HARYANA 122002 INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "GOVINDAN RAGHAVAN", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2646583D", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "208 DEPOT ROAD\n#02-56\nINTERLACE, THE\nSINGAPORE (109698)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "BAER PIERRE FRANCOIS ALEC", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "36500", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2716294J", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "2 PEACH GARDEN, # 18 - 02, MEYER\nROAD\nSINGAPORE 437603", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ACE INTERNATIONAL GROUP\nLIMITED", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "60061", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "T03UF1081A", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "395 ANO NUEVO AVE #213\nSUNNYVALE CA 94085", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PARAG VIJAY THAKUR", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "A0698596", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "77 ROBINSON ROAD\n#16-00\nROBINSON 77\nSINGAPORE (068896)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "KYLIAN TECHNOLOGY\nMANAGEMENT PTE LTD", 
-            "nationality": "SINGAPORE", 
-            "ordinary_num": "12000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "199702619Z", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "105 HOLLAND GROVE VIEW\nSINGAPORE (276262)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "PAUL STEFANSSON", 
-            "nationality": "CANADIAN", 
-            "ordinary_num": "30000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "BC244271", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "8A, SAAHIL,14 ALTAMOUNT ROAD\nMUMBAI 400026 INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "JOHN ARUNKUMAR DIAZ", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "38000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2658328D", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "GNELLENSTRASSE 16 8142\nUITIKON, SWITZERLAND", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "RALPH GANTENBEIN", 
-            "nationality": "SWISS", 
-            "ordinary_num": "17000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "0936212", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "1 RHU CROSS\n#04-08\nCOSTA RHU\nSINGAPORE (437431)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "VIBHAV PANANDIKER", 
-            "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2677358Z", 
-            "source_of_address": "ACRA"
-        }, 
-        {
             "address": "40 NEWPORT PKWY, APT #3014\nJERSEY CITY, NJ 07310 USA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SAURAV JINDAL", 
             "nationality": "INDIAN", 
-            "ordinary_num": "15000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "15000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "A8751013", 
             "source_of_address": "ACRA"
         }, 
         {
-            "address": "394/1 BLOCK G NEW ALIPORE\nCALCUATTA 700053", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "SHOBHA PUNUKOLLU", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "40000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "Z2078767", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "43RD FLOOR, CITIBANK TOWER,\nCITIBANK\nPLAZA 3, GARDEN ROAD HONG\nKONG", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "ANAND RAMACHANDRAN", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S7179355I", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "CREDIT SUISSE UETLIBERG\nSTRASSE 231\nCH-8070 ZURICH SWITZERLAND", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "NITIN BHIKHU PAREKH", 
-            "nationality": "BRITISH", 
-            "ordinary_num": "118926", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "043100970", 
-            "source_of_address": "ACRA"
-        }, 
-        {
-            "address": "AL MUHAIRY CENTRE,TOWER A,\nUNIT 1602\nP.O.BOX 41765 ABU DHABI U AE", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "JAYARAMAN VISHWANATHAN", 
-            "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "10000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "S2727689Z", 
-            "source_of_address": "OSCARS"
-        }, 
-        {
-            "address": "A-12 IIT BOMBAY MUMBAI 400076\nINDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
-            "name": "KRITHIVASAN RAMAMRITHAM", 
-            "nationality": "AMERICAN", 
-            "ordinary_num": "25000", 
-            "pref_currency": null, 
-            "pref_num": null, 
-            "shareholder_id": "710836013", 
-            "source_of_address": "ACRA"
-        }, 
-        {
             "address": "9 NATHAN ROAD\n#09-02\nREGENCY PARK\nSINGAPORE (248730)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "DINKAR RAI", 
             "nationality": "INDIAN", 
-            "ordinary_num": "35000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "35000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "A8980510", 
             "source_of_address": "ACRA"
         }, 
         {
+            "address": "105 HOLLAND GROVE VIEW\nSINGAPORE (276262)", 
+            "address_changed": null, 
+            "name": "PAUL STEFANSSON", 
+            "nationality": "CANADIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "BC244271", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "27C TOWER 3 TREGUNTER, 14\nTREGUNTERPATM,\nMID-LEVELS, HONG KONG", 
+            "address_changed": null, 
+            "name": "RAJESH SUNDARESAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "E0244121", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "5 TEMASEK BOULEVARD\n#08-00\nSUNTEC TOWER FIVE\nSINGAPORE (038985)", 
+            "address_changed": null, 
+            "name": "SANJEEV SANYAL", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F2420018M", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "13687 ST JOHNS WOOD PL,\nHERNDON\nVA 20171", 
+            "address_changed": null, 
+            "name": "RAGHUVEER MUKKAMALLA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "15075"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "F8734518", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
+            "address_changed": null, 
+            "name": "JAI BUDDHICHAND MAROO", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "37643"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "G5683512T", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "80 RAFFLES PLACE\n#14-01\nUOB PLAZA\nSINGAPORE (048624)", 
+            "address_changed": null, 
+            "name": "SAT PAL S/O I D KHATTAR", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S0000747A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "112 TANJONG RHU ROAD\n#09-02\nCAMELOT BY-THE-WATER\nSINGAPORE (436929)", 
+            "address_changed": null, 
+            "name": "KANWALJIT SOIN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "5000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S0083268E", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "43 POOLE ROAD\nSINGAPORE (437531)", 
+            "address_changed": null, 
+            "name": "CHEN WEI CHING", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1137211B", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "23A RIDOUT ROAD\nSINGAPORE (248417)", 
+            "address_changed": null, 
+            "name": "SANKARAN LEENA MRS. LEENA\nPINSLER", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1352147F", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "33 BALMORAL ROAD\n#10-03\nBALMORAL GATE\nSINGAPORE (259811)", 
+            "address_changed": null, 
+            "name": "CHAN MUI TIAN MONICA", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S1633859A", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "239 ARCADIA ROAD\n#03-03\nTHE ARCADIA\nSINGAPORE (289845)", 
+            "address_changed": null, 
+            "name": "RAKESH KUMAR AGGARWAL", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2591784G", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "65 CORONATION ROAD\nSINGAPORE (269464)", 
+            "address_changed": null, 
+            "name": "IYENGAR VIJAYKUMAR GOPALAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2592639J", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
+            "address_changed": null, 
+            "name": "JAYESH ARVIND PAREKH", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "112642"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2598645H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "151 STEVENS ROAD\n#04-07\nEQUATORIAL, THE\nSINGAPORE (257872)", 
+            "address_changed": null, 
+            "name": "ARVIND SINGH", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "70000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2608808I", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "#2, 1ST FL,SILVER OAK ESTATE\nB.DESAI RD,MUMBAI 40002 6, INDIA", 
+            "address_changed": null, 
+            "name": "SADANAND BHALCHANDRA SULE", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2612744J", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "33 BALMORAL ROAD\n#02-03\nBALMORAL GATE\nSINGAPORE (259811)", 
+            "address_changed": null, 
+            "name": "RAVDEEP KAUR SINGH", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "1"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2614207E", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "THE LABURNUM, TH 2, PH 1, DLF,\nSUSHANT LOK, SEC 28,\nGURUAON HARYANA 122002 INDIA", 
+            "address_changed": null, 
+            "name": "GOVINDAN RAGHAVAN", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2646583D", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "8A, SAAHIL,14 ALTAMOUNT ROAD\nMUMBAI 400026 INDIA", 
+            "address_changed": null, 
+            "name": "JOHN ARUNKUMAR DIAZ", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "38000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2658328D", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "9 BALMORAL PARK\n#11-01\nBALMORAL HILLS\nSINGAPORE (259844)", 
+            "address_changed": null, 
+            "name": "PICHUMONY SUNDARAM", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2667461A", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "1 RHU CROSS\n#04-08\nCOSTA RHU\nSINGAPORE (437431)", 
+            "address_changed": null, 
+            "name": "VIBHAV PANANDIKER", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2677358Z", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "130 TANJONG RHU ROAD\n#03-23\nPEBBLE BAY\nSINGAPORE (436918)", 
+            "address_changed": null, 
+            "name": "NAIK SHAILESHKUMAR SUMANTRAI S2697523I", 
+            "nationality": "ACRA", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "25000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "SINGAPORE CITIZEN", 
+            "source_of_address": "11/11/2009"
+        }, 
+        {
+            "address": "17 HAIG AVENUE\nSINGAPORE (438873)", 
+            "address_changed": null, 
+            "name": "VENKATRAMAN ANANTHA\nNAGESWARAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "100001"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2697819Z", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "11 NATHAN ROAD\n#08-04\nREGENCY PARK\nSINGAPORE (248732)", 
+            "address_changed": null, 
+            "name": "ASHUTOSH SINHA", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2705970H", 
+            "source_of_address": "ACRA"
+        }, 
+        {
             "address": "112 TANJONG RHU ROAD\n#13-01\nCAMELOT BY-THE-WATER\nSINGAPORE (436929)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "ALOK SHARMA", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "20000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S2713677Z", 
             "source_of_address": "OSCARS"
         }, 
         {
+            "address": "208 DEPOT ROAD\n#02-56\nINTERLACE, THE\nSINGAPORE (109698)", 
+            "address_changed": null, 
+            "name": "BAER PIERRE FRANCOIS ALEC", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "36500"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2716294J", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "AL MUHAIRY CENTRE,TOWER A,\nUNIT 1602\nP.O.BOX 41765 ABU DHABI U AE", 
+            "address_changed": null, 
+            "name": "JAYARAMAN VISHWANATHAN", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S2727689Z", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "11 NATHAN ROAD\n#02-04\nREGENCY PARK\nSINGAPORE (248732)", 
+            "address_changed": null, 
+            "name": "VENKATESH SETHURAMAN", 
+            "nationality": "SINGAPORE CITIZEN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S6863685Z", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "10 CUSCADEN WALK\n#23-01\nFOUR SEASONS PARK\nSINGAPORE (249693)", 
+            "address_changed": null, 
+            "name": "PRASAD PULAK CHANDAN", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S6884171B", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "44 MONK'S HILL ROAD\n#05-44\nMONKS HILL FLAT\nSINGAPORE (228575)", 
+            "address_changed": null, 
+            "name": "VU TIEN VY", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S6884532G", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "110 TANJONG RHU ROAD\n#14-02\nCAMELOT BY-THE-WATER\nSINGAPORE (436928)", 
+            "address_changed": null, 
+            "name": "ANAND RAMACHANDRAN", 
+            "nationality": "BRITISH", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S6978307D", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "61 GRANGE ROAD\n#12-02\nBEVERLY HILL APARTMENTS\nSINGAPORE (249570)", 
+            "address_changed": null, 
+            "name": "VINOD AACHI", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "110000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7085108C", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "43RD FLOOR, CITIBANK TOWER,\nCITIBANK\nPLAZA 3, GARDEN ROAD HONG\nKONG", 
+            "address_changed": null, 
+            "name": "ANAND RAMACHANDRAN", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7179355I", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "11 TANJONG RHU ROAD\n#23-04\nWATERSIDE, THE\nSINGAPORE (436896)", 
+            "address_changed": null, 
+            "name": "P. VICTOR CHERIAN", 
+            "nationality": "SINGAPORE P.R.", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "S7678503A", 
+            "source_of_address": "OSCARS"
+        }, 
+        {
+            "address": "2 PEACH GARDEN, # 18 - 02, MEYER\nROAD\nSINGAPORE 437603", 
+            "address_changed": null, 
+            "name": "ACE INTERNATIONAL GROUP\nLIMITED", 
+            "nationality": "SINGAPORE", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "60061"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "T03UF1081A", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "103 CLEMENTI ROAD\n#07-01\nSINGAPORE (129788)", 
+            "address_changed": null, 
+            "name": "PARAYIL GOVINDAN", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1003142", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "437 TANJONG KATONG ROAD\n#09-02\nKING'S MANSION\nSINGAPORE (437147)", 
+            "address_changed": null, 
+            "name": "RAMNATH IYER", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "24000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1152867", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "29E, ADMIRALITY CENTRE TOWER 1\n18 HARCOURT RD", 
+            "address_changed": null, 
+            "name": "PRAMILA CHANRAI", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "12542"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1228923", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "57 GRANGE ROAD\n#13-03\nGRAMERCY PARK\nSINGAPORE (249569)", 
+            "address_changed": null, 
+            "name": "SANDEEP MALIK", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1545288", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "68 BAYSHORE ROAD\n#12-02\nCOSTA DEL SOL\nSINGAPORE (469986)", 
+            "address_changed": null, 
+            "name": "JASMEET WALIA", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z1729263", 
+            "source_of_address": "ACRA"
+        }, 
+        {
+            "address": "394/1 BLOCK G NEW ALIPORE\nCALCUATTA 700053", 
+            "address_changed": null, 
+            "name": "SHOBHA PUNUKOLLU", 
+            "nationality": "INDIAN", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "40000"
+                }
+            ], 
+            "pref_currency": null, 
+            "pref_num": null, 
+            "shareholder_id": "Z2078767", 
+            "source_of_address": "ACRA"
+        }, 
+        {
             "address": "P O BOX 62817 DUBAI UAE", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SRIVIDYA BOOVARAHAMOORTHY", 
             "nationality": "INDIAN", 
-            "ordinary_num": "16160", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "16160"
+                }
+            ], 
             "shareholder_id": "A5314483", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"
@@ -836,10 +1088,14 @@
         {
             "address": "P O BOX 62817 DUBAI UAE", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "RAGOTHAMAN HAYAGREEVAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": "16160", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "16160"
+                }
+            ], 
             "shareholder_id": "E9530875", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"
@@ -847,10 +1103,14 @@
         {
             "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "JAYESH ARVIND PAREKH", 
             "nationality": "SINGAPORE CITIZEN", 
-            "ordinary_num": "50000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
             "shareholder_id": "S2598645H", 
             "shareholder_type": "B", 
             "source_of_address": "ACRA"
@@ -858,10 +1118,14 @@
         {
             "address": "114A ARTHUR ROAD\n#21-08\nKATONG PARK TOWERS\nSINGAPORE (439826)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "MONA JAYESH PAREKH MRS", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "50000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
             "shareholder_id": "S2598646F", 
             "shareholder_type": "B", 
             "source_of_address": "OSCARS"
@@ -869,10 +1133,14 @@
         {
             "address": "202, VINAYAK ANGAAN,\nPRABHADEVI,\nMUMBAI - 400025 INDIA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SAMEER ANIL WAGLE", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "50000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
             "shareholder_id": "S7185168J", 
             "shareholder_type": "C", 
             "source_of_address": "OSCARS"
@@ -880,10 +1148,14 @@
         {
             "address": "9 TANJONG RHU ROAD\n#13-03\nWATERSIDE, THE\nSINGAPORE (436894)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "KEDAR ANIL WAGLE", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "50000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "50000"
+                }
+            ], 
             "shareholder_id": "S7176449D", 
             "shareholder_type": "C", 
             "source_of_address": "OSCARS"
@@ -891,10 +1163,14 @@
         {
             "address": "CASABELLA APT., 2F, 4-23-1,\nMINAMI-AOYAMA, MINATO-KU,\nTOKYO 107-0062 JAPAN", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "JENNIFER MEEHAN", 
             "nationality": "AMERICAN", 
-            "ordinary_num": "20000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
             "shareholder_id": "015213104", 
             "shareholder_type": "D", 
             "source_of_address": "ACRA"
@@ -902,10 +1178,14 @@
         {
             "address": "CASABELLA APT., 2F, 4-23-1,\nMINAMI-AOYAMA, MINATO-KU,\nTOKYO 107-0062 JAPAN", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "JOHN LEWIS", 
             "nationality": "AMERICAN", 
-            "ordinary_num": "20000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "20000"
+                }
+            ], 
             "shareholder_id": "500544549", 
             "shareholder_type": "D", 
             "source_of_address": "ACRA"
@@ -913,10 +1193,14 @@
         {
             "address": "2 BARBARY WALK\nSHEPHERD'S HILL ESTATE\nSINGAPORE (149861)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "RANJANA SANJAY MATHUR", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "15000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "15000"
+                }
+            ], 
             "shareholder_id": "S2696232C", 
             "shareholder_type": "E", 
             "source_of_address": "ACRA"
@@ -924,10 +1208,14 @@
         {
             "address": "2 BARBARY WALK\nSHEPHERD'S HILL ESTATE\nSINGAPORE (149861)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SANJAY MATHUR", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": "15000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "15000"
+                }
+            ], 
             "shareholder_id": "S2696231E", 
             "shareholder_type": "E", 
             "source_of_address": "ACRA"
@@ -935,10 +1223,14 @@
         {
             "address": "103 CLEMENTI ROAD\n#08-07\nSINGAPORE (129788)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "PRAGNYA MUKUL ASHER", 
             "nationality": "INDIAN", 
-            "ordinary_num": "30000", 
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
             "shareholder_id": "T122514", 
             "shareholder_type": "F", 
             "source_of_address": "ACRA"
@@ -946,10 +1238,14 @@
         {
             "address": "103 CLEMENTI ROAD\n#08-07\nSINGAPORE (129788)", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "ASHER MUKULCHANDRA GOVINDJI", 
             "nationality": "INDIAN", 
-            "ordinary_num": "30000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "30000"
+                }
+            ], 
             "shareholder_id": "Z1315259", 
             "shareholder_type": "F", 
             "source_of_address": "ACRA"
@@ -957,10 +1253,14 @@
         {
             "address": "TRAN BANGALA, NEAR UCO BANK,\nTOLAKNAGAR\nPALDI, AHMEDABAD 380007 INDIA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SHAH DHAVAL AJITKUMAR", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "shareholder_id": "E1015089", 
             "shareholder_type": "G", 
             "source_of_address": "ACRA"
@@ -968,10 +1268,14 @@
         {
             "address": "TRAN BANGALA, NEAR UCO BANK,\nTOLAKNAGAR\nPALDI, AHMEDABAD 380007 INDIA", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "SHAH SEJAL DHAVAL", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "shareholder_id": "A9155877", 
             "shareholder_type": "G", 
             "source_of_address": "ACRA"
@@ -979,10 +1283,14 @@
         {
             "address": "BLK 23, FLAT 16H, LAGUNA CITY,\nKOWLOON, HONG KONG", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "RAJESH RANGANATHAN", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "shareholder_id": "747127(4)", 
             "shareholder_type": "H", 
             "source_of_address": "ACRA"
@@ -990,10 +1298,14 @@
         {
             "address": "BLK 23, FLAT 16H, LAGUNA CITY,\nKOWLOON, HONG KONG", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "ANAND SANGHI", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "shareholder_id": "439554(2)", 
             "shareholder_type": "H", 
             "source_of_address": "ACRA"
@@ -1001,10 +1313,14 @@
         {
             "address": "BLK 23, FLAT 16H, LAGUNA CITY,\nKOWLOON, HONG KONG", 
             "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
             "name": "PUNIT KHANNA", 
             "nationality": "INDIAN", 
-            "ordinary_num": "10000",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS", 
+                    "ordinary_number": "10000"
+                }
+            ], 
             "shareholder_id": "363661(9)", 
             "shareholder_type": "H", 
             "source_of_address": "ACRA"

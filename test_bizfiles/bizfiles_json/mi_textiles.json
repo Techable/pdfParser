@@ -71,11 +71,15 @@
     "shareholders": [
         {
             "address": "81 VIGYAN VIHAR DELHI 110092\nINDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SEEMA BAJAJ", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "25000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "25000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "Z2766204", 
@@ -83,11 +87,15 @@
         }, 
         {
             "address": "767 BEDOK RESERVOIR VIEW\n#06-227\nLONGVALE\nSINGAPORE (470767)", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "RAKESH BAJAJ", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "25000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "25000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "G3161606P", 
@@ -95,11 +103,15 @@
         }, 
         {
             "address": "MORGAN & MORGAN BUILDING,\nPASEA ESTATE ROAD TOWN\nTORTOLA, BRITISH VIRGIN ISLANDS", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SIDRA FINANCE LTD.", 
-            "nationality": "VIRGIN ISLANDS, BRITISH", 
-            "ordinary_num": "1100000", 
+            "nationality": "VIRGIN ISLANDS, BRITISH",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1100000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T16UF0580J", 
@@ -107,11 +119,15 @@
         }, 
         {
             "address": "807 ROHIT HSE 3 TOLSTOY MARG\nNEW DELHI 110001 INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "VEENA ENTERPRISES LTD", 
-            "nationality": "INDIA", 
-            "ordinary_num": "1000000", 
+            "nationality": "INDIA",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "1000000"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T04UF0058E", 
@@ -119,22 +135,30 @@
         }, 
         {
             "address": "81 VIGYAN VIHAR\nNEW DELHI-110092, INDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "RAKESH BAJAJ", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "100000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100000"
+                }
+            ],
             "shareholder_id": "Z1903897", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"
         }, 
         {
             "address": "81 VIGYAN VIHAR DELHI 110092\nINDIA", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "SEEMA BAJAJ", 
-            "nationality": "INDIAN", 
-            "ordinary_num": "100000", 
+            "nationality": "INDIAN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "100000"
+                }
+            ],
             "shareholder_id": "Z2766204", 
             "shareholder_type": "A", 
             "source_of_address": "ACRA"

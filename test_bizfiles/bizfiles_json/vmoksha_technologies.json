@@ -98,11 +98,15 @@
     "shareholders": [
         {
             "address": "328,BLOCK 309,ROAD 912,NORTH \nSEGAIYA\nP.O. BOX 5485,MANAMA,BAHRAIN", 
-            "address_changed": null, 
-            "currency": "SINGAPORE, DOLLARS", 
+            "address_changed": null,
             "name": "CHANCE WORLD INTERNATIONAL \nB.S.C.",
-            "nationality": "BAHRAIN", 
-            "ordinary_num": "537887", 
+            "nationality": "BAHRAIN",
+            "ordinary_num": [
+                {
+                    "currency": "SINGAPORE, DOLLARS",
+                    "ordinary_number": "537887"
+                }
+            ],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "T06UF1032J", 
