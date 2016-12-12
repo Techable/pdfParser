@@ -269,9 +269,9 @@ class PdfParserProvider:
             if index in page_values and not pending_table['address'] and len(page_values[index]) == 1:
                 pending_table['address'] = page_values[index][0].text
                 index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
-            if(len(page_values[index]) == 2) and pending_table['ordinary_num'] is None:
-                pending_table['ordinary_num'] = page_values[index][0].text
-                pending_table['currency'] = page_values[index][1].text
+            if(len(page_values[index]) == 2) and not pending_table['ordinary_num']:
+                ordinary_numb_dict = {'ordinary_number': page_values[index][0].text, 'currency': page_values[index][1].text}
+                pending_table['ordinary_num'].append(ordinary_numb_dict)
                 index = self.get_index(index, 81, [21, 24, 48, 47, 58, 70, 99, 1495], page_values)
             if(len(page_values[index]) == 2) and pending_table['pref_num'] is None:
                 pending_table['pref_num'] = page_values[index][0].text
@@ -279,6 +279,22 @@ class PdfParserProvider:
                 index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
             parser_obj.shareholders_details.append(pending_table)
             parser_obj.pending_shareholders_table = None
+        return index
+
+    def update_ordinary_numbers(self, index, page_values, shareholders_dict):
+        ordinary_number_dict = {'ordinary_number': None, 'currency': None}
+        ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
+        if page_values[index][0].text in ordinary_numbers:
+            index = self.get_index(index, 27, [22.62, 22.73, 22.55], page_values)
+            ordinary_number_dict['ordinary_number'] = page_values[index][0].text
+            # shareholders_dict['ordinary_num'].append(page_values[index][0].text)
+            if len(page_values[index]) == 1:
+                index = self.get_index_by_operation(index, 0.5, [0.45], page_values)
+                currency = page_values[index][0]
+            else:
+                currency = page_values[index][1]
+            ordinary_number_dict['currency'] = currency.text
+            shareholders_dict['ordinary_num'].append(ordinary_number_dict)
         return index
 
     """
@@ -309,10 +325,9 @@ class PdfParserProvider:
                                             'nationality':'',''
                                             'source_of_address':'',
                                             'address_changed':None,
-                                            'currency':'',
                                             'pref_num': None,
                                             'pref_currency': None,
-                                            'ordinary_num':None
+                                            'ordinary_num': []
                                              }
 
                         if parser_obj.pending_shareholders_table is None:
@@ -362,24 +377,30 @@ class PdfParserProvider:
                         if (index in page_values):
                             shareholders_table_fields = len(page_values[index])
                             if(shareholders_table_fields == 2):
-                                pref_index = round(index - 47, 2)
-                                ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
-                                if page_values[index][0].text in ordinary_numbers:
-                                    index = self.get_index(index, 27, [22.62, 22.73, 22.55], page_values)
-                                    shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                    if len(page_values[index]) == 1:
-                                        index = self.get_index_by_operation(index, 0.5, [0.45], page_values)
-                                        currency = page_values[index][0]
-                                    else:
-                                        currency = page_values[index][1]
-                                    shareholders_dict['currency'] = currency.text
+                                index = self.update_ordinary_numbers(index, page_values, shareholders_dict)
+                                temp_index = round(index - 22.83, 2)
+                                if temp_index in page_values:
+                                    index = self.update_ordinary_numbers(temp_index, page_values, shareholders_dict)
+                                # ordinary_numbers = ['Ordinary (Number)', 'Ordinary(Number)']
+                                # if page_values[index][0].text in ordinary_numbers:
+                                #     index = self.get_index(index, 27, [22.62, 22.73, 22.55], page_values)
+                                #     shareholders_dict['ordinary_num'].append(page_values[index][0].text)
+                                #     if len(page_values[index]) == 1:
+                                #         index = self.get_index_by_operation(index, 0.5, [0.45], page_values)
+                                #         currency = page_values[index][0]
+                                #     else:
+                                #         currency = page_values[index][1]
+                                #     shareholders_dict['currency'] = currency.text
+                                # index = round(index - 22.83, 2)
+                                pref_index = round(index - 20, 2)
                                 if pref_index in page_values and 'Preference(Number)' in page_values[pref_index][0].text:
                                     index = round(pref_index - 27, 2)
                                     shareholders_dict['pref_num'] = page_values[index][0].text
                                     shareholders_dict['pref_currency'] = page_values[index][1].text
                             elif shareholders_table_fields == 1:
-                                shareholders_dict['ordinary_num'] = page_values[index][0].text
-                                shareholders_dict['currency'] = page_values[round(index + 0.5, 2)][0].text
+                                ordinary_numb_dict = {'ordinary_number': page_values[index][0].text,
+                                 'currency': page_values[round(index + 0.5, 2)][0].text}
+                                shareholders_dict['ordinary_num'].append(ordinary_numb_dict)
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             break
@@ -392,9 +413,9 @@ class PdfParserProvider:
                         shareholders_table_fields = len(page_values[index])
                     else:
                         break
-        parser_obj.shareholders_details = \
-            [dict(t) for t in set([tuple(d.items()) \
-            for d in parser_obj.shareholders_details])]
+        # parser_obj.shareholders_details = \
+        #     [dict(t) for t in set([tuple(d.items()) \
+        #     for d in parser_obj.shareholders_details])]
 
     def _find_shareholder_type_and_index(self, list_of_t):
         shareholder_index = None
@@ -456,8 +477,7 @@ class PdfParserProvider:
                                 'nationality':'',
                                 'source_of_address':'',
                                 'address_changed':None,
-                                'currency': parser_obj.currency,
-                                'ordinary_num': parser_obj.ordinary_num
+                                'ordinary_num': [{'ordinary_number': parser_obj.ordinary_num, 'currency': parser_obj.currency}]
                             }
                             shareholder_type_details = temp_page_values[temp_index]
                             shareholder_type_details.sort()
@@ -498,8 +518,7 @@ class PdfParserProvider:
                         'nationality': '',
                         'source_of_address': '',
                         'address_changed':None,
-                        'currency': '',
-                        'ordinary_num': ''
+                        'ordinary_num': []
                     }
                     parser_obj.pending_shareholders_type_table = shareholder_type_dict
 
@@ -525,8 +544,7 @@ class PdfParserProvider:
                             'nationality':'',
                             'source_of_address':'',
                             'address_changed':None,
-                            'currency':currency,
-                            'ordinary_num':ordinary_num
+                            'ordinary_num': [{'ordinary_number': ordinary_num, 'currency': currency}]
                         }
                         shareholder_type_details = temp_page_values[index]
                         shareholder_type_details.sort()
@@ -934,7 +952,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/asr_global.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/daily_karma.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
