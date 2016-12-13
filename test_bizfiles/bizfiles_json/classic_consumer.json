@@ -63,7 +63,7 @@
     "date_of_address": "15/09/2010", 
     "date_of_last_agm": "07/12/2011", 
     "date_of_last_ar": "03/01/2012", 
-    "date_of_lodgment_of_ar": "03/01/2012", 
+    "date_of_lodgement_of_ar": "03/01/2012", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -107,7 +107,7 @@
             "address_changed": null,
             "name": "SALONI VINAYKANT", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "299999"
@@ -123,7 +123,7 @@
             "address_changed": null,
             "name": "SOWRIRAJAN SRINIVASAN", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1"

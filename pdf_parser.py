@@ -76,7 +76,7 @@ class PdfParser:
                 'date_of_last_agm':'',
                 'date_of_last_ar':'',
                 'date_of_ac_at_last':'',
-                'date_of_lodgment_of_ar':'',
+                'date_of_lodgement_of_ar':'',
                 'audit_firm_name':'',
                 'organization':'',
                 'pdf_file': self.input_pdf_file
@@ -269,9 +269,9 @@ class PdfParserProvider:
             if index in page_values and not pending_table['address'] and len(page_values[index]) == 1:
                 pending_table['address'] = page_values[index][0].text
                 index = self.get_index(index, 81, [21, 24, 48, 58, 70, 99, 1495], page_values)
-            if(len(page_values[index]) == 2) and not pending_table['ordinary_num']:
+            if(len(page_values[index]) == 2) and not pending_table['ordinary_numbers']:
                 ordinary_numb_dict = {'ordinary_number': page_values[index][0].text, 'currency': page_values[index][1].text}
-                pending_table['ordinary_num'].append(ordinary_numb_dict)
+                pending_table['ordinary_numbers'].append(ordinary_numb_dict)
                 index = self.get_index(index, 81, [21, 24, 48, 47, 58, 70, 99, 1495], page_values)
             if(len(page_values[index]) == 2) and pending_table['pref_num'] is None:
                 pending_table['pref_num'] = page_values[index][0].text
@@ -294,7 +294,7 @@ class PdfParserProvider:
             else:
                 currency = page_values[index][1]
             ordinary_number_dict['currency'] = currency.text
-            shareholders_dict['ordinary_num'].append(ordinary_number_dict)
+            shareholders_dict['ordinary_numbers'].append(ordinary_number_dict)
         return index
 
     """
@@ -327,7 +327,7 @@ class PdfParserProvider:
                                             'address_changed':None,
                                             'pref_num': None,
                                             'pref_currency': None,
-                                            'ordinary_num': []
+                                            'ordinary_numbers': []
                                              }
 
                         if parser_obj.pending_shareholders_table is None:
@@ -400,7 +400,7 @@ class PdfParserProvider:
                             elif shareholders_table_fields == 1:
                                 ordinary_numb_dict = {'ordinary_number': page_values[index][0].text,
                                  'currency': page_values[round(index + 0.5, 2)][0].text}
-                                shareholders_dict['ordinary_num'].append(ordinary_numb_dict)
+                                shareholders_dict['ordinary_numbers'].append(ordinary_numb_dict)
                         else:
                             parser_obj.pending_shareholders_table = shareholders_dict
                             break
@@ -477,7 +477,7 @@ class PdfParserProvider:
                                 'nationality':'',
                                 'source_of_address':'',
                                 'address_changed':None,
-                                'ordinary_num': [{'ordinary_number': parser_obj.ordinary_num, 'currency': parser_obj.currency}]
+                                'ordinary_numbers': [{'ordinary_number': parser_obj.ordinary_num, 'currency': parser_obj.currency}]
                             }
                             shareholder_type_details = temp_page_values[temp_index]
                             shareholder_type_details.sort()
@@ -518,7 +518,7 @@ class PdfParserProvider:
                         'nationality': '',
                         'source_of_address': '',
                         'address_changed':None,
-                        'ordinary_num': []
+                        'ordinary_numbers': []
                     }
                     parser_obj.pending_shareholders_type_table = shareholder_type_dict
 
@@ -544,7 +544,7 @@ class PdfParserProvider:
                             'nationality':'',
                             'source_of_address':'',
                             'address_changed':None,
-                            'ordinary_num': [{'ordinary_number': ordinary_num, 'currency': currency}]
+                            'ordinary_numbers': [{'ordinary_number': ordinary_num, 'currency': currency}]
                         }
                         shareholder_type_details = temp_page_values[index]
                         shareholder_type_details.sort()
@@ -901,7 +901,7 @@ class PdfParserProvider:
             elif 'Date of Lodgment of AR, A/C' in values:
                 titles = ['Date of Lodgment of AR, A/C']
                 value = self.get_company_record_value(key, titles, [0.8], values, '+', page_values)
-                parser_obj.company_details['date_of_lodgment_of_ar'] = value.replace(':', '').strip()
+                parser_obj.company_details['date_of_lodgement_of_ar'] = value.replace(':', '').strip()
             elif 'RECEIPT NO.' in values:
                 if round(key + 0.8, 2) in page_values:
                     receipt_no = page_values[round(key + 0.8, 2)][0].text
@@ -952,7 +952,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/not_working_bizfiles/daily_karma.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/fortune_8_access.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 

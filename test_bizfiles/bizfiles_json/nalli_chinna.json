@@ -30,7 +30,7 @@
     "date_of_address": "10/06/1998", 
     "date_of_last_agm": "31/08/2011", 
     "date_of_last_ar": "19/09/2011", 
-    "date_of_lodgment_of_ar": "19/09/2011", 
+    "date_of_lodgement_of_ar": "19/09/2011", 
     "description": "", 
     "former_name": "CHINNASAMI CHETTY PTE LTD", 
     "id": "", 
@@ -92,7 +92,7 @@
             "address_changed": null,
             "name": "NALLI KUPPUSWAMI CHETTI", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "45000"
@@ -108,7 +108,7 @@
             "address_changed": null,
             "name": "NALLI PROCESSING PRIVATE LIMITED", 
             "nationality": "INDIA",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1000000"
@@ -124,7 +124,7 @@
             "address_changed": null,
             "name": "NALLI CHINNASAMI CHETTY PVT LTD", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "140002"
@@ -140,7 +140,7 @@
             "address_changed": null,
             "name": "NALLI RAMANATHAN", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "15000"

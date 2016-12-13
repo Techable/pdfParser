@@ -47,7 +47,7 @@
     "date_of_address": "20/01/2010", 
     "date_of_last_agm": "15/09/2012", 
     "date_of_last_ar": "15/10/2012", 
-    "date_of_lodgment_of_ar": "15/10/2012", 
+    "date_of_lodgement_of_ar": "15/10/2012", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -82,7 +82,7 @@
             "address_changed": null,
             "name": "PACIFIC AND ATLANTIC TRADING PTE. \nLTD.",
             "nationality": "SINGAPORE",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2000000"

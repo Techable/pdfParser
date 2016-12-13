@@ -30,7 +30,7 @@
     "date_of_address": "24/08/2015", 
     "date_of_last_agm": "", 
     "date_of_last_ar": "", 
-    "date_of_lodgment_of_ar": "", 
+    "date_of_lodgement_of_ar": "", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -65,7 +65,7 @@
             "address_changed": null,
             "name": "CHAWLA ANIL", 
             "nationality": "INDIAN", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "ordinary_number": "1",
                     "currency": "SINGAPORE, DOLLARS"

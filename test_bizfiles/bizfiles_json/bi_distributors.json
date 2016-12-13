@@ -135,7 +135,7 @@
     "date_of_address": "15/02/2003", 
     "date_of_last_agm": "31/05/2016", 
     "date_of_last_ar": "09/06/2016", 
-    "date_of_lodgment_of_ar": "09/06/2016", 
+    "date_of_lodgement_of_ar": "09/06/2016", 
     "description": "", 
     "former_name": "BUSHRA INVESTMENTS PTE LTD", 
     "id": "", 
@@ -197,7 +197,7 @@
             "address_changed": null,
             "name": "MOHAMED MUSTAFA & SAMSUDDIN\nCO. PTE LTD", 
             "nationality": "SINGAPORE", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "3000000"

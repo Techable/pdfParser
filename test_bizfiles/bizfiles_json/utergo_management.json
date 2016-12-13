@@ -30,7 +30,7 @@
     "date_of_address": "26/02/2015", 
     "date_of_last_agm": "", 
     "date_of_last_ar": "", 
-    "date_of_lodgment_of_ar": "", 
+    "date_of_lodgement_of_ar": "", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -56,7 +56,7 @@
             "address_changed": null,
             "name": "LEC GROUP PTE. LTD.", 
             "nationality": "SINGAPORE",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1"

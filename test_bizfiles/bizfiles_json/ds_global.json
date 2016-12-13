@@ -62,7 +62,7 @@
     "date_of_address": "30/10/2015", 
     "date_of_last_agm": "09/03/2016", 
     "date_of_last_ar": "16/03/2016", 
-    "date_of_lodgment_of_ar": "16/03/2016", 
+    "date_of_lodgement_of_ar": "16/03/2016", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -133,7 +133,7 @@
             "address_changed": null,
             "name": "DSL GLOBAL PTE. LTD.", 
             "nationality": "SINGAPORE", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "3767400"
@@ -149,7 +149,7 @@
             "address_changed": null,
             "name": "RK TECHNOLOGY & INVESTMENTS\nPTE. LTD.", 
             "nationality": "SINGAPORE",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2511600"

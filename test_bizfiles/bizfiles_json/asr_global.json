@@ -46,7 +46,7 @@
     "date_of_address": "06/07/2010", 
     "date_of_last_agm": "27/12/2013", 
     "date_of_last_ar": "27/01/2014", 
-    "date_of_lodgment_of_ar": "27/01/2014", 
+    "date_of_lodgement_of_ar": "27/01/2014", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -99,7 +99,7 @@
             "address_changed": null, 
             "name": "A S R MINING PRIVATE LIMITED", 
             "nationality": "INDIA", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "UNITED STATES OF AMERICA, DOLLARS", 
                     "ordinary_number": "4475835"
@@ -119,7 +119,7 @@
             "address_changed": null, 
             "name": "SRINIVAS RAMA RAJU ALLURI", 
             "nationality": "INDIAN", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS", 
                     "ordinary_number": "269900"

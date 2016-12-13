@@ -30,7 +30,7 @@
     "date_of_address": "30/03/2016", 
     "date_of_last_agm": "", 
     "date_of_last_ar": "", 
-    "date_of_lodgment_of_ar": "", 
+    "date_of_lodgement_of_ar": "", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -65,7 +65,7 @@
             "address_changed": null,
             "name": "N SRIRAM", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1"

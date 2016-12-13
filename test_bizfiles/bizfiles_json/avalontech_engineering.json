@@ -30,7 +30,7 @@
     "date_of_address": "19/11/2009", 
     "date_of_last_agm": "19/09/2014", 
     "date_of_last_ar": "17/10/2014", 
-    "date_of_lodgment_of_ar": "17/10/2014", 
+    "date_of_lodgement_of_ar": "17/10/2014", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -83,7 +83,7 @@
             "address_changed": null,
             "name": "ANIL KUMAR LUTHRA", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "100000"
@@ -99,7 +99,7 @@
             "address_changed": null,
             "name": "CHANDER PRAKASH", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "22000"
@@ -115,7 +115,7 @@
             "address_changed": null,
             "name": "SONI KARISHMA MATTA", 
             "nationality": "SINGAPORE P.R.", 
-            "ordinary_num": [],
+            "ordinary_numbers": [],
             "pref_currency": null, 
             "pref_num": null, 
             "shareholder_id": "S7787677D", 
@@ -126,7 +126,7 @@
             "address_changed": null,
             "name": "JAGJIT SINGH", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "50000"
@@ -142,7 +142,7 @@
             "address_changed": null,
             "name": "DHEERAJ SONI", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "258000"

@@ -215,7 +215,7 @@
     "date_of_address": "28/02/1989", 
     "date_of_last_agm": "05/11/2015", 
     "date_of_last_ar": "01/12/2015", 
-    "date_of_lodgment_of_ar": "01/12/2015", 
+    "date_of_lodgement_of_ar": "01/12/2015", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -286,7 +286,7 @@
             "address_changed": null,
             "name": "ISHRET JAHAN", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1165667"
@@ -302,7 +302,7 @@
             "address_changed": null,
             "name": "ESTATE OF MUSTAFA (DECEASED)", 
             "nationality": "SINGAPORE P.R.",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2000914"
@@ -318,7 +318,7 @@
             "address_changed": null,
             "name": "MUSTAQ AHMAD @ MUSHTAQ\nAHMAD S/O MUSTAFA", 
             "nationality": "SINGAPORE CITIZEN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "8172504"
@@ -334,7 +334,7 @@
             "address_changed": null,
             "name": "ESTATE OF SHAMSUDDIN\n(DECEASED)", 
             "nationality": "SINGAPORE P.R.",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2000915"

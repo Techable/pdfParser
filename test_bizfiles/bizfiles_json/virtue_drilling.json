@@ -95,7 +95,7 @@
     "date_of_address": "31/07/2013", 
     "date_of_last_agm": "18/08/2015", 
     "date_of_last_ar": "14/09/2015", 
-    "date_of_lodgment_of_ar": "14/09/2015", 
+    "date_of_lodgement_of_ar": "14/09/2015", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -148,7 +148,7 @@
             "address_changed": null,
             "name": "T07UF1046C", 
             "nationality": "ACRA",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "3805000"
@@ -164,7 +164,7 @@
             "address_changed": null,
             "name": "MAHARASHTRA SEAMLESS\n(SINGAPORE) PTE. LTD.", 
             "nationality": "SINGAPORE",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "4661125"
@@ -180,7 +180,7 @@
             "address_changed": null,
             "name": "VICTORIA METALS INTERNATIONAL\nLTD", 
             "nationality": "OTHERS",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2891800"
@@ -196,7 +196,7 @@
             "address_changed": null,
             "name": "JINDAL DRILLING & INDUSTRIES\nLTD", 
             "nationality": "INDIA",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "13983375"
@@ -212,7 +212,7 @@
             "address_changed": null,
             "name": "DISCOVERY DRILLING PTE. LTD.", 
             "nationality": "SINGAPORE",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "570750"
@@ -228,7 +228,7 @@
             "address_changed": null,
             "name": "GATALINIA LIMITED", 
             "nationality": "VIRGIN ISLANDS, BRITISH",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "2625450"

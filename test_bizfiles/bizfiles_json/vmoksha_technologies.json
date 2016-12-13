@@ -39,7 +39,7 @@
     "date_of_address": "12/12/2011", 
     "date_of_last_agm": "16/08/2013", 
     "date_of_last_ar": "16/09/2013", 
-    "date_of_lodgment_of_ar": "16/09/2013", 
+    "date_of_lodgement_of_ar": "16/09/2013", 
     "description": "", 
     "former_name": "KEMEFS E-SOLUTIONS PTE LTD", 
     "id": "", 
@@ -101,7 +101,7 @@
             "address_changed": null,
             "name": "CHANCE WORLD INTERNATIONAL \nB.S.C.",
             "nationality": "BAHRAIN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "537887"

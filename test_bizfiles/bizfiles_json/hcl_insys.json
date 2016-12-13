@@ -55,7 +55,7 @@
     "date_of_address": "17/12/2009", 
     "date_of_last_agm": "28/01/2016", 
     "date_of_last_ar": "18/02/2016", 
-    "date_of_lodgment_of_ar": "18/02/2016", 
+    "date_of_lodgement_of_ar": "18/02/2016", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -99,7 +99,7 @@
             "address_changed": null,
             "name": "HCL SERVICES LIMITED", 
             "nationality": "OTHERS",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "6199991"
@@ -115,7 +115,7 @@
             "address_changed": null,
             "name": "HCL SERVICES LIMITED", 
             "nationality": "INDIA",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "UNITED STATES OF AMERICA, DOLLARS",
                     "ordinary_number": "11347619"

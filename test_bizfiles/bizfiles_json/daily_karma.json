@@ -46,7 +46,7 @@
     "date_of_address": "15/01/2015", 
     "date_of_last_agm": "", 
     "date_of_last_ar": "", 
-    "date_of_lodgment_of_ar": "", 
+    "date_of_lodgement_of_ar": "", 
     "description": "", 
     "former_name": "URBAN LIFE PTE. LTD.", 
     "id": "", 
@@ -72,7 +72,7 @@
             "address_changed": null, 
             "name": "ANAND MECHERI", 
             "nationality": "INDIAN", 
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "UNITED STATES OF AMERICA, DOLLARS", 
                     "ordinary_number": "100000"

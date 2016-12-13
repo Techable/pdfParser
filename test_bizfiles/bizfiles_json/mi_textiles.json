@@ -30,7 +30,7 @@
     "date_of_address": "", 
     "date_of_last_agm": "25/02/2016", 
     "date_of_last_ar": "29/03/2016", 
-    "date_of_lodgment_of_ar": "29/03/2016", 
+    "date_of_lodgement_of_ar": "29/03/2016", 
     "description": "", 
     "former_name": "", 
     "id": "", 
@@ -74,7 +74,7 @@
             "address_changed": null,
             "name": "SEEMA BAJAJ", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "25000"
@@ -90,7 +90,7 @@
             "address_changed": null,
             "name": "RAKESH BAJAJ", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "25000"
@@ -106,7 +106,7 @@
             "address_changed": null,
             "name": "SIDRA FINANCE LTD.", 
             "nationality": "VIRGIN ISLANDS, BRITISH",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1100000"
@@ -122,7 +122,7 @@
             "address_changed": null,
             "name": "VEENA ENTERPRISES LTD", 
             "nationality": "INDIA",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "1000000"
@@ -138,7 +138,7 @@
             "address_changed": null,
             "name": "RAKESH BAJAJ", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "100000"
@@ -153,7 +153,7 @@
             "address_changed": null,
             "name": "SEEMA BAJAJ", 
             "nationality": "INDIAN",
-            "ordinary_num": [
+            "ordinary_numbers": [
                 {
                     "currency": "SINGAPORE, DOLLARS",
                     "ordinary_number": "100000"

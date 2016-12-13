@@ -31,9 +31,15 @@ class TestStringMethods(unittest.TestCase):
                     actual_details = actual_company_details[key]
                     actual_details.sort()
                     actual_company_details[key].sort()
+                    print "#######################"
+                    print bizfile_json_name
+                    print "#######################"
                     self.assertEqual(len(actual_details), len(expected_details))
                     self.assertListEqual(actual_details, expected_details)
                 else:
+                    print "#######################"
+                    print bizfile_json_name, key
+                    print "#######################"
                     self.assertEqual(expected_details, actual_company_details[key])
 
 if __name__ == '__main__':
