@@ -903,7 +903,9 @@ class PdfParserProvider:
                 value = self.get_company_record_value(key, titles, [0.8], values, '+', page_values)
                 parser_obj.company_details['date_of_lodgement_of_ar'] = value.replace(':', '').strip()
             elif 'RECEIPT NO.' in values:
-                if round(key + 0.8, 2) in page_values:
+                if len(page_values[key]) == 3:
+                    receipt_no = page_values[key][2].text
+                elif round(key + 0.8, 2) in page_values:
                     receipt_no = page_values[round(key + 0.8, 2)][0].text
                 else:
                     receipt_no = page_values[round(key + 1, 2)][0].text if page_values[round(key + 1, 2)] else ''
@@ -952,7 +954,7 @@ def run_pdf_parser(pdf_file):
 
 if __name__ == "__main__":
     PDF_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/fortune_8_access.pdf'
+    pdf_file_path =  PDF_DIR + '/test_bizfiles/bizfiles/arjan_sons.pdf'
     pdf_file = open(pdf_file_path)
     company_details = run_pdf_parser(pdf_file)
 
